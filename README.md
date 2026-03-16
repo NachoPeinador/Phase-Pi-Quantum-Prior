@@ -17,7 +17,7 @@ A diferencia de la superposición uniforme de Hadamard ($H^{\otimes n}$), este "
 
 El núcleo del proyecto es la función de densidad de amplitud modulada por fases analíticas:
 
-P(x) \propto \exp\left[A \sin\left(\frac{2\pi x}{6} + \phi\right)\right] \cdot \mathds{1}_{x\equiv 1,5 \pmod{6}}
+$$P(x) \propto \exp\left[A \sin\left(\frac{2\pi x}{6} + \phi\right)\right] \mathds{1}_{x\equiv 1,5 \pmod{6}}$$
 
 ### Los Dos Pilares de la Fase
 1. **$\phi_2 = \pi$ (Origen Simétrico):** Derivado del isomorfismo entre el grupo de unidades $(\mathbb{Z}/6\mathbb{Z})^{\times}$ y el grupo discreto $\mathbb{Z}/2\mathbb{Z}$. Actúa como un operador *gauge* que resuelve la anomalía quiral del sustrato.
