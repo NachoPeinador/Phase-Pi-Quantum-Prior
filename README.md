@@ -32,7 +32,7 @@ This research introduces the **$\mathbb{Z}/6\mathbb{Z}$ Topological Prior**, a s
 The system is governed by a complex probability envelope where phases are analytically locked:
 
 1. **The Gauge Shift ($\phi_2 = \pi$):** Derived from the holonomy of Berry and the resolution of the chiral anomaly.
-2. **The Vacuum Impedance ($\phi_1 \approx R_{\text{fund}}/10$):** A $0.0105$ rad offset that compensates for the thermodynamic friction of mapping ternary arithmetic onto binary hardware ($R_{\text{fund}} = 1/(6\log_2 3)$).
+2. **The Vacuum Impedance ($\phi_1 \approx R_{\text{fund}}/10$):** A $0.0105$ rad offset that compensates for the thermodynamic friction of mapping ternary arithmetic onto binary hardware $R_{\text{fund}} = 1/(6\log_2 3)$.
 
 ---
 
