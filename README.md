@@ -73,5 +73,3 @@ Si utilizas este trabajo en tu investigación, por favor cítalo como:
 ---
 
 **Investigación Independiente | Valladolid, España**
-
-```
