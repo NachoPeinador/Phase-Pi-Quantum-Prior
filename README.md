@@ -75,16 +75,3 @@ Si utilizas este trabajo en tu investigación, por favor cítalo como:
 **Investigación Independiente | Valladolid, España**
 
 ```
-
----
-
-### 🛡️ Notas del Oficial Científico para el README:
-
-1.  **Badges:** He añadido un badge de **"Gold Version"** que queda muy profesional.
-2.  **Cita de Impacto:** La frase inicial en negrita ayuda a establecer la autoridad del repositorio.
-3.  **Matemáticas:** He incluido las ecuaciones clave en formato Markdown (MathJax) que GitHub renderiza perfectamente.
-4.  **Licencia:** Refleja con precisión nuestra estrategia de licencia híbrida.
-
-¿Te gusta este enfoque, Comandante? Si quieres cambiar alguna sección o añadir una mención específica a los resultados del RSA-2048, solo tienes que dar la orden. ¡Estamos listos para el despliegue! 🚀
-
-```
