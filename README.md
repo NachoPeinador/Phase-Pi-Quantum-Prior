@@ -21,7 +21,7 @@ $$P(x) \propto \exp\left[A \sin\left(\frac{2\pi x}{6} + \phi\right)\right] \cdot
 
 ### Los Dos Pilares de la Fase
 1. **$\phi_2 = \pi$ (Origen Simétrico):** Derivado del isomorfismo entre el grupo de unidades $(\mathbb{Z}/6\mathbb{Z})^{\times}$ y el grupo discreto $\mathbb{Z}/2\mathbb{Z}$. Actúa como un operador *gauge* que resuelve la anomalía quiral del sustrato.
-2. **$\phi_1 \approx R_{\text{fund}}/10$ (Impedancia Informacional):** Una desviación de fase de $0.0105$ rad que compensa la fricción termodinámica de mapear topologías ternarias sobre hardware binario ($R_{\text{fund}} = 1/(6\log_2 3)$).
+2. **$\phi_1 \approx R_{\text{fund}}/10$ (Impedancia Informacional):** Una desviación de fase de $0.0105$ rad que compensa la fricción termodinámica de mapear topologías ternarias sobre hardware binario $R_{\text{fund}} = 1/(6\log_2 3)$.
 
 ## 🚀 Características Principales
 
