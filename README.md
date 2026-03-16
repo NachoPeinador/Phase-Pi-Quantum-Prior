@@ -1,75 +1,157 @@
-# Phase-Pi-Quantum-Prior: Z/6Z Topological Superselection for NISQ State Preparation
+# 🌀 Phase-Pi-Quantum-Prior
 
-[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
-[![Status: Gold Version](https://img.shields.io/badge/Status-Gold%20Version-gold.svg)](#)
+### Analytical Phase Origins and $\mathbb{Z}/6\mathbb{Z}$ Topological Superselection for NISQ State Preparation
 
-> **"La inicialización uniforme maximiza la ignorancia. La superselección topológica Z/6Z impone la inteligencia aritmética directamente en el registro cuántico."**
+---
 
-## 📖 Descripción General
+## 🎯 TL;DR – The Essentials
 
-Este repositorio contiene la base de operaciones para la **Fase Pi**, un protocolo avanzado de preparación de estados cuánticos (QSP) diseñado para hardware de la era NISQ. Basado en el manuscrito *"El Origen Analítico de la Fase π: Simetría, Dualidad y Preparación de Estados en la Superselección Topológica Z/6Z"*, este sistema permite purgar estructuralmente el **66.6%** del espacio de búsqueda estéril en algoritmos de factorización y búsqueda aritmética.
+### 🔬 **Theoretical Breakthroughs**
 
-A diferencia de la superposición uniforme de Hadamard ($H^{\otimes n}$), este "Prior Topológico" confina la amplitud de probabilidad en los canales resonantes $1 \pmod 6$ y $5 \pmod 6$ mediante un circuito de profundidad polinómica $\mathcal{O}(\text{poly}(n))$ y dimensión de enlace constante $\chi \le 6$.
+* 📐 **Analytical Phase Discovery:** Proof that the optimal initialization phases ($\phi_1, \phi_2$) are not heuristic, but emerge from the unit group isomorphism $(\mathbb{Z}/6\mathbb{Z})^{\times} \cong \mathbb{Z}/2\mathbb{Z}$ and holographic vacuum impedance.
+* 🧩 **Topological Superselection:** Implementation of a "Prior Topológico" that purges **66.6%** of computationally sterile states ($n \equiv 0, 2, 3, 4 \pmod 6$) directly at the registration layer.
+* ⚡ **Polynomial Complexity:** Exact state preparation via **Matrix Product States (MPS)** with constant bond dimension $\chi \le 6$, avoiding the exponential $O(2^n)$ overhead of arbitrary distributions.
+* 🛡️ **Lindblad Resilience:** Discovery of a **Non-Ergodic Extended (NEE) phase** that protects the register against thermal decoherence, enforcing an Area Law for entanglement entropy.
 
-## 🧠 Fundamentos Teóricos
+### 📊 **Computational Validation (N=60 Qubits)**
 
-El núcleo del proyecto es la función de densidad de amplitud modulada por fases analíticas:
+* 📉 **Entropy Stasis:** Under a depolarizing noise rate of $p=0.015$, the bipartite entropy $S_2$ saturates at $\approx 1.65$ bits, defying the Ergodic Volume Law (30 bits).
+* 🧪 **Robustness Plateau:** Sensitivity analysis confirms the NEE phase is stable against gauge fluctuations in the range $\phi_1 \in [0, 0.05]$ rad.
+* 🚀 **Algorithmic Gain:** Structural search space reduction enabling a potential **5.46x acceleration** in integer factorization subroutines.
 
-$$P(x) \propto \exp\left[A \sin\left(\frac{2\pi x}{6} + \phi\right)\right] \cdot \mathbb{1}_{x\equiv 1,5 \pmod{6}}$$
+---
 
-### Los Dos Pilares de la Fase
-1. **$\phi_2 = \pi$ (Origen Simétrico):** Derivado del isomorfismo entre el grupo de unidades $(\mathbb{Z}/6\mathbb{Z})^{\times}$ y el grupo discreto $\mathbb{Z}/2\mathbb{Z}$. Actúa como un operador *gauge* que resuelve la anomalía quiral del sustrato.
-2. **$\phi_1 \approx R_{\text{fund}}/10$ (Impedancia Informacional):** Una desviación de fase de $0.0105$ rad que compensa la fricción termodinámica de mapear topologías ternarias sobre hardware binario $R_{\text{fund}} = 1/(6\log_2 3)$.
+## 🔍 Research Overview: Beyond Uniform Superposition
 
-## 🚀 Características Principales
+Standard quantum algorithms (e.g., Shor, Grover) initialize registers in a state of maximum ignorance: the uniform superposition $H^{\otimes n}|0\rangle$. While easy to prepare, this forces the oracle to process an exponential volume of arithmetically impossible trajectories.
 
-- **Fase NEE Protegida:** El estado induce una fase *Non-Ergodic Extended* que bloquea pasivamente la termalización ergódica bajo ruido de Lindblad.
-- **Implementación MPS:** Compilación exacta mediante *Matrix Product States* (MPS), evitando el crecimiento exponencial de la profundidad del circuito.
-- **Robustez Topológica:** Demostrada estabilidad de la entropía de entrelazamiento $S_2$ en registros macroscópicos de hasta $N=60$ qubits.
-- **Estrategia Adaptativa:** Algoritmo de conmutación ortogonal de canal con coste $\mathcal{O}(1)$ para criptoanálisis eficiente.
+This research introduces the **$\mathbb{Z}/6\mathbb{Z}$ Topological Prior**, a structured Quantum State Preparation (QSP) protocol that injects arithmetic intelligence into the vacuum state. By aligning the quantum amplitude with the modular density of prime numbers, we transform integer factorization from a blind search into a **topologically tuned resonance**.
 
-## 📂 Estructura del Repositorio
+### 🚀 The Analytical Pillars
 
-```text
-Phase-Pi-Quantum-Prior/
-├── docs/               # Manuscrito "Gold Version" en LaTeX y PDF.
-├── notebooks/          # Colabs experimentales (Montecarlo, S2 scaling, Parameter Sweep).
-├── src/                # Scripts de Python para construcción de operadores y simulaciones.
-├── figures/            # Gráficas de fidelidad y escalado de entropía.
-├── LICENSE             # Apache License 2.0.
-└── CITATION.cff        # Información para citación académica.
+The system is governed by a complex probability envelope where phases are analytically locked:
+
+1. **The Gauge Shift ($\phi_2 = \pi$):** Derived from the holonomy of Berry and the resolution of the chiral anomaly.
+2. **The Vacuum Impedance ($\phi_1 \approx R_{\text{fund}}/10$):** A $0.0105$ rad offset that compensates for the thermodynamic friction of mapping ternary arithmetic onto binary hardware ($R_{\text{fund}} = 1/(6\log_2 3)$).
+
+---
+
+## 🧭 Conceptual Framework
+
+```mermaid
+graph TD
+    A["Arithmetic Topology<br>Z/6Z Ring"] --> B["Modular Superselection<br>Resonant Channels 1 & 5"]
+    C["Group Theory<br>Isomorphism Z/2Z"] --> D["Phase Duality<br>φ₂ = φ₁ + π"]
+    E["Information Theory<br>Vacuum Impedance"] --> F["Phase Offset<br>φ₁ ≈ R_fund/10"]
+    
+    B --> H["Topological Prior State<br>|ψ_top⟩"]
+    D --> H
+    F --> H
+    
+    H --> NEE["Non-Ergodic Phase<br>Area Law Scaling"]
+    H --> MPS["MPS Preparation<br>O(poly(n)) Depth"]
+    H --> CRYP["Cryptanalysis<br>66.6% Search Purge"]
+
+    style H fill:#f96,stroke:#333,stroke-width:3px
+    style NEE fill:#bbf,stroke:#333,stroke-width:2px
 
 ```
 
-## 📊 Resultados Destacados
+---
 
-El escalado mediante redes tensoriales **MPDO** confirma que, bajo una tasa de ruido despolarizante $p=0.015$, la entropía del sistema se mantiene por debajo de la cota topográfica de **1.65 bits**, desafiando la Ley de Volumen que exigiría hasta 30 bits de caos térmico en $N=60$.
+## 📊 Experimental Results ($N=60$, $p=0.015$)
 
-*(Insertar aquí imagen: `figures/image_c0fee0.png` mostrando el aplanamiento de S2)*
+The following table summarizes the thermodynamic performance of the $\mathbb{Z}/6\mathbb{Z}$ state under open-system dynamics (Lindblad Master Equation) using **Matrix Product Density Operators (MPDO)**:
 
-## ⚖️ Licencia Híbrida
+| Metric | Modular Prior (NEE) | Uniform Baseline (Ergodic) | Advantage |
+| --- | --- | --- | --- |
+| **Entanglement ($S_2$) @ N=60** | **1.6495 bits** | **30.0 bits** | **94.5% Reduction** |
+| **Scaling Law** | Area Law ($S \sim \text{const}$) | Volume Law ($S \sim N/2$) | Thermal Immunity |
+| **Circuit Depth** | $\mathcal{O}(n^2)$ logical gates | $\mathcal{O}(1)$ | Practical NISQ depth |
+| **Search Space** | $33.3\%$ (Resonant) | $100\%$ (All channels) | **3x Structural Gain** |
+| **Phase Robustness** | Plateau up to $0.05$ rad | N/A | Hardware Tolerant |
 
-Este proyecto utiliza un esquema de licenciamiento dual para proteger tanto el software como la propiedad intelectual teórica:
+---
 
-* **Código y Algoritmos:** Licenciados bajo [Apache License 2.0](https://www.google.com/search?q=LICENSE).
-* **Contenido Teórico y Manuscrito:** Licenciados bajo [Creative Commons Attribution 4.0 International (CC-BY-4.0)](https://creativecommons.org/licenses/by/4.0/).
+## 🚀 Reproducibility and Computational Lab
 
-## 🖋️ Citación
+### Cloud Execution (Recommended)
 
-Si utilizas este trabajo en tu investigación, por favor cítalo como:
+Run the macroscopic scaling experiments and the $\phi_1$ parameter sweep directly in your browser.
+
+### Local Installation
+
+```bash
+git clone https://github.com/NachoPeinador/Phase-Pi-Quantum-Prior.git
+cd Phase-Pi-Quantum-Prior
+pip install numpy matplotlib scipy tensornetwork
+
+```
+
+---
+
+## 📂 Repository Structure
+
+<details>
+<summary><strong>👇 Click to view repository structure</strong></summary>
+
+```text
+.
+├── 📂 docs/               # Theoretical Documentation
+│   ├── 📄 Phase_Pi_Gold.pdf # The definitive manuscript
+│   └── 📝 Phase_Pi_Gold.tex # LaTeX source
+│
+├── 📂 notebooks/          # Experimental Suites
+│   ├── 📓 Scaling_N60.ipynb # Lindblad dynamics & MPDO scaling
+│   └── 📓 Phi1_Sweep.ipynb  # Robustness analysis
+│
+├── 📂 src/                # Implementation Core
+│   ├── 🐍 mps_compiler.py   # MPS isometric synthesis
+│   └── 🐍 z6z_prior.py      # Operator logic
+│
+├── 📜 LICENSE             # Dual scheme: Apache 2.0 / CC-BY 4.0
+└── 📜 CITATION.cff        # Academic citation metadata
+
+```
+
+</details>
+
+---
+
+## ⚖️ Licensing & Citation
+
+This project utilizes a **dual-licensing scheme**:
+
+* **Code and Algorithms:** [Apache License 2.0](https://www.google.com/search?q=LICENSE).
+* **Theoretical Content & Manuscript:** [Creative Commons Attribution 4.0 International (CC-BY-4.0)](https://www.google.com/search?q=https://creativecommons.org/licenses/by/4.0/).
+
+**BibTeX Citation:**
 
 ```bibtex
 @software{Peinador_Phase_Pi_2026,
   author = {Peinador Sala, José Ignacio},
   title = {El Origen Analítico de la Fase π: Simetría, Dualidad y Preparación de Estados en la Superselección Topológica Z/6Z},
-  url = {[https://github.com/NachoPeinador/Phase-Pi-Quantum-Prior](https://github.com/NachoPeinador/Phase-Pi-Quantum-Prior)},
-  year = {2026}
+  url = {https://github.com/NachoPeinador/Phase-Pi-Quantum-Prior},
+  year = {2026},
+  doi = {10.5281/zenodo.xxxxxxxx}
 }
 
 ```
 
 ---
 
-**Investigación Independiente | Valladolid, España**
+## 🔭 Philosophical Context
+
+> *"The analytical phase is not an adjustment; it is the geometric penalty for trying to squeeze the continuous vacuum into a binary register."*
+
+This work establishes that arithmetic is not a random sequence, but a **deterministic wave structure** encoded in the $\mathbb{Z}/6\mathbb{Z}$ topology. Recognizing this allows us to fundamentally rewrite the rules of quantum cryptanalysis for the NISQ era.
+
+---
+
+<div align="center">
+
+**Last Update:** March 2026 | **Status:** Gold Version | Built with ⚛️ & 🐍
+
+</div>
+
+---
