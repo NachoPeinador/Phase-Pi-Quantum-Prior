@@ -1,10 +1,3 @@
-Aquí tienes la versión en español del `README.md`, traducida manteniendo el mismo nivel de rigor académico y la terminología técnica de alto nivel (FTQC, MPDO, Lindbladiano Padre) que consolidamos durante la revisión del artículo.
-
-He ajustado el \\textit{badge} de idioma para que, en esta versión, apunte a la lectura en inglés.
-
-Copia y pega este bloque en tu archivo `README_es.md`:
-
-````markdown
 # 🌀 Phase-Pi-Quantum-Prior
 
 ### Orígenes Analíticos de la Fase y Superselección Topológica $\mathbb{Z}/6\mathbb{Z}$ para la Preparación de Estados en NISQ/FTQC
