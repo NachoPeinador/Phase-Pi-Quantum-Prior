@@ -56,7 +56,7 @@ graph TD
     style CRYP fill:#bfb,stroke:#333,stroke-width:2px
 ````
 
------
+---
 
 ## 📊 Experimental Results & Macroscopic Scaling
 
@@ -78,7 +78,7 @@ The following tables summarize the thermodynamic and computational performance o
 | **Estimated T-Count** | $\sim 2.83 \times 10^{11}$ gates | $\sim 9.45 \times 10^{10}$ gates | **\~1.89e11 Gates Saved** |
 | **Hardware Implication** | Deep FTQC Required | Shallow FTQC / Late NISQ | **Threshold Relaxation** |
 
------
+---
 
 ## 🚀 Reproducibility and Computational Lab
 
@@ -96,7 +96,7 @@ cd Phase-Pi-Quantum-Prior
 pip install numpy matplotlib scipy sympy tensornetwork qiskit qiskit-aer tqdm
 ```
 
------
+---
 
 ## 📂 Repository Structure
 
@@ -120,7 +120,7 @@ pip install numpy matplotlib scipy sympy tensornetwork qiskit qiskit-aer tqdm
 
 \</details\>
 
------
+---
 
 ## ⚖️ Licensing & Citation
 
@@ -141,7 +141,7 @@ This project utilizes a **dual-licensing scheme**:
 }
 ```
 
------
+---
 
 ## 🔭 Philosophical Context
 
@@ -149,7 +149,7 @@ This project utilizes a **dual-licensing scheme**:
 
 This work establishes that arithmetic is not a random sequence, but a **deterministic wave structure** encoded in the $\mathbb{Z}/6\mathbb{Z}$ topology. Recognizing this allows us to fundamentally rewrite the rules of quantum cryptanalysis and hardware initialization for the FTQC era.
 
------
+---
 
 \<div align="center"\>
 
@@ -157,9 +157,4 @@ This work establishes that arithmetic is not a random sequence, but a **determin
 
 \</div\>
 
------
-
-```
-
-http://googleusercontent.com/interactive_content_block/0
-```
+---
