@@ -17,7 +17,7 @@
 * 📐 **Descubrimiento Analítico de Fases:** Demostración de que las fases óptimas de inicialización ($\phi_1, \phi_2$) no son heurísticas. $\phi_2 = \pi$ emerge del isomorfismo del grupo de unidades $(\mathbb{Z}/6\mathbb{Z})^{\times} \cong \mathbb{Z}/2\mathbb{Z}$ actuando como una Holonomía de Berry no conmutativa.
 * 🔄 **Origen en el Grupo de Renormalización (RG):** La fase termodinámica $\phi_1 \approx R_{\text{fund}}/10$ se deriva estrictamente como un punto fijo infrarrojo de la función beta de Callan-Symanzik, acoplada al invariante de Euler-Kronecker.
 * ⚡ **Complejidad Polinómica:** Preparación exacta del estado mediante **Matrix Product States (MPS)** con dimensión de enlace topológica constante $\chi \le 6$, evitando el coste exponencial $\mathcal{O}(2^n)$ de las distribuciones arbitrarias.
-* 🛡️ **Lindbladiano Padre y Fase NEE:** Construcción de un superoperador disipativo libre de frustración con una brecha espectral (\textit{Liouvillian gap}) que no colapsa ($\Delta = \Omega(1)$). Esto prueba rigurosamente que el sistema entra en una **Fase Extendida No Ergódica (NEE)**, derrotando la Hipótesis de Termalización del Estado Propio (ETH).
+* 🛡️ **Lindbladiano Padre y Fase NEE:** Construcción de un superoperador disipativo libre de frustración con una brecha espectral **Liouvillian gap** que no colapsa $\Delta = \Omega(1)$. Esto prueba rigurosamente que el sistema entra en una **Fase Extendida No Ergódica (NEE)**, derrotando la Hipótesis de Termalización del Estado Propio (ETH).
 
 ### 📊 **Validación Computacional (N=60 Qubits)**
 
