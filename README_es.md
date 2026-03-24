@@ -1,6 +1,6 @@
 # 🌀 Phase-Pi-Quantum-Prior
 
-### Orígenes Analíticos de la Fase y Superselección Topológica $\mathbb{Z}/6\mathbb{Z}$ para la Preparación de Estados en NISQ/FTQC
+### Superselección Topológica $\mathbb{Z}/6\mathbb{Z}$: Derivación Analítica de Fases y Estabilización Disipativa para Criptoanálisis FTQC
 [![Read in English](https://img.shields.io/badge/Lang-Read%20in%20English-blue?style=flat&logoColor=white&color=00529B)](https://github.com/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/README.md)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.xxxxxxxx.svg)](https://doi.org/10.5281/zenodo.xxxxxxxx)
@@ -17,13 +17,13 @@
 * 📐 **Descubrimiento Analítico de Fases:** Demostración de que las fases óptimas de inicialización ($\phi_1, \phi_2$) no son heurísticas. $\phi_2 = \pi$ emerge del isomorfismo del grupo de unidades $(\mathbb{Z}/6\mathbb{Z})^{\times} \cong \mathbb{Z}/2\mathbb{Z}$ actuando como una Holonomía de Berry no conmutativa.
 * 🔄 **Origen en el Grupo de Renormalización (RG):** La fase termodinámica $\phi_1 \approx R_{\text{fund}}/10$ se deriva estrictamente como un punto fijo infrarrojo de la función beta de Callan-Symanzik, acoplada al invariante de Euler-Kronecker.
 * ⚡ **Complejidad Polinómica:** Preparación exacta del estado mediante **Matrix Product States (MPS)** con dimensión de enlace topológica constante $\chi \le 6$, evitando el coste exponencial $\mathcal{O}(2^n)$ de las distribuciones arbitrarias.
-* 🛡️ **Lindbladiano Padre y Fase NEE:** Construcción de un superoperador disipativo libre de frustración con una brecha espectral **Liouvillian gap** que no colapsa $\Delta = \Omega(1)$. Esto prueba rigurosamente que el sistema entra en una **Fase Extendida No Ergódica (NEE)**, derrotando la Hipótesis de Termalización del Estado Propio (ETH).
+* 🛡️ **Lindbladiano Padre y Fase NEE:** Construcción de un superoperador disipativo libre de frustración con un \textit{Liouvillian gap} que no colapsa ($\Delta = \Omega(1)$). Acotado por la **Desigualdad de Sóbolev Logarítmica Modificada (MLSI)**, esto garantiza una mezcla rápida estricta (\textit{rapid mixing}), probando que el sistema entra en una **Fase Extendida No Ergódica (NEE)** que derrota la Hipótesis de Termalización del Estado Propio (ETH).
 
 ### 📊 **Validación Computacional (N=60 Qubits)**
 
 * 📉 **Ley de Área Disipativa:** Bajo una tasa de ruido despolarizante de $p=0.015$, la entropía bipartita MPDO $S_2$ se satura estrictamente en $\approx 1.65$ bits, desafiando la Ley de Volumen ergódica (30 bits).
 * 🧪 **Plateau de Robustez:** El análisis de sensibilidad confirma que la fase NEE es estructuralmente estable frente a fluctuaciones de \textit{gauge} en el rango $\phi_1 \in [0, 0.1]$ rad.
-* 🚀 **Ganancia de Recursos FTQC:** La reducción estructural del espacio de búsqueda (purga del 66.6%) permite una reducción masiva en el prefactor de puertas Toffoli (**~189.000 millones de puertas T ahorradas** para RSA-2048), relajando los umbrales de corrección de errores cuánticos.
+* 🚀 **Ganancia de Recursos FTQC:** La reducción estructural del espacio de búsqueda (purga del 66.6%) permite una reducción masiva en el prefactor de puertas Toffoli (**~189.000 millones de puertas T ahorradas** para RSA-2048). Esto comprime drásticamente el volumen espacio-temporal de los ciclos de síndrome de los **Códigos de Superficie** ($\tau$), relajando los umbrales de destilación de estados mágicos.
 
 ---
 
@@ -47,9 +47,9 @@ graph TD
     D --> H
     F --> H
     
-    H --> NEE["Lindbladiano Padre (Δ > 0)<br>Fase NEE (Ley de Área)"]
+    H --> NEE["Lindbladiano Padre y MLSI<br>Fase NEE (Ley de Área)"]
     H --> MPS["Compilación MPS<br>χ ≤ 6 | Profundidad O(poly(n))"]
-    H --> CRYP["Criptoanálisis FTQC<br>Reducción Masiva del T-Count"]
+    H --> CRYP["FTQC con Código de Superficie<br>Reducción Masiva del T-Count"]
 
     style H fill:#f96,stroke:#333,stroke-width:3px
     style NEE fill:#bbf,stroke:#333,stroke-width:2px
@@ -134,7 +134,7 @@ Este proyecto utiliza un **esquema de doble licencia**:
 ```bibtex
 @software{Peinador_Phase_Pi_2026,
   author = {Peinador Sala, José Ignacio},
-  title = {El Origen Analítico de la Fase π: Simetría, Dualidad y Preparación de Estados en la Superselección Topológica Z/6Z},
+  title = {Superselección Topológica Z/6Z: Derivación Analítica de Fases y Estabilización Disipativa para Criptoanálisis FTQC},
   url = {[https://github.com/NachoPeinador/Phase-Pi-Quantum-Prior](https://github.com/NachoPeinador/Phase-Pi-Quantum-Prior)},
   year = {2026},
   doi = {10.5281/zenodo.xxxxxxxx}
@@ -149,7 +149,7 @@ Este proyecto utiliza un **esquema de doble licencia**:
 
 Este trabajo establece que la aritmética no es una secuencia aleatoria, sino una **estructura ondulatoria determinista** codificada en la topología $\mathbb{Z}/6\mathbb{Z}$. Reconocer este hecho nos permite reescribir fundamentalmente las reglas del criptoanálisis cuántico y la inicialización de hardware para la era FTQC.
 
------
+---
 
 \<div align="center"\>
 
@@ -157,4 +157,3 @@ Este trabajo establece que la aritmética no es una secuencia aleatoria, sino un
 
 \</div\>
 
----
