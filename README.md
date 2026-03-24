@@ -17,7 +17,7 @@
 * 📐 **Analytical Phase Discovery:** Proof that the optimal initialization phases ($\phi_1, \phi_2$) are not heuristic. $\phi_2 = \pi$ emerges from the unit group isomorphism $(\mathbb{Z}/6\mathbb{Z})^{\times} \cong \mathbb{Z}/2\mathbb{Z}$ acting as a non-commutative Berry Holonomy. 
 * 🔄 **Renormalization Group (RG) Origin:** The thermodynamic phase $\phi_1 \approx R_{\text{fund}}/10$ is strictly derived as an infrared fixed point of the Callan-Symanzik beta function, coupled to the Euler-Kronecker invariant.
 * ⚡ **Polynomial Complexity:** Exact state preparation via **Matrix Product States (MPS)** with constant topological bond dimension $\chi \le 6$, avoiding the exponential $\mathcal{O}(2^n)$ overhead of arbitrary distributions.
-* 🛡️ **Parent Lindbladian & NEE Phase:** Construction of a frustration-free dissipative superoperator with a non-collapsing Liouvillian gap ($\Delta = \Omega(1)$). Bounded by the **Modified Logarithmic Sobolev Inequality (MLSI)**, this guarantees strict rapid mixing, proving the system enters a **Non-Ergodic Extended (NEE) phase** that defeats Eigenstate Thermalization (ETH).
+* 🛡️ **Parent Lindbladian & NEE Phase:** Construction of a frustration-free dissipative superoperator with a non-collapsing Liouvillian gap $\Delta = \Omega(1)$. Bounded by the **Modified Logarithmic Sobolev Inequality (MLSI)**, this guarantees strict rapid mixing, proving the system enters a **Non-Ergodic Extended (NEE) phase** that defeats Eigenstate Thermalization (ETH).
 
 ### 📊 **Computational Validation (N=60 Qubits)**
 
