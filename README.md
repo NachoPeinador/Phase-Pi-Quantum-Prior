@@ -1,6 +1,6 @@
 # 🌀 Phase-Pi-Quantum-Prior
 
-### Analytical Phase Origins and $\mathbb{Z}/6\mathbb{Z}$ Topological Superselection for NISQ/FTQC State Preparation
+### Topological Superselection $\mathbb{Z}/6\mathbb{Z}$: Analytical Phase Derivation and Dissipative Stabilization for FTQC Cryptanalysis
 [![Read in Spanish](https://img.shields.io/badge/Lang-Leer%20en%20Español-red?style=flat&logoColor=white&color=B31B1B)](https://github.com/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/README_es.md)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.xxxxxxxx.svg)](https://doi.org/10.5281/zenodo.xxxxxxxx)
@@ -17,13 +17,13 @@
 * 📐 **Analytical Phase Discovery:** Proof that the optimal initialization phases ($\phi_1, \phi_2$) are not heuristic. $\phi_2 = \pi$ emerges from the unit group isomorphism $(\mathbb{Z}/6\mathbb{Z})^{\times} \cong \mathbb{Z}/2\mathbb{Z}$ acting as a non-commutative Berry Holonomy. 
 * 🔄 **Renormalization Group (RG) Origin:** The thermodynamic phase $\phi_1 \approx R_{\text{fund}}/10$ is strictly derived as an infrared fixed point of the Callan-Symanzik beta function, coupled to the Euler-Kronecker invariant.
 * ⚡ **Polynomial Complexity:** Exact state preparation via **Matrix Product States (MPS)** with constant topological bond dimension $\chi \le 6$, avoiding the exponential $\mathcal{O}(2^n)$ overhead of arbitrary distributions.
-* 🛡️ **Parent Lindbladian & NEE Phase:** Construction of a frustration-free dissipative superoperator with a non-collapsing Liouvillian gap $\Delta = \Omega(1)$. This rigorously proves the system enters a **Non-Ergodic Extended (NEE) phase**, defeating Eigenstate Thermalization (ETH).
+* 🛡️ **Parent Lindbladian & NEE Phase:** Construction of a frustration-free dissipative superoperator with a non-collapsing Liouvillian gap ($\Delta = \Omega(1)$). Bounded by the **Modified Logarithmic Sobolev Inequality (MLSI)**, this guarantees strict rapid mixing, proving the system enters a **Non-Ergodic Extended (NEE) phase** that defeats Eigenstate Thermalization (ETH).
 
 ### 📊 **Computational Validation (N=60 Qubits)**
 
 * 📉 **Dissipative Area Law:** Under a depolarizing noise rate of $p=0.015$, the MPDO bipartite entropy $S_2$ strictly saturates at $\approx 1.65$ bits, defying the Ergodic Volume Law (30 bits).
 * 🧪 **Robustness Plateau:** Sensitivity analysis confirms the NEE phase is structurally stable against gauge fluctuations in the range $\phi_1 \in [0, 0.1]$ rad.
-* 🚀 **FTQC Resource Gain:** Structural search space reduction (66.6% purge) enabling a massive reduction in the Toffoli gate pre-factor (**~189 Billion T-gates saved** for RSA-2048), relaxing quantum error correction thresholds.
+* 🚀 **FTQC Resource Gain:** Structural search space reduction (66.6% purge) enabling a massive reduction in the Toffoli gate pre-factor (**~189 Billion T-gates saved** for RSA-2048). This drastically compresses the space-time volume of **Surface Code** syndrome cycles ($\tau$), relaxing magic state distillation thresholds.
 
 ---
 
@@ -47,9 +47,9 @@ graph TD
     D --> H
     F --> H
     
-    H --> NEE["Parent Lindbladian (Δ > 0)<br>NEE Phase (Area Law)"]
+    H --> NEE["Parent Lindbladian & MLSI<br>NEE Phase (Area Law)"]
     H --> MPS["MPS Compilation<br>χ ≤ 6 | O(poly(n)) Depth"]
-    H --> CRYP["FTQC Cryptanalysis<br>Massive T-Count Reduction"]
+    H --> CRYP["Surface Code FTQC<br>Massive T-Count Reduction"]
 
     style H fill:#f96,stroke:#333,stroke-width:3px
     style NEE fill:#bbf,stroke:#333,stroke-width:2px
@@ -157,4 +157,3 @@ This work establishes that arithmetic is not a random sequence, but a **determin
 
 \</div\>
 
----
