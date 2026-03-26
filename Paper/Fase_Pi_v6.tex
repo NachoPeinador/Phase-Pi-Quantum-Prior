@@ -95,7 +95,7 @@ En el marco de la teoría de superselección topológica basada en el anillo mod
 
 \section{Introducción}
 
-Los algoritmos de búsqueda cuántica, entre los que destaca el algoritmo de Shor para la factorización de enteros, deben su potencial aceleración exponencial a la capacidad de explorar simultáneamente un enorme espacio de soluciones \cite{PeinadorGenesis}. Esta exploración se inicia tradicionalmente con la preparación de un registro en superposición uniforme, lograda mediante la aplicación paralela de compuertas Hadamard: $H^{\otimes n}\ket{0} = 2^{-n/2}\sum_{x=0}^{2^n-1}\ket{x}$. Si bien este procedimiento es óptimo desde el punto de vista de la profundidad de circuito ($\mathcal{O}(1)$), adolece de un grave defecto termodinámico: maximiza la entropía de Shannon del estado inicial, obligando al algoritmo a procesar un volumen exponencial de trayectorias computacionalmente estériles.
+Los algoritmos de búsqueda cuántica, entre los que destaca el algoritmo de Shor para la factorización de enteros\cite{Shor1994}, deben su potencial aceleración exponencial a la capacidad de explorar simultáneamente un enorme espacio de soluciones. Esta exploración se inicia tradicionalmente con la preparación de un registro en superposición uniforme, lograda mediante la aplicación paralela de compuertas Hadamard: $H^{\otimes n}\ket{0} = 2^{-n/2}\sum_{x=0}^{2^n-1}\ket{x}$. Si bien este procedimiento es óptimo desde el punto de vista de la profundidad de circuito ($\mathcal{O}(1)$), adolece de un grave defecto termodinámico: maximiza la entropía de Shannon del estado inicial, obligando al algoritmo a procesar un volumen exponencial de trayectorias computacionalmente estériles.
 
 En problemas con una fuerte estructura aritmética, esta ignorancia resulta especialmente costosa. Un teorema elemental de topología aritmética establece que todo número primo $p>3$ satisface $p \equiv 1 \pmod 6$ o $p \equiv 5 \pmod 6$. El anillo modular $\mathbb{Z}/6\mathbb{Z}$ emerge así como un filtro topológico natural: los canales $0,2,3,4 \pmod 6$ son estériles y pueden ser ignorados, reduciendo el espacio de búsqueda efectivo en un $66.66\%$ \cite{PeinadorSpectrum}. Sin embargo, trasladar esta ventaja clásica al dominio cuántico exige construir un operador de inicialización que confine la amplitud de probabilidad en los canales resonantes sin violar la unitariedad ni requerir una profundidad de circuito exponencial.
 
@@ -142,7 +142,7 @@ La propiedad algebraica fundamental que rige la dinámica del sistema es la rela
 5 \equiv -1 \pmod{6}.
 \label{eq:inverso_aditivo}
 \end{equation}
-Esta identidad establece que las dos clases resonantes son isomorfismos de paridad inversa, lo que exigirá una compensación topológica estricta en el dominio de las fases para mantener la unitariedad.
+Lejos de ser un mero artefacto aritmético, la primacía topológica de este anillo emana de los fundamentos del Modelo Estándar. En el marco de la Geometría No Conmutativa (NCG), la resolución del problema del doblamiento de fermiones y la obtención de la gradación quiral correcta exige que el espacio interno finito posea una dimensión KO igual a 6 módulo 8 \cite{Connes2008}. El centro del grupo de gauge unimodular resultante es exactamente isomorfo a $\mathbb{Z}/6\mathbb{Z}$. Por consiguiente, la identidad \eqref{eq:inverso_aditivo} establece que las dos clases resonantes operan como los equivalentes geométricos de los sectores quirales (levógiros y dextrógiros) del vacío, exigiendo una compensación topológica estricta en el dominio de las fases para mantener la unitariedad \cite{PeinadorRiemann}.
 
 \subsection{Canales Estériles y Resonantes}
 
@@ -413,7 +413,7 @@ Dado que los generadores de la base topológica conmutan estrictamente con el op
 
 \begin{teorema}[Inmunidad Ergódica y Ley de Área Disipativa]
 \label{teo:parent_lindbladian}
-El espectro de la matriz de transferencia del Liouvilliano $\mathcal{L}_{\text{MST}}$ exhibe un autovalor dominante aislado $\lambda_0 = 0$ asociado al estado asintótico $\rho_\infty$ con dimensión de enlace estricta $\chi_{\text{MPDO}} \le 36$. La brecha de relajación espectral (\textit{Liouvillian gap}) $\Delta = \text{Re}(\lambda_1) > 0$ está acotada inferiormente por la penalización topológica, siendo analíticamente independiente del tamaño $N$. Este confinamiento destruye la termalización de volumen (ETH), forzando a la Entropía de Rényi bipartita ($S_2$) a saturar una Ley de Área estricta:
+El espectro de la matriz de transferencia del Liouvilliano $\mathcal{L}_{\text{MST}}$ exhibe un autovalor dominante aislado $\lambda_0 = 0$ asociado al estado asintótico $\rho_\infty$ con dimensión de enlace estricta $\chi_{\text{MPDO}} \le 36$. La brecha de relajación espectral (\textit{Liouvillian gap}) $\Delta = \text{Re}(\lambda_1) > 0$ está acotada inferiormente por la penalización topológica, siendo analíticamente independiente del tamaño $N$. Este confinamiento restringe la dinámica a una variedad de soporte intrínsecamente multifractal \cite{PeinadorRiemann}, destruyendo la termalización de volumen dictada por la Hipótesis de Termalización del Estado Propio (ETH) y forzando a la Entropía de Rényi bipartita ($S_2$) a saturar una Ley de Área estricta:
 \begin{equation}
 S_2(\rho(t \to \infty)) = -\log_2(\text{Tr}(\rho_A^2)) \le \log_2(\chi_{\text{MPDO}}) \approx 2.585 \text{ bits}.
 \end{equation}
@@ -511,14 +511,18 @@ Finalmente, en el dominio del criptoanálisis cuántico, la Estrategia Adaptativ
 \begin{thebibliography}{99}
 
 % --- REFERENCIAS DEL AUTOR (SUSTRATO Y VALIDACIÓN) ---
-\bibitem{PeinadorGenesis}
-J. I. Peinador Sala, \textit{La Génesis de e y la Unificación de Constantes Fundamentales desde el Sustrato Modular $\mathbb{Z}/6\mathbb{Z}$}, Zenodo (2026). \url{https://doi.org/10.5281/zenodo.18673474}
+
+\bibitem{Shor1994}
+P. W. Shor, \textit{Algorithms for quantum computation: discrete logarithms and factoring}, Proc. 35th Annual Symposium on Foundations of Computer Science, IEEE (1994).
 
 \bibitem{PeinadorSpectrum}
 J. I. Peinador Sala, \textit{Dualidad Espectral-Aritmética: Coherencia de Fase Modular en el Espectro de Riemann}, Zenodo (2026). \url{https://doi.org/10.5281/zenodo.18417862}
 
 \bibitem{PeinadorDSP}
 J. I. Peinador Sala, \textit{The Modular Spectrum of $\pi$: Theoretical Unification, DSP Isomorphism, and Exascale Validation}, Zenodo (2026). \url{https://doi.org/10.5281/zenodo.18455954}
+
+\bibitem{PeinadorRiemann}
+J. I. Peinador Sala, \textit{Explicit Hermitian Hamiltonian for the Riemann Zeros from Modular Arithmetic Quantum Chaos and $\mathbb{Z}/6\mathbb{Z}$ Multifractality}. Manuscrito en preparación (2026).
 
 % --- ORDEN TOPOLÓGICO Y FASE GEOMÉTRICA ---
 \bibitem{Berry1984}
@@ -547,8 +551,7 @@ K. S. Rai, J. I. Cirac, \& Á. M. Alhambra. \textit{Matrix product state approxi
 D. T. Stephen, M. Guttman, \& J. I. Cirac. \textit{Constant-depth preparation of matrix product states via measurement-assisted fusion}. arXiv:2502.12345 (2025).
 
 % --- FTQC, T-COUNT Y ALGORITMO DE SHOR ---
-\bibitem{Shor1994}
-P. W. Shor, \textit{Algorithms for quantum computation: discrete logarithms and factoring}, Proc. 35th Annual Symposium on Foundations of Computer Science, IEEE (1994).
+
 
 \bibitem{Fowler2012}
 A. G. Fowler, M. Mariantoni, J. M. Martinis, \& A. N. Cleland, \textit{Surface codes: Towards practical large-scale quantum computation}, Phys. Rev. A \textbf{86}, 032324 (2012).
@@ -565,6 +568,9 @@ C. G. Callan, \textit{Broken scale invariance in scalar field theory}, Phys. Rev
 
 \bibitem{Ihara2006}
 Y. Ihara, \textit{On the Euler-Kronecker constants of global fields and primes in arithmetic progressions}, Proc. Symp. Pure Math. \textbf{75}, 407–451 (2006).
+
+\bibitem{Connes2008}
+A. Connes, \& M. Marcolli, \textit{Noncommutative Geometry, Quantum Fields and Motives}, American Mathematical Society (2008).
 
 \end{thebibliography}
 
