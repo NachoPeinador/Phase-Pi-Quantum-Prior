@@ -155,6 +155,8 @@ En este último notebook, trasladamos nuestros descubrimientos a nivel termodin�
 ---
 
 ## ⚖️ Licencia y Citación
+<details>
+<summary><strong>👇 Clic para ver</strong></summary>
 
 Este proyecto utiliza un **esquema de doble licencia**:
 
@@ -173,6 +175,7 @@ Este proyecto utiliza un **esquema de doble licencia**:
 }
 }
 ```
+</details>
 
 ---
 
