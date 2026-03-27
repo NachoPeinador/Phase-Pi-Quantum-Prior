@@ -138,13 +138,13 @@ En este último notebook, trasladamos nuestros descubrimientos a nivel termodin�
 ```text
 .
 ├── 📂 docs/               # Documentación Teórica
-│   ├── 📄 Phase_Pi_Gold.pdf # El manuscrito definitivo revisado por pares
-│   └── 📝 Phase_Pi_Gold.tex # Código fuente en LaTeX
+│   ├── 📄 Superseleccion_Topologica_Z6Z.pdf # El manuscrito definitivo revisado por pares
+│   └── 📝 Superseleccion_Topologica_Z6Z.tex # Código fuente en LaTeX
 │
 ├── 📂 notebooks/          # Suites de Validación Experimental
-│   ├── 📓 01_Geometric_Phase_Validation.ipynb
-│   ├── 📓 02_MPDO_Lindblad_NEE_Scaling.ipynb
-│   └── 📓 03_FTQC_Cryptanalysis_TCount.ipynb
+│   ├── 📓 Arithmetic_and_Thermodynamic_Foundations_of_Z_6Z_Superselection.ipynb
+│   ├── 📓 Hybrid_Cryptanalysis_and_Optimal_Adaptive_Strategy.ipynb
+│   └── 📓 The_NISQ_Hardware_Challenge_and_MPS_Compression.ipynb
 │
 ├── 📜 LICENSE             # Esquema dual: Apache 2.0 / CC-BY 4.0
 └── 📜 CITATION.cff        # Metadatos de citación académica
@@ -166,10 +166,11 @@ Este proyecto utiliza un **esquema de doble licencia**:
 ```bibtex
 @software{Peinador_Phase_Pi_2026,
   author = {Peinador Sala, José Ignacio},
-  title = {Superselección Topológica Z/6Z: Derivación Analítica de Fases y Estabilización Disipativa para Criptoanálisis FTQC},
-  url = {[https://github.com/NachoPeinador/Phase-Pi-Quantum-Prior](https://github.com/NachoPeinador/Phase-Pi-Quantum-Prior)},
+  title = {Topological {$\mathbb{Z}/6\mathbb{Z}$} Superselection: Analytic Phase Derivation and Dissipative Stabilization for {FTQC} Cryptanalysis},
+  url = {https://github.com/NachoPeinador/Phase-Pi-Quantum-Prior},
   year = {2026},
   doi = {10.5281/zenodo.xxxxxxxx}
+}
 }
 ```
 
