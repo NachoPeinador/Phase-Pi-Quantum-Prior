@@ -40,6 +40,7 @@
 Los algoritmos cuánticos estándar (ej. Shor, Grover) inicializan los registros en un estado de máxima ignorancia: la superposición uniforme $H^{\otimes n}|0\rangle$. Aunque es fácil de preparar, esto obliga al oráculo a procesar un volumen exponencial de trayectorias aritméticamente imposibles, exigiendo tiempos de coherencia inasumibles.
 
 Esta investigación introduce el **Prior Topológico $\mathbb{Z}/6\mathbb{Z}$**, un protocolo estructurado de Preparación de Estados Cuánticos (QSP) que inyecta inteligencia aritmética en el estado de vacío. Al alinear la amplitud cuántica con la densidad modular de los números primos, transformamos la factorización de enteros de una búsqueda ciega a una **resonancia topológicamente sintonizada**, optimizada para hardware NISQ y las primeras generaciones FTQC (Tolerantes a Fallos).
+
 ---
 
 ## 🧭 Marco Conceptual
