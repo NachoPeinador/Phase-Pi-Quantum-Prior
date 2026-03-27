@@ -12,9 +12,9 @@
 
 <p align="center">
   <img src="Images/DISCRETE_SYMMETRY.png" width="90%" alt="Global Invariance and Pi-Periodicity of the Partition Function">
-  <br>
-  <em><strong>The analytic core of the $\mathbb{Z}/6\mathbb{Z}$ topological superselection.</strong> The perfect geometric duality between the resonant channels (blue and red) demonstrates the Zero-Leakage adaptive strategy driven by the exact holonomic phase shift $\Delta\phi = \pi$.</em>
 </p>
+
+> * **The analytic core of the $\mathbb{Z}/6\mathbb{Z}$ topological superselection.** The perfect geometric duality between the resonant channels (blue and red) demonstrates the Zero-Leakage adaptive strategy driven by the exact holonomic phase shift $\Delta\phi = \pi$.*
 
 ---
 
