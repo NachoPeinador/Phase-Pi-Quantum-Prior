@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this software, computational framework, or the associated empirical data in your research, please cite it as below."
+authors:
+  - family-names: "Peinador Sala"
+    given-names: "José Ignacio"
+    orcid: "https://orcid.org/0009-0008-1822-3452"
+title: "Topological Z/6Z Superselection: Analytic Phase Derivation and Dissipative Stabilization for FTQC Cryptanalysis"
+version: 1.0.0
+doi: 10.5281/zenodo.xxxxxxxx
+date-released: 2026-03-27
+url: "https://github.com/NachoPeinador/Phase-Pi-Quantum-Prior"
+repository-code: "https://github.com/NachoPeinador/Phase-Pi-Quantum-Prior"
+keywords:
+  - quantum computing
+  - fault-tolerant quantum computing (FTQC)
+  - topological superselection
+  - matrix product states (MPS)
+  - open quantum systems
+  - lindblad dynamics
+  - quantum cryptanalysis
+  - shor's algorithm
+license: MIT
+abstract: >-
+  This repository contains the empirical validation suite and computational 
+  framework for the Z/6Z Topological Prior in quantum state preparation. 
+  It includes exact Matrix Product Density Operator (MPDO) tensor contractions 
+  simulating the Non-Ergodic Extended (NEE) phase under Lindblad dynamics, 
+  and the macroscopic projection of Fault-Tolerant Quantum Computing (FTQC) 
+  T-count reductions for hybrid cryptanalysis against RSA moduli.
