@@ -82,19 +82,50 @@ Las siguientes tablas resumen el rendimiento termodinámico y computacional del 
 
 ## 🚀 Reproducibilidad y Laboratorio Computacional
 
-La suite de validación empírica está dividida en tres Cuadernos Jupyter (Jupyter Notebooks) exhaustivos.
+La suite de validación empírica se divide en tres exhaustivos Jupyter Notebooks. Cada notebook está meticulosamente diseñado para demostrar las afirmaciones teóricas del manuscrito a través de código funcional, contracciones tensoriales exactas y simulaciones termodinámicas.
 
-  * **Cuaderno I:** Validación Geométrica y Coherencia de Fase.
-  * **Cuaderno II:** Viabilidad en Hardware, Contracción Tensorial MPDO (N=60) y Análisis Espectral de Liouville.
-  * **Cuaderno III:** Criptoanálisis Híbrido, Estrategia Adaptativa y Proyecciones de T-Count FTQC.
+### 📓 Notebook I: Fundamentos Aritméticos y Termodinámicos
+**Archivo:** [`Arithmetic_and_Thermodynamic_Foundations_of_Z_6Z_Superselection.ipynb`](./Arithmetic_and_Thermodynamic_Foundations_of_Z_6Z_Superselection.ipynb)
 
-### Instalación Local
+Este notebook proporciona el marco experimental y la validación empírica para el **Prior Topológico $\mathbb{Z}/6\mathbb{Z}$**. Demuestra cómo romper con la tradicional superposición uniforme de máxima entropía (utilizada en algoritmos como el de Shor) confinando la amplitud cuántica estrictamente a canales aritméticos resonantes.
 
-```bash
-git clone [https://github.com/NachoPeinador/Phase-Pi-Quantum-Prior.git](https://github.com/NachoPeinador/Phase-Pi-Quantum-Prior.git)
-cd Phase-Pi-Quantum-Prior
-pip install numpy matplotlib scipy sympy tensornetwork qiskit qiskit-aer tqdm
-```
+**Validaciones y Descubrimientos Clave:**
+* **Confinamiento Aritmético (\textit{Zero-Leakage} / Fuga Cero):** Demuestra que el **100%** de los números primos $p > 3$ residen exclusivamente en las clases de congruencia $1 \pmod 6$ y $5 \pmod 6$, anulando por completo las amplitudes en los canales estériles ($0, 2, 3, 4$).
+* **Impedancia Informacional ($R_{\text{fund}}$):** Deriva y valida las constantes termodinámicas que rigen el mapeo de la topología aritmética ternaria sobre qubits binarios. Para aislar el canal 1 con una fidelidad del **99.98%**, el sistema requiere estrictamente la fase $\phi_1 \approx R_{\text{fund}}/10$.
+* **Óptimo de Fase Dual y Transferencia Isomórfica:** Demuestra que el aislamiento absoluto para la clase 5 se logra en $\phi_2 = \pi$. La transición entre canales no requiere recalibración del sistema, solo la inyección de esta fase geométrica pura, confirmando la dualidad del inverso multiplicativo ($5 \equiv -1 \pmod 6$).
+* **Simetría Discreta y Paridad Modular:** Valida numéricamente la periodicidad $\pi$ de la función de partición $Z(\phi)$ y la dualidad exacta $P_1(\phi) = P_5(\phi+\pi)$. La preservación del invariante de paridad modular $\langle \hat{P} \rangle$ garantiza que las rotaciones holonómicas sean fundamentalmente estables y libres de entropía.
+
+**Conclusión:** Este marco permite la preparación de estados cuánticos utilizando **Estados de Producto Matricial (MPS)** con una dimensión de enlace acotada ($\chi \le 6$). Esto evade estrictamente el límite de profundidad exponencial $\mathcal{O}(2^n)$ y protege al sistema de la decoherencia a través de la Fase No Ergódica Extendida (NEE).
+
+---
+
+### 📓 Notebook II: El Desafío del Hardware NISQ y la Compresión MPS
+**Archivo:** [`The_NISQ_Hardware_Challenge_and_MPS_Compression.ipynb`](./The_NISQ_Hardware_Challenge_and_MPS_Compression.ipynb)
+
+En este notebook, pasamos de las matemáticas abstractas a la **Ingeniería de Hardware Cuántico**. Demostramos que el Prior Topológico $\mathbb{Z}/6\mathbb{Z}$ no es meramente una construcción teórica, sino un vector de estado cuántico unitario y válido que puede codificarse en la matriz densidad de un ordenador cuántico real, superando la histórica profundidad de circuito exponencial $\mathcal{O}(2^n)$ típicamente requerida para la preparación de estados dispersos.
+
+**Validaciones y Descubrimientos Clave:**
+* **Unitariedad Perfecta y Fuga Cero (vía Qiskit):** Demuestra que las fases exactas $\phi_1 = R_{\text{fund}}/10$ y $\phi_2 = \pi$ generan un estado cuántico físicamente válido que anula perfectamente las amplitudes en los canales estériles, acotando estrictamente la complejidad del entrelazamiento.
+* **El Camino a la Compresión MPS:** Demuestra que las reglas de superselección actúan como un autómata finito de 6 estados. Esto permite compilar el estado usando **Estados de Producto Matricial (MPS)** con una dimensión de enlace máxima $\chi \le 6$, garantizando una eficiente profundidad de circuito polinómica $\mathcal{O}(\text{poly}(n))$.
+* **Unicidad del Estado Estacionario ($\lambda_0 = 0$):** Mediante análisis espectral exacto, confirmamos que el autovalor dominante es exactamente cero, demostrando que el estado MPS es el único "estado oscuro" (\textit{dark state}) del Lindbladiano Padre.
+* **Protección Macroscópica y Mezcla Rápida (\textit{Rapid Mixing}, $\Delta = \Omega(1)$):** Muestra que el hiato o \textit{gap} espectral del Liouvilliano no colapsa en el límite termodinámico ($N \to \infty$). En su lugar, la penalización topológica escala de forma aditiva ($\Delta \propto N$), garantizando una relajación ultrarrápida hacia el subespacio protegido y evadiendo la Hipótesis de Termalización del Estado Propio (ETH).
+
+**Conclusión:** El subespacio topológico $\mathbb{Z}/6\mathbb{Z}$ actúa como un atractor disipativo estrictamente estable y libre de frustración. La fase No Ergódica Extendida (NEE) no es un transitorio pre-termal ni un artefacto de tamaño finito, sino una realidad macroscópica asintótica que protege matemáticamente al hardware de la decoherencia.
+
+---
+
+### 📓 Notebook III: Criptoanálisis Híbrido y Estrategia Adaptativa Óptima
+**Archivo:** [`Hybrid_Cryptanalysis_and_Optimal_Adaptive_Strategy.ipynb`](./Hybrid_Cryptanalysis_and_Optimal_Adaptive_Strategy.ipynb)
+
+En este último notebook, trasladamos nuestros descubrimientos a nivel termodinámico y de hardware al dominio del **Criptoanálisis Aplicado**. Simulamos la partición ortogonal del espacio de Hilbert contra módulos criptográficos objetivo (ej., RSA), cuantificando rigurosamente la reducción neta en las evaluaciones del oráculo en comparación con la inicialización de máxima entropía del algoritmo de Shor estándar.
+
+**Validaciones y Descubrimientos Clave:**
+* **La Estrategia Adaptativa Óptima:** Valida un protocolo de búsqueda tolerante a fallos de dos rondas que explota la simetría de inversión quiral y el invariante de paridad modular ($\langle \hat{P} \rangle$). La Ronda 1 inyecta $\phi_1 \approx R_{\text{fund}}/10$ para colapsar la amplitud sobre el canal $1 \pmod 6$. Si no tiene éxito, la Ronda 2 aplica una rotación holonómica $\Delta\phi = \pi$ para transferir íntegramente la masa de probabilidad al canal $5 \pmod 6$ con **fuga algorítmica cero** (\textit{zero algorithmic leakage}).
+* **Compresión de Recursos FTQC:** Demuestra que purgar el 66.66% de las trayectorias de búsqueda estériles *antes* de la primera llamada al oráculo reduce directamente el prefactor polinómico del algoritmo de búsqueda en 2/3.
+* **Reducción Masiva del \textit{T-Count} (RSA-2048):** Proyecta la estrategia sobre un módulo RSA-2048 macroscópico. Mientras que la inicialización estándar de Shor exige $\sim 2.83 \times 10^{11}$ compuertas T, la Estrategia de Búsqueda Modular (MST) elude aproximadamente **189 mil millones** de estas operaciones altamente costosas.
+* **Relajación de los Umbrales de Coherencia:** Demuestra que la drástica reducción en la profundidad lógica disminuye significativamente la fidelidad de compuerta requerida y extiende el tiempo de coherencia efectivo necesario para una factorización exitosa.
+
+**Conclusión:** La estrategia MST trasciende una mera aceleración matemática. Proporciona un "atajo" estructural y termodinámico que despresuriza los umbrales de corrección de errores, haciendo que el algoritmo de Shor sea viable en hardware de Computación Cuántica Tolerante a Fallos (FTQC) con niveles de ruido de fondo significativamente mayores de lo estimado previamente.
 
 ---
 
