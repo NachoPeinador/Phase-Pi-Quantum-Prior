@@ -131,8 +131,8 @@ In this final notebook, we translate our thermodynamic and hardware-level discov
 
 ## 📂 Repository Structure
 
-\<details\>
-\<summary\>\<strong\>👇 Click to view repository structure\</strong\>\</summary\>
+<details>
+<summary><strong>👇 Clic para ver la estructura del repositorio</strong></summary>
 
 ```text
 .
@@ -149,7 +149,7 @@ In this final notebook, we translate our thermodynamic and hardware-level discov
 └── 📜 CITATION.cff        # Academic citation metadata
 ```
 
-\</details\>
+<details\>
 
 ---
 
