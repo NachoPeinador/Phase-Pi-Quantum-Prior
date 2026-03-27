@@ -187,9 +187,9 @@ Este trabajo establece que la aritmética no es una secuencia aleatoria, sino un
 
 ---
 
-\<div align="center"\>
+<div align="center">
 
-**Última Actualización:** Marzo 2026 | **Estado:** Versión Gold | Construido con ⚛️ & 🐍
+<b>Last Update:</b> March 2026 | <b>Status:</b> Ready for Peer Review | Built with ⚛️ & 🐍
 
-\</div\>
+</div>
 
