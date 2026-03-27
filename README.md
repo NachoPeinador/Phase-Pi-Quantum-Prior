@@ -132,18 +132,18 @@ In this final notebook, we translate our thermodynamic and hardware-level discov
 ## 📂 Repository Structure
 
 <details>
-<summary><strong>👇 Clic para ver la estructura del repositorio</strong></summary>
+<summary><strong>👇 Click to view repository structure</strong></summary>
 
 ```text
 .
-├── 📂 docs/               # Theoretical Documentation
-│   ├── 📄 Phase_Pi_Gold.pdf # The definitive peer-reviewed manuscript
-│   └── 📝 Phase_Pi_Gold.tex # LaTeX source
+├── 📂 Paper/                # Theoretical Documentation
+│   ├── 📄 Topological_Z6Z_Superselection.pdf # The definitive peer-reviewed manuscript
+│   └── 📝 Topological_Z6Z_Superselection.tex # LaTeX source
 │
 ├── 📂 notebooks/          # Experimental Validation Suites
-│   ├── 📓 01_Geometric_Phase_Validation.ipynb
-│   ├── 📓 02_MPDO_Lindblad_NEE_Scaling.ipynb
-│   └── 📓 03_FTQC_Cryptanalysis_TCount.ipynb
+│   ├── 📓 Arithmetic_and_Thermodynamic_Foundations_of_Z_6Z_Superselection.ipynb
+│   ├── 📓 Hybrid_Cryptanalysis_and_Optimal_Adaptive_Strategy.ipynb
+│   └── 📓 The_NISQ_Hardware_Challenge_and_MPS_Compression.ipynb
 │
 ├── 📜 LICENSE             # Dual scheme: Apache 2.0 / CC-BY 4.0
 └── 📜 CITATION.cff        # Academic citation metadata
@@ -165,10 +165,11 @@ This project utilizes a **dual-licensing scheme**:
 ```bibtex
 @software{Peinador_Phase_Pi_2026,
   author = {Peinador Sala, José Ignacio},
-  title = {El Origen Analítico de la Fase π: Simetría, Dualidad y Preparación de Estados en la Superselección Topológica Z/6Z},
-  url = {[https://github.com/NachoPeinador/Phase-Pi-Quantum-Prior](https://github.com/NachoPeinador/Phase-Pi-Quantum-Prior)},
+  title = {Topological {$\mathbb{Z}/6\mathbb{Z}$} Superselection: Analytic Phase Derivation and Dissipative Stabilization for {FTQC} Cryptanalysis},
+  url = {https://github.com/NachoPeinador/Phase-Pi-Quantum-Prior},
   year = {2026},
   doi = {10.5281/zenodo.xxxxxxxx}
+}
 }
 ```
 
