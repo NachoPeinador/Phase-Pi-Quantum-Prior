@@ -154,6 +154,8 @@ In this final notebook, we translate our thermodynamic and hardware-level discov
 ---
 
 ## ⚖️ Licensing & Citation
+<details>
+<summary><strong>👇 Click to view </strong></summary>
 
 This project utilizes a **dual-licensing scheme**:
 
@@ -172,7 +174,7 @@ This project utilizes a **dual-licensing scheme**:
 }
 }
 ```
-
+</details>
 ---
 
 ## 🔭 Philosophical Context
