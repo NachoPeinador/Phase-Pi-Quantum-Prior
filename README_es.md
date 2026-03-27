@@ -132,8 +132,8 @@ En este último notebook, trasladamos nuestros descubrimientos a nivel termodin�
 
 ## 📂 Estructura del Repositorio
 
-\<details\>
-\<summary\>\<strong\>👇 Clic para ver la estructura del repositorio\</strong\>\</summary\>
+<details>
+<summary><strong>👇 Clic para ver la estructura del repositorio</strong></summary>
 
 ```text
 .
@@ -150,7 +150,7 @@ En este último notebook, trasladamos nuestros descubrimientos a nivel termodin�
 └── 📜 CITATION.cff        # Metadatos de citación académica
 ```
 
-\</details\>
+</details>
 
 ---
 
