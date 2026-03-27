@@ -438,7 +438,7 @@ Evaluando la Entropía de Rényi bipartita $S_2$ frente al límite de termalizac
 \begin{figure}[H]
 \centering
 % Asegúrate de renombrar la imagen gráfica a image_c0fee0.png en tu directorio
-\includegraphics[width=0.85\textwidth]{image_c0fee0.png}
+\includegraphics[width=0.85\textwidth]{Area_Law_Proof.png}
 \caption{Extrapolación termodinámica de la Entropía de Rényi bipartita ($S_2$) empleando redes tensoriales MPDO bajo dinámica de Lindblad. El estado modular exhibe una estricta adhesión a la Ley de Área, saturando en $S_2 \approx 1.65$ bits, muy por debajo de la cota topológica $\log_2 6$ (línea verde). Este estrangulamiento desafía masivamente la termalización de volumen (línea roja discontinua), demostrando la consolidación asintótica de la Fase \textit{Non-Ergodic Extended} (NEE).}
 \label{fig:S2_scaling_macro}
 \end{figure}
@@ -508,6 +508,34 @@ Paralelamente, hemos derivado analíticamente que la pequeña asimetría requeri
 Desde la perspectiva de los sistemas cuánticos abiertos, la formulación de un Lindbladiano Padre libre de frustración demuestra que el estado modular evade estructuralmente la Hipótesis de Termalización del Estado Propio (ETH). La existencia de una brecha espectral de disipación (\textit{Liouvillian gap}) acotada y la satisfacción de la Desigualdad de Sóbolev Logarítmica Modificada (MLSI) garantizan una mezcla rápida (\textit{rapid mixing}) que confina la dinámica a una Fase Extendida No Ergódica (NEE). La saturación asintótica de la entropía de Rényi ($S_2 \approx 1.65$ bits), verificada mediante contracción exacta de redes tensoriales MPDO hasta $N=60$ qubits, confirma que el registro blinda pasivamente la coherencia cuántica, imponiendo una Ley de Área estricta frente al ruido ambiental.
 
 Finalmente, en el dominio del criptoanálisis cuántico, la Estrategia Adaptativa de Búsqueda Modular (MST) redefine la viabilidad operativa de la factorización de enteros. Si bien la superselección topológica no subvierte la cota de complejidad asintótica superior $\mathcal{O}(n^3)$ del algoritmo de Shor, sí ejecuta una contracción crítica del prefactor polinómico y de la profundidad lógica de compuertas Toffoli. Al purgar analíticamente el volumen estéril del espacio de Hilbert mediante estados MPS de enlace acotado ($\chi \le 6$) y operar con una profundidad de inicialización local $\mathcal{O}(1)$ durante la conmutación de canal, la topología modular reduce masivamente el volumen espacio-temporal de los ciclos lógicos de síndrome ($\tau$). Esta minimización del requerimiento de destilación mágica relaja drásticamente los umbrales de corrección de errores en códigos de superficie, habilitando la ejecución de criptoanálisis sobre estándares industriales (como RSA-2048) dentro de las tolerancias térmicas de las arquitecturas FTQC y NISQ contemporáneas.
+
+% ==============================================================================
+% AGRADECIMIENTOS Y DECLARACIÓN DE IA
+% ==============================================================================
+\section*{Agradecimientos}
+El autor expresa su más profundo agradecimiento a:
+
+\begin{itemize}
+    \item La comunidad de computación científica de código abierto, particularmente a los desarrolladores de \textsc{Python}, \textsc{SciPy} (específicamente \texttt{scipy.linalg}) y \textsc{NumPy}. La simulación y contracción exacta de los Operadores de Densidad de Producto Matricial (MPDO) hasta el límite macroscópico de $N=60$ qubits bajo dinámica disipativa habría sido computacionalmente prohibitiva sin estas rutinas algebraicas altamente optimizadas.
+    \item Los arquitectos de \textsc{Google Colab}, por democratizar el acceso a entornos computacionales de alto rendimiento, permitiendo a investigadores independientes resolver sistemas cuánticos abiertos complejos y compartir motores de simulación reproducibles sin barreras económicas.
+    \item La tradición intelectual de la teoría de la información cuántica, la materia condensada y los sistemas cuánticos abiertos, desde Rolf Landauer y Göran Lindblad, hasta Peter Shor, Alexei Kitaev y John Preskill. Su andamiaje fundacional ha hecho posible esta síntesis geométrica y algorítmica.
+\end{itemize}
+
+\vspace{0.3cm}
+\noindent \textbf{Declaración de uso de IA} \\
+De acuerdo con los principios de transparencia científica, el autor declara que se utilizaron Modelos de Lenguaje Extensos (LLMs) como soporte instrumental durante la preparación de este manuscrito para las siguientes tareas específicas:
+
+\begin{enumerate}
+    \item \textbf{Revisión adversaria (\textit{Red Teaming}):} Se emplearon modelos de IA para simular un proceso riguroso de revisión por pares, sometiendo a prueba de estrés las hipótesis sobre la viabilidad termodinámica del estado. Esta dialéctica crítica motivó directamente el salto de sistemas cerrados a la formulación del Lindbladiano Padre, impulsando la adopción del escalado de redes tensoriales MPDO como herramienta de diagnóstico definitiva para certificar la inmunidad ergódica.
+    \item \textbf{Optimización de código:} Asistencia en la refactorización de la arquitectura del software y la gestión de memoria para contraer eficientemente las matrices de transferencia disipativas de $1296 \times 1296$ (asociadas al límite estructural $\chi \le 36$) dentro de las restricciones de hardware en la nube.
+    \item \textbf{Refinamiento técnico:} Mejora de la fluidez, la jerarquía estructural y la precisión del lenguaje científico (incluyendo la traducción integral al inglés académico) para alinearlo con los estándares de formato y rigor de revistas de física y tecnología cuántica de alto impacto.
+\end{enumerate}
+
+\textbf{Aclaración crucial:} Los avances teóricos fundamentales de este trabajo —la deducción de la fase $\phi_2 = \pi$ como holonomía de Berry para resolver la anomalía quiral, la derivación de $\phi_1 \approx R_{\text{fund}}/10$ como atractor infrarrojo del flujo del Grupo de Renormalización, la formulación del Lindbladiano Padre libre de frustración, la certificación de la fase No Ergódica Extendida (NEE) mitigadora de la termalización, y la drástica contracción de la profundidad lógica (\textit{T-count}) en criptoanálisis FTQC— son exclusivamente creación intelectual original del autor. Las herramientas de IA actuaron estrictamente como asistentes metodológicos, no como agentes de descubrimiento conceptual.
+
+
+\section{Disponibilidad de datos}
+El marco computacional completo, incluyendo los algoritmos de Python para la contracción exacta de redes tensoriales MPDO bajo dinámica de Lindblad y los scripts de extrapolación termodinámica (evaluación de la Ley de Área y entropía de Rényi), están disponibles públicamente y son totalmente reproducibles en el repositorio oficial: \url{https://github.com/NachoPeinador/Phase-Pi-Quantum-Prior}
 
 % ==============================================================================
 % REFERENCIAS
@@ -629,5 +657,7 @@ Esta dinámica de propagación destruye matemáticamente la termalización de vo
 S_2(\rho(t \to \infty)) \le \log_2(\chi_{\text{MPDO}}) \le \log_2(36) \approx 5.169 \text{ bits},
 \end{equation}
 lo que ratifica desde la teoría de campos topológicos la represión ergódica extrema ($S_2 \approx 1.65$ bits) reportada en el límite macroscópico $N=60$, garantizando un bloqueo incondicional contra el emborronamiento térmico en hardware NISQ.
+
+
 
 \end{document}
