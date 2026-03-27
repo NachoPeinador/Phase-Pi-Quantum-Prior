@@ -185,9 +185,9 @@ This work establishes that arithmetic is not a random sequence, but a **determin
 
 ---
 
-\<div align="center"\>
+<div align="center">
 
-**Last Update:** March 2026 | **Status:** Gold Version | Built with ⚛️ & 🐍
+<b>Last Update:</b> March 2026 | <b>Status:</b> Ready for Peer Review | Built with ⚛️ & 🐍
 
-\</div\>
+</div>
 
