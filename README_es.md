@@ -85,7 +85,7 @@ Las siguientes tablas resumen el rendimiento termodinámico y computacional del 
 La suite de validación empírica se divide en tres exhaustivos Jupyter Notebooks. Cada notebook está meticulosamente diseñado para demostrar las afirmaciones teóricas del manuscrito a través de código funcional, contracciones tensoriales exactas y simulaciones termodinámicas.
 
 ### 📓 Notebook I: Fundamentos Aritméticos y Termodinámicos
-**Archivo:** [`Arithmetic_and_Thermodynamic_Foundations_of_Z_6Z_Superselection.ipynb`](./Arithmetic_and_Thermodynamic_Foundations_of_Z_6Z_Superselection.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Phase-Pi-Quantum-Prior/blob/main/Notebooks/Arithmetic_and_Thermodynamic_Foundations_of_Z_6Z_Superselection.ipynb)
 
 Este notebook proporciona el marco experimental y la validación empírica para el **Prior Topológico $\mathbb{Z}/6\mathbb{Z}$**. Demuestra cómo romper con la tradicional superposición uniforme de máxima entropía (utilizada en algoritmos como el de Shor) confinando la amplitud cuántica estrictamente a canales aritméticos resonantes.
 
@@ -100,7 +100,7 @@ Este notebook proporciona el marco experimental y la validación empírica para 
 ---
 
 ### 📓 Notebook II: El Desafío del Hardware NISQ y la Compresión MPS
-**Archivo:** [`The_NISQ_Hardware_Challenge_and_MPS_Compression.ipynb`](./The_NISQ_Hardware_Challenge_and_MPS_Compression.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Phase-Pi-Quantum-Prior/blob/main/Notebooks/The_NISQ_Hardware_Challenge_and_MPS_Compression.ipynb)
 
 En este notebook, pasamos de las matemáticas abstractas a la **Ingeniería de Hardware Cuántico**. Demostramos que el Prior Topológico $\mathbb{Z}/6\mathbb{Z}$ no es meramente una construcción teórica, sino un vector de estado cuántico unitario y válido que puede codificarse en la matriz densidad de un ordenador cuántico real, superando la histórica profundidad de circuito exponencial $\mathcal{O}(2^n)$ típicamente requerida para la preparación de estados dispersos.
 
@@ -115,7 +115,8 @@ En este notebook, pasamos de las matemáticas abstractas a la **Ingeniería de H
 ---
 
 ### 📓 Notebook III: Criptoanálisis Híbrido y Estrategia Adaptativa Óptima
-**Archivo:** [`Hybrid_Cryptanalysis_and_Optimal_Adaptive_Strategy.ipynb`](./Hybrid_Cryptanalysis_and_Optimal_Adaptive_Strategy.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Phase-Pi-Quantum-Prior/blob/main/Notebooks/Hybrid_Cryptanalysis_and_Optimal_Adaptive_Strategy.ipynb)
+
 
 En este último notebook, trasladamos nuestros descubrimientos a nivel termodinámico y de hardware al dominio del **Criptoanálisis Aplicado**. Simulamos la partición ortogonal del espacio de Hilbert contra módulos criptográficos objetivo (ej., RSA), cuantificando rigurosamente la reducción neta en las evaluaciones del oráculo en comparación con la inicialización de máxima entropía del algoritmo de Shor estándar.
 
