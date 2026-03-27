@@ -85,7 +85,7 @@ The following tables summarize the thermodynamic and computational performance o
 The empirical validation suite is divided into three comprehensive Jupyter Notebooks. Each notebook is meticulously designed to prove the theoretical claims of the manuscript through functional code, exact tensor contractions, and thermodynamic simulations.
 
 ### 📓 Notebook I: Arithmetic and Thermodynamic Foundations
-**File:** [`Arithmetic_and_Thermodynamic_Foundations_of_Z_6Z_Superselection.ipynb`](./Arithmetic_and_Thermodynamic_Foundations_of_Z_6Z_Superselection.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Phase-Pi-Quantum-Prior/blob/main/Notebooks/Arithmetic_and_Thermodynamic_Foundations_of_Z_6Z_Superselection.ipynb)
 
 This notebook provides the experimental framework and empirical validation for the **$\mathbb{Z}/6\mathbb{Z}$ Topological Prior**. It demonstrates how to break away from the traditional, maximum-entropy uniform superposition (used in algorithms like Shor's) by confining the quantum amplitude strictly to resonant arithmetic channels.
 
@@ -100,7 +100,7 @@ This notebook provides the experimental framework and empirical validation for t
 ---
 
 ### 📓 Notebook II: The NISQ Hardware Challenge and MPS Compression
-**File:** [`The_NISQ_Hardware_Challenge_and_MPS_Compression.ipynb`](./The_NISQ_Hardware_Challenge_and_MPS_Compression.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Phase-Pi-Quantum-Prior/blob/main/Notebooks/The_NISQ_Hardware_Challenge_and_MPS_Compression.ipynb)
 
 In this notebook, we transition from abstract mathematics to **Quantum Hardware Engineering**. We demonstrate that the $\mathbb{Z}/6\mathbb{Z}$ Topological Prior is not merely a theoretical construct, but a valid, unitary quantum state vector that can be encoded into the density matrix of a real-world quantum computer, overcoming the historical exponential circuit depth $\mathcal{O}(2^n)$ typically required for sparse state preparation.
 
@@ -115,7 +115,7 @@ In this notebook, we transition from abstract mathematics to **Quantum Hardware 
 ---
 
 ### 📓 Notebook III: Hybrid Cryptanalysis and Optimal Adaptive Strategy
-**File:** [`Hybrid_Cryptanalysis_and_Optimal_Adaptive_Strategy.ipynb`](./Hybrid_Cryptanalysis_and_Optimal_Adaptive_Strategy.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Phase-Pi-Quantum-Prior/blob/main/Notebooks/Hybrid_Cryptanalysis_and_Optimal_Adaptive_Strategy.ipynb)
 
 In this final notebook, we translate our thermodynamic and hardware-level discoveries into the domain of **Applied Cryptanalysis**. We simulate the orthogonal partitioning of the Hilbert space against target cryptographic moduli (e.g., RSA), rigorously quantifying the net reduction in oracle evaluations compared to the maximum-entropy initialization of standard Shor's algorithm.
 
