@@ -149,7 +149,7 @@ In this final notebook, we translate our thermodynamic and hardware-level discov
 └── 📜 CITATION.cff        # Academic citation metadata
 ```
 
-<details\>
+</details>
 
 ---
 
