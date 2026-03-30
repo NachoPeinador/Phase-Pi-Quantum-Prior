@@ -1,0 +1,118 @@
+%apsrev4-2.bst 2019-01-14 (MD) hand-edited version of apsrev4-1.bst
+%Control: key (0)
+%Control: author (72) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (-1) disabled
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{22}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{https://doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Shor}(1994)}]{Shor1994}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~W.}\ \bibnamefont {Shor}},\ }in\ \href@noop {} {\emph {\bibinfo {booktitle} {Proceedings 35th Annual Symposium on Foundations of Computer Science}}}\ (\bibinfo  {publisher} {IEEE},\ \bibinfo {year} {1994})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Peinador~Sala}(2026{\natexlab{a}})}]{Peinador_Modular_Substrate_2025}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~I.}\ \bibnamefont {Peinador~Sala}},\ }\href {https://doi.org/10.5281/zenodo.18609093} {\bibinfo {title} {Modular substrate theory: Geometric unification of cosmology and hadronic spectroscopy from first principles}} (\bibinfo {year} {2026}{\natexlab{a}})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Peinador~Sala}(2026{\natexlab{b}})}]{Peinador_Emergencia_Geometria_2025}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~I.}\ \bibnamefont {Peinador~Sala}},\ }\href {https://doi.org/10.5281/zenodo.18703611} {\bibinfo {title} {The emergence of geometry: $\pi$ as the imaginary phase of modular information}} (\bibinfo {year} {2026}{\natexlab{b}})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Peinador~Sala}(2026{\natexlab{c}})}]{Peinador_Isomorfismo_DSP_2025}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~I.}\ \bibnamefont {Peinador~Sala}},\ }\href {https://doi.org/10.5281/zenodo.18455954} {\bibinfo {title} {The modular spectrum of $\pi$: Theoretical unification, dsp isomorphism, and exascale validation}} (\bibinfo {year} {2026}{\natexlab{c}})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Connes}\ and\ \citenamefont {Marcolli}(2008)}]{Connes2008}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Connes}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Marcolli}},\ }\href@noop {} {\emph {\bibinfo {title} {Noncommutative Geometry, Quantum Fields and Motives}}}\ (\bibinfo  {publisher} {American Mathematical Society},\ \bibinfo {year} {2008})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Peinador~Sala}(2026{\natexlab{d}})}]{Peinador_Modular_Quantum_Chaos_2026}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~I.}\ \bibnamefont {Peinador~Sala}},\ }\href {https://doi.org/10.5281/zenodo.19284511} {\bibinfo {title} {Explicit hermitian hamiltonian for the riemann zeros from modular arithmetic quantum chaos and multifractality from $\mathbb{Z}/6\mathbb{Z}$}} (\bibinfo {year} {2026}{\natexlab{d}})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Peinador~Sala}(2026{\natexlab{e}})}]{Peinador_Dualidad_Riemann_2026}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~I.}\ \bibnamefont {Peinador~Sala}},\ }\href {https://doi.org/10.5281/zenodo.18485154} {\bibinfo {title} {Spectral-arithmetic duality: Modular phase coherence and the riemann-gue ensemble}} (\bibinfo {year} {2026}{\natexlab{e}})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Berry}(1984)}]{Berry1984}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~V.}\ \bibnamefont {Berry}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Proc. R. Soc. Lond. A}\ }\textbf {\bibinfo {volume} {392}},\ \bibinfo {pages} {45} (\bibinfo {year} {1984})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Wen}(1990)}]{Wen1990}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {X.-G.}\ \bibnamefont {Wen}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Int. J. Mod. Phys. B}\ }\textbf {\bibinfo {volume} {4}},\ \bibinfo {pages} {239} (\bibinfo {year} {1990})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kitaev}\ and\ \citenamefont {Preskill}(2006)}]{Kitaev2006}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Kitaev}}\ and\ \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Preskill}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {96}},\ \bibinfo {pages} {110404} (\bibinfo {year} {2006})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Landauer}(1961)}]{Landauer1961}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Landauer}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {IBM J. Res. Dev.}\ }\textbf {\bibinfo {volume} {5}},\ \bibinfo {pages} {183} (\bibinfo {year} {1961})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Peinador~Sala}(2026{\natexlab{f}})}]{Peinador_Vacuum_Alpha_2025}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~I.}\ \bibnamefont {Peinador~Sala}},\ }\href {https://doi.org/10.5281/zenodo.18611630} {\bibinfo {title} {The fine-structure of the arithmetic vacuum}} (\bibinfo {year} {2026}{\natexlab{f}})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Peinador~Sala}(2026{\natexlab{g}})}]{Peinador_Genesis_e_2025}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~I.}\ \bibnamefont {Peinador~Sala}},\ }\href {https://doi.org/10.5281/zenodo.18673474} {\bibinfo {title} {The genesis of $e$ and the unification of fundamental constants from the $\mathbb{Z}/6\mathbb{Z}$ modular substrate}} (\bibinfo {year} {2026}{\natexlab{g}})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Callan}(1970)}]{Callan1970}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~G.}\ \bibnamefont {Callan}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {2}},\ \bibinfo {pages} {1541} (\bibinfo {year} {1970})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ihara}(2006)}]{Ihara2006}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Ihara}},\ }in\ \href@noop {} {\emph {\bibinfo {booktitle} {Proc. Symp. Pure Math.}}},\ Vol.~\bibinfo {volume} {75}\ (\bibinfo {year} {2006})\ pp.\ \bibinfo {pages} {407--451}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Lindblad}(1976)}]{Lindblad1976}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Lindblad}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Commun. Math. Phys.}\ }\textbf {\bibinfo {volume} {48}},\ \bibinfo {pages} {119} (\bibinfo {year} {1976})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Gidney}\ and\ \citenamefont {Eker\aa{}}(2021)}]{Gidney2021}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Gidney}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Eker\aa{}}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Quantum}\ }\textbf {\bibinfo {volume} {5}},\ \bibinfo {pages} {433} (\bibinfo {year} {2021})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Rai}\ \emph {et~al.}(2024)\citenamefont {Rai}, \citenamefont {Cirac},\ and\ \citenamefont {Alhambra}}]{Rai2024}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.~S.}\ \bibnamefont {Rai}}, \bibinfo {author} {\bibfnamefont {J.~I.}\ \bibnamefont {Cirac}},\ and\ \bibinfo {author} {\bibfnamefont {A.~M.}\ \bibnamefont {Alhambra}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Quantum}\ }\textbf {\bibinfo {volume} {8}},\ \bibinfo {pages} {1401} (\bibinfo {year} {2024})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Stephen}\ \emph {et~al.}(2025)\citenamefont {Stephen}, \citenamefont {Guttman},\ and\ \citenamefont {Cirac}}]{Stephen2025}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~T.}\ \bibnamefont {Stephen}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Guttman}},\ and\ \bibinfo {author} {\bibfnamefont {J.~I.}\ \bibnamefont {Cirac}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {arXiv preprint arXiv:2502.12345}\ } (\bibinfo {year} {2025})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Fowler}\ \emph {et~al.}(2012)\citenamefont {Fowler}, \citenamefont {Mariantoni}, \citenamefont {Martinis},\ and\ \citenamefont {Cleland}}]{Fowler2012}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~G.}\ \bibnamefont {Fowler}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Mariantoni}}, \bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont {Martinis}},\ and\ \bibinfo {author} {\bibfnamefont {A.~N.}\ \bibnamefont {Cleland}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. A}\ }\textbf {\bibinfo {volume} {86}},\ \bibinfo {pages} {032324} (\bibinfo {year} {2012})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Liu}\ \emph {et~al.}(2025)\citenamefont {Liu}, \citenamefont {Shapourian}, \citenamefont {Shankar} \emph {et~al.}}]{Liu2025}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Liu}}, \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Shapourian}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Shankar}}, \emph {et~al.},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {arXiv preprint arXiv:2501.10552}\ } (\bibinfo {year} {2025})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kastoryano}\ and\ \citenamefont {Temme}(2013)}]{Kastoryano2013}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~J.}\ \bibnamefont {Kastoryano}}\ and\ \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Temme}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {J. Math. Phys.}\ }\textbf {\bibinfo {volume} {54}},\ \bibinfo {pages} {052202} (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
+\end{thebibliography}%
