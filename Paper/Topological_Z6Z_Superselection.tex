@@ -1,11 +1,11 @@
 \documentclass[12pt,a4paper]{article}
 
 % ==============================================================================
-% PAQUETES Y CONFIGURACIÓN PARA REVISTA MATEMÁTICA IBEROAMERICANA
+% PACKAGES AND CONFIGURATION FOR TOP-TIER PHYSICS JOURNALS (e.g., PRX QUANTUM)
 % ==============================================================================
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[spanish]{babel}
+\usepackage[english]{babel}
 \usepackage{amsmath, amssymb, amsthm, mathrsfs}
 \usepackage{mathtools}
 \usepackage{geometry}
@@ -35,27 +35,27 @@
 \onehalfspacing
 
 % ==============================================================================
-% CONFIGURACIÓN DE TEOREMAS
+% THEOREM CONFIGURATIONS
 % ==============================================================================
 \theoremstyle{plain}
-\newtheorem{teorema}{Teorema}[section]
-\newtheorem{lema}[teorema]{Lema}
-\newtheorem{proposicion}[teorema]{Proposición}
-\newtheorem{corolario}[teorema]{Corolario}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
 
 \theoremstyle{definition}
-\newtheorem{definicion}[teorema]{Definición}
-\newtheorem{ejemplo}[teorema]{Ejemplo}
-\newtheorem{observacion}[teorema]{Observación}
-\newtheorem{notacion}[teorema]{Notación}
-\newtheorem{conjetura}[teorema]{Conjetura}
-\newtheorem{resultado}[teorema]{Resultado}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{observation}[theorem]{Observation}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{result}[theorem]{Result}
 
 \theoremstyle{remark}
-\newtheorem*{remark}{Observación}
+\newtheorem*{remark}{Remark}
 
 % ==============================================================================
-% COMANDOS PERSONALIZADOS
+% CUSTOM COMMANDS
 % ==============================================================================
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\R}{\mathbb{R}}
@@ -72,11 +72,11 @@
 
 \begin{document}
 
-\title{Superselección Topológica $\mathbb{Z}/6\mathbb{Z}$: Derivación Analítica de Fases y Estabilización Disipativa para Criptoanálisis FTQC}
+\title{Topological $\mathbb{Z}/6\mathbb{Z}$ Superselection: Analytic Phase Derivation and Dissipative Stabilization for FTQC Cryptanalysis}
 
 \author{
   \textbf{José Ignacio Peinador Sala}\,\orcidlink{0009-0008-1822-3452} \\
-  \textit{Investigador Independiente, Valladolid, España} \\
+  \textit{Independent Researcher, Valladolid, Spain} \\
   \texttt{joseignacio.peinador@gmail.com}
 }
 
@@ -84,458 +84,456 @@
 \maketitle
 
 \begin{abstract}
-En el marco de la teoría de superselección topológica basada en el anillo modular $\mathbb{Z}/6\mathbb{Z}$, la inicialización estructurada de registros cuánticos exige una modulación de amplitud asimétrica para confinar la probabilidad en los canales resonantes $1 \pmod 6$ y $5 \pmod 6$. Este trabajo demuestra que la emergencia de las fases óptimas ($\phi_1 \approx 0.0105$ rad y $\phi_2 = \pi$ rad) no constituye un artefacto empírico, sino una consecuencia analítica rigurosa. Por un lado, la fase $\pi$ emana del isomorfismo entre el grupo de unidades $(\mathbb{Z}/6\mathbb{Z})^{\times}$ y el grupo discreto $\mathbb{Z}/2\mathbb{Z}$, actuando como una Holonomía de Berry no conmutativa que resuelve la anomalía quiral del sustrato y reconcilia la regularización del vacío escalar $\zeta(0)$ con la entropía binaria de Shannon. Por otro lado, la asimetría termodinámica $\phi_1$ se deriva axiomáticamente como un punto fijo infrarrojo de la función beta del Grupo de Renormalización, dictada por la invariante de Euler-Kronecker. Demostramos que este confinamiento topológico estabiliza el sistema: la formulación de un Lindbladiano Padre libre de frustración induce una fase \textit{Non-Ergodic Extended} (NEE) que mitiga pasivamente la decoherencia térmica. Validado mediante escalado tensorial macroscópico, el estado admite una representación exacta como \textit{Matrix Product Density Operator} (MPDO) con dimensión de enlace $\chi_{\text{MPDO}} \le 36$. Los resultados establecen un nuevo estándar de eficiencia para la computación tolerante a fallos (FTQC), evadiendo la termalización ergódica y contrayendo masivamente la profundidad lógica (T-count) en los algoritmos de criptoanálisis cuántico.
+Within the framework of topological superselection theory based on the modular ring $\mathbb{Z}/6\mathbb{Z}$, the structured initialization of quantum registers demands an asymmetric amplitude modulation to confine probability within the resonant channels $1 \pmod 6$ and $5 \pmod 6$. This work demonstrates that the emergence of the optimal phases ($\phi_1 \approx 0.0105$ rad and $\phi_2 = \pi$ rad) is not an empirical artifact, but a rigorous analytic consequence. On the one hand, the phase $\pi$ emanates from the isomorphism between the unit group $(\mathbb{Z}/6\mathbb{Z})^{\times}$ and the discrete group $\mathbb{Z}/2\mathbb{Z}$, acting as a non-commutative Berry Holonomy that resolves the chiral anomaly of the substrate and reconciles the scalar vacuum regularization $\zeta(0)$ with the Shannon binary entropy. On the other hand, the thermodynamic asymmetry $\phi_1$ is derived axiomatically as an infrared fixed point of the Renormalization Group beta function, dictated by the Euler-Kronecker invariant. We demonstrate that this topological confinement stabilizes the system: the formulation of a frustration-free Parent Lindbladian induces a Non-Ergodic Extended (NEE) phase that passively mitigates thermal decoherence. Validated through macroscopic tensor scaling, the state admits an exact representation as a Matrix Product Density Operator (MPDO) with a bond dimension $\chi_{\text{MPDO}} \le 36$. The results establish a new efficiency standard for Fault-Tolerant Quantum Computing (FTQC), evading ergodic thermalization and massively contracting the logical depth (T-count) in quantum cryptanalysis algorithms.
 
 \vspace{0.5cm}
-\noindent \textbf{Palabras clave:} Superselección Topológica, Preparación de Estados Cuánticos, Estados de Producto Matricial (MPS), Dinámica de Lindblad, Fase NEE, Computación Tolerante a Fallos (FTQC), Criptoanálisis Cuántico.
+\noindent \textbf{Keywords:} Topological Superselection, Quantum State Preparation, Matrix Product States (MPS), Lindblad Dynamics, NEE Phase, Fault-Tolerant Quantum Computing (FTQC), Quantum Cryptanalysis.
 \end{abstract}
 
 \tableofcontents
 \newpage
 
-\section{Introducción}
+\section{Introduction}
 
-Los algoritmos de búsqueda cuántica, entre los que destaca el algoritmo de Shor para la factorización de enteros\cite{Shor1994}, deben su potencial aceleración exponencial a la capacidad de explorar simultáneamente un enorme espacio de soluciones. Esta exploración se inicia tradicionalmente con la preparación de un registro en superposición uniforme, lograda mediante la aplicación paralela de compuertas Hadamard: $H^{\otimes n}\ket{0} = 2^{-n/2}\sum_{x=0}^{2^n-1}\ket{x}$. Si bien este procedimiento es óptimo desde el punto de vista de la profundidad de circuito ($\mathcal{O}(1)$), adolece de un grave defecto termodinámico: maximiza la entropía de Shannon del estado inicial, obligando al algoritmo a procesar un volumen exponencial de trayectorias computacionalmente estériles.
+Quantum search algorithms, notably Shor's algorithm for integer factorization \cite{Shor1994}, owe their potential exponential speedup to the ability to simultaneously explore an enormous solution space. Traditionally, this exploration begins with the preparation of a register in a uniform superposition, achieved by the parallel application of Hadamard gates: $H^{\otimes n}\ket{0} = 2^{-n/2}\sum_{x=0}^{2^n-1}\ket{x}$. While this procedure is optimal from a circuit depth perspective ($\mathcal{O}(1)$), it suffers from a severe thermodynamic flaw: it maximizes the Shannon entropy of the initial state, forcing the algorithm to process an exponential volume of computationally sterile trajectories.
 
-En problemas con una fuerte estructura aritmética, esta ignorancia resulta especialmente costosa. Un teorema elemental de topología aritmética establece que todo número primo $p>3$ satisface $p \equiv 1 \pmod 6$ o $p \equiv 5 \pmod 6$.El anillo modular $\mathbb{Z}/6\mathbb{Z}$ emerge así como un filtro topológico natural, fundamentado axiomáticamente en la dinámica del sustrato modular: los canales divisores de cero y simétricos pares $0,2,3,4 \pmod 6$ son estrictamente estériles y pueden ser ignorados, reduciendo de manera analítica el espacio de búsqueda efectivo en un $66.66\%$ \cite{Peinador_Modular_Substrate_2025, Peinador_Emergencia_Geometria_2025}. Sin embargo, trasladar esta ventaja clásica al dominio cuántico exige construir un operador de inicialización que confine la amplitud de probabilidad en los canales resonantes sin violar la unitariedad ni requerir una profundidad de circuito exponencial.
+In problems with a strong arithmetic structure, this ignorance is especially costly. An elementary theorem of arithmetic topology states that every prime number $p>3$ satisfies $p \equiv 1 \pmod 6$ or $p \equiv 5 \pmod 6$. The modular ring $\mathbb{Z}/6\mathbb{Z}$ thus emerges as a natural topological filter, axiomatically grounded in the dynamics of the modular substrate: the zero-divisor and even-symmetric channels $0,2,3,4 \pmod 6$ are strictly sterile and can be ignored, analytically reducing the effective search space by $66.66\%$ \cite{Peinador_Modular_Substrate_2025, Peinador_Emergencia_Geometria_2025}. However, translating this classical advantage to the quantum domain requires constructing an initialization operator that confines the probability amplitude within the resonant channels without violating unitarity or demanding an exponential circuit depth.
 
-Investigaciones recientes focalizadas sobre la hibridación de arquitecturas algorítmicas aritméticas han propuesto rigurosamente una función de densidad de amplitud espectral modulada por una fase \textit{gauge} $\phi$ \cite{Peinador_Isomorfismo_DSP_2025}:
+Recent investigations focused on the hybridization of arithmetic algorithmic architectures have rigorously proposed a spectral amplitude density function modulated by a \textit{gauge} phase $\phi$ \cite{Peinador_Isomorfismo_DSP_2025}:
 \begin{equation}
 P(x) \propto \exp\left[A \sin\left(\frac{2\pi x}{6} + \phi\right)\right] \cdot \mathds{1}_{x\equiv 1,5 \pmod{6}},
 \label{eq:amplitud}
 \end{equation}
-donde $A$ es un factor de ganancia (interpretable como la inversa de la temperatura efectiva del vacío, $\beta_{\text{eff}}$) y $\mathds{1}$ la función indicatriz sobre los canales resonantes. Las emulaciones analíticas y empíricas de esta familia de estados revelaron un comportamiento altamente estructurado: las fases que maximizan la fidelidad de probabilidad en cada canal convergen a valores muy concretos (Tabla \ref{tab:fases}).
+where $A$ is a gain factor (interpretable as the inverse of the effective vacuum temperature, $\beta_{\text{eff}}$) and $\mathds{1}$ is the indicator function over the resonant channels. Analytical and empirical emulations of this state family revealed a highly structured behavior: the phases that maximize the probability fidelity in each channel converge to highly specific values (Table \ref{tab:fases}).
 
 \begin{table}[H]
 \centering
-\caption{Convergencia asintótica de las fases óptimas por clase de congruencia}
+\caption{Asymptotic convergence of the optimal phases per congruence class}
 \label{tab:fases}
 \begin{tabular}{lllc}
 \toprule
-\textbf{Clase} & \textbf{Fase Óptima} & \textbf{Origen Físico / Analítico} & \textbf{Fidelidad} \\
+\textbf{Class} & \textbf{Optimal Phase} & \textbf{Physical / Analytic Origin} & \textbf{Fidelity} \\
 \midrule
-$1 \pmod 6$ & $\phi_1 \approx 0.0105$ rad & Impedancia Informacional ($R_{\text{fund}}/10$) & $> 0.999$ \\
-$5 \pmod 6$ & $\phi_2 = 3.1415$ rad & Isomorfismo y Anomalía Quiral ($\pi$) & $> 0.999$ \\
+$1 \pmod 6$ & $\phi_1 \approx 0.0105$ rad & Informational Impedance ($R_{\text{fund}}/10$) & $> 0.999$ \\
+$5 \pmod 6$ & $\phi_2 = 3.1415$ rad & Isomorphism and Chiral Anomaly ($\pi$) & $> 0.999$ \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-¿Por qué la clase $5$ demanda exactamente la constante $\pi$? ¿Constituye un óptimo local o es la firma de un isomorfismo estructural que resuelve la anomalía quiral del sustrato? ¿Qué significado físico tiene la pequeña desviación $\phi_1$ y por qué se relaciona con la impedancia informacional del vacío $R_{\text{fund}} = 1/(6\log_2 3)$? El presente artículo resuelve estos interrogantes mediante una amalgama de teoría de grupos, geometría no conmutativa y termodinámica de sistemas cuánticos abiertos.
+Why does class $5$ demand exactly the constant $\pi$? Does it constitute a local optimum or is it the signature of a structural isomorphism resolving the chiral anomaly of the substrate? What physical meaning does the small deviation $\phi_1$ hold, and why is it related to the informational impedance of the vacuum $R_{\text{fund}} = 1/(6\log_2 3)$? The present article resolves these questions through an amalgamation of group theory, non-commutative geometry, and the thermodynamics of open quantum systems.
 
-La hoja de ruta es la siguiente. En la \textbf{Sección 2}, formalizamos la estructura algebraica de $\mathbb{Z}/6\mathbb{Z}$ y revelamos el isomorfismo polifásico que conecta este sustrato con el procesamiento cuántico de señales, definiendo la frontera de la Zona de Brillouin. En la \textbf{Sección 3}, demostramos analíticamente que $\phi_2 = \pi$ es una consecuencia directa de la Holonomía de Berry. Formulamos el \textit{Lema Puente Holográfico} que vincula esta fase geométrica con la regularización del vacío $\zeta(0)$ y la entropía de Shannon local. En la \textbf{Sección 4}, abordamos el origen de $\phi_1 \approx R_{\text{fund}}/10$, presentándolo no como una heurística, sino derivándolo desde primeros principios mediante un flujo del Grupo de Renormalización acoplado a la constante de Euler-Kronecker. En la \textbf{Sección 5}, exploramos la robustez física y algorítmica: formalizamos un Lindbladiano Padre que estabiliza el registro en una fase \textit{Non-Ergodic Extended} (NEE), validada mediante escalado tensorial MPDO ($\chi \le 36$). Finalmente, evaluamos las implicaciones de esta topología mediante una estrategia de búsqueda adaptativa, demostrando una reducción drástica del volumen del circuito lógico (T-count) y relajando masivamente los umbrales de corrección de errores en arquitecturas tolerantes a fallos (FTQC).
+The roadmap is as follows. In \textbf{Section 2}, we formalize the algebraic structure of $\mathbb{Z}/6\mathbb{Z}$ and reveal the polyphase isomorphism connecting this substrate with quantum signal processing, defining the Brillouin Zone boundary. In \textbf{Section 3}, we analytically prove that $\phi_2 = \pi$ is a direct consequence of Berry Holonomy. We formulate the \textit{Holographic Bridge Lemma} linking this geometric phase with the vacuum regularization $\zeta(0)$ and local Shannon entropy. In \textbf{Section 4}, we address the origin of $\phi_1 \approx R_{\text{fund}}/10$, presenting it not as a heuristic, but deriving it from first principles via a Renormalization Group flow coupled to the Euler-Kronecker constant. In \textbf{Section 5}, we explore the physical and algorithmic robustness: we formalize a frustration-free Parent Lindbladian that stabilizes the register in a Non-Ergodic Extended (NEE) phase, validated by MPDO tensor scaling ($\chi \le 36$). Finally, we evaluate the implications of this topology through an adaptive search strategy, demonstrating a drastic reduction in the logical circuit volume (T-count) and massively relaxing the error correction thresholds in Fault-Tolerant Quantum Computing (FTQC) architectures.
 
-\section{El Sustrato Modular e Isomorfismo Polifásico}
+\section{The Modular Substrate and Polyphase Isomorphism}
 \label{sec:sustrato_modular}
 
-Para aprovechar la estructura geométrica de los números primos en la inicialización de un registro cuántico, es imperativo formalizar las propiedades topológicas del anillo $\mathbb{Z}/6\mathbb{Z}$. Esta sección establece los conceptos algebraicos subyacentes, clasifica el espacio de Hilbert en canales resonantes y estériles, y revela una conexión profunda con la física del estado sólido (la Zona de Brillouin) y la teoría de procesamiento digital de señales (isomorfismo polifásico).
+To leverage the geometric structure of prime numbers in the initialization of a quantum register, it is imperative to formalize the topological properties of the modular ring $\mathbb{Z}/6\mathbb{Z}$. This section establishes the underlying algebraic concepts, classifies the Hilbert space into resonant and sterile channels, and reveals a profound connection with solid-state physics (the Brillouin Zone) and digital signal processing theory (polyphase isomorphism).
 
-\subsection{Definición y Propiedades Algebraicas}
+\subsection{Definition and Algebraic Properties}
 
-El anillo $\mathbb{Z}/6\mathbb{Z}$ constituye el conjunto de clases de congruencia módulo 6: $\mathbb{Z}/6\mathbb{Z} = \{0,1,2,3,4,5\}$. Desde una perspectiva de superselección, los estados base se clasifican según su generabilidad:
+The ring $\mathbb{Z}/6\mathbb{Z}$ constitutes the set of congruence classes modulo 6: $\mathbb{Z}/6\mathbb{Z} = \{0,1,2,3,4,5\}$. From a superselection perspective, the basis states are classified according to their generability:
 \begin{itemize}
-    \item \textbf{Generadores del grupo aditivo:} Los elementos coprimos con 6, es decir, $1$ y $5$. Constituyen el \textit{grupo de unidades} $G = (\mathbb{Z}/6\mathbb{Z})^{\times}$, el cual es isomorfo a $\mathbb{Z}/2\mathbb{Z}$. La función indicatriz de Euler dicta $\varphi(6)=2$.
-    \item \textbf{Divisores de cero:} $2,3,4$ (junto con el neutro $0$). Estos elementos carecen de inverso multiplicativo y definen los subespacios disipativos del anillo.
+    \item \textbf{Generators of the additive group:} The elements coprime to 6, namely $1$ and $5$. They constitute the \textit{unit group} $G = (\mathbb{Z}/6\mathbb{Z})^{\times}$, which is isomorphic to $\mathbb{Z}/2\mathbb{Z}$. Euler's totient function dictates $\varphi(6)=2$.
+    \item \textbf{Zero divisors:} $2,3,4$ (along with the identity $0$). These elements lack a multiplicative inverse and define the dissipative subspaces of the ring.
 \end{itemize}
 
-La propiedad algebraica fundamental que rige la dinámica del sistema es la relación de conjugación entre los generadores:
+The fundamental algebraic property governing the system's dynamics is the conjugation relationship between the generators:
 \begin{equation}
 5 \equiv -1 \pmod{6}.
 \label{eq:inverso_aditivo}
 \end{equation}
-Lejos de ser un mero artefacto aritmético, la primacía topológica de este anillo emana de los fundamentos del Modelo Estándar. En el marco de la Geometría No Conmutativa (NCG), la resolución del problema del doblamiento de fermiones y la obtención de la gradación quiral correcta exige inexorablemente que el espacio métrico interno finito posea una dimensión KO igual a 6 módulo 8 \cite{Connes2008, Peinador_Emergencia_Geometria_2025}. El centro algebraico del grupo de gauge unimodular resultante, cuya isometría estructural preserva íntegramente la gradación quiral bajo severas deformaciones dinámicas de decaimiento de potencia \cite{Peinador_Modular_Quantum_Chaos_2026}, es exactamente isomorfo a $\mathbb{Z}/6\mathbb{Z}$. Por consiguiente, la identidad fundamental \eqref{eq:inverso_aditivo} establece que las clases topológicas $\mathcal{C}_1$ y $\mathcal{C}_5$ operan analíticamente como los equivalentes geométricos exactos de los sectores quirales del vacío, exigiendo una compensación topológica holonómica estricta para garantizar firmemente que el espectro de absorción aritmético preserve su unitariedad subyacente \cite{Peinador_Dualidad_Riemann_2026, Peinador_Modular_Quantum_Chaos_2026}.
+Far from being a mere arithmetic artifact, the topological primacy of this ring emanates from the foundations of the Standard Model. Within the framework of Noncommutative Geometry (NCG), resolving the fermion doubling problem and obtaining the correct chiral grading inexorably requires the finite internal metric space to possess a KO-dimension of 6 modulo 8 \cite{Connes2008, Peinador_Emergencia_Geometria_2025}. The algebraic center of the resulting unimodular gauge group, whose structural isometry integrally preserves the chiral grading under severe power-law decay dynamical deformations \cite{Peinador_Modular_Quantum_Chaos_2026}, is exactly isomorphic to $\mathbb{Z}/6\mathbb{Z}$. Consequently, the fundamental identity \eqref{eq:inverso_aditivo} establishes that the topological classes $\mathcal{C}_1$ and $\mathcal{C}_5$ operate analytically as the exact geometric equivalents of the chiral sectors of the vacuum, demanding a strict holonomic topological compensation to firmly guarantee that the arithmetic absorption spectrum preserves its underlying unitarity \cite{Peinador_Dualidad_Riemann_2026, Peinador_Modular_Quantum_Chaos_2026}.
 
-\subsection{Canales Estériles y Resonantes}
+\subsection{Sterile and Resonant Channels}
 
-Al mapear los enteros $x$ sobre los autoestados de un registro cuántico computacional $|x\rangle$, la clase de congruencia módulo 6 determina la viabilidad criptográfica de la trayectoria. 
+By mapping the integers $x$ onto the eigenstates of a computational quantum register $|x\rangle$, the congruence class modulo 6 determines the cryptographic viability of the trajectory. 
 
-\begin{teorema}
-Para todo número primo $p>3$, se cumple inexorablemente que $p \equiv 1 \pmod{6}$ o $p \equiv 5 \pmod{6}$. En consecuencia, el conjunto de primos $\mathcal{P}_{>3}$ está topológicamente confinado en la unión de las clases $\mathcal{C}_1 \cup \mathcal{C}_5$.
-\end{teorema}
+\begin{theorem}
+For every prime number $p>3$, it inexorably holds that $p \equiv 1 \pmod{6}$ or $p \equiv 5 \pmod{6}$. Consequently, the set of primes $\mathcal{P}_{>3}$ is topologically confined within the union of the classes $\mathcal{C}_1 \cup \mathcal{C}_5$.
+\end{theorem}
 
-Las clases $\mathcal{C}_1$ y $\mathcal{C}_5$ se definen como \textbf{canales resonantes}. Por el contrario, las clases $\mathcal{C}_0,\mathcal{C}_2,\mathcal{C}_3,\mathcal{C}_4$ constituyen \textbf{canales estériles}. En un algoritmo de búsqueda como el de Shor, la amplitud de probabilidad depositada en un canal estéril contribuye exclusivamente a la ergodicidad térmica y a la entropía de Shannon, sin aportar utilidad computacional. La inicialización topológica exige purgar estas trayectorias.
+The classes $\mathcal{C}_1$ and $\mathcal{C}_5$ are defined as \textbf{resonant channels}. Conversely, the classes $\mathcal{C}_0,\mathcal{C}_2,\mathcal{C}_3,\mathcal{C}_4$ constitute \textbf{sterile channels}. In a search algorithm such as Shor's, the probability amplitude deposited in a sterile channel contributes exclusively to thermal ergodicity and Shannon entropy, providing no computational utility. Topological initialization requires purging these trajectories.
 
-\subsection{El Canal $r=3$ y la Frontera de la Zona de Brillouin}
+\subsection{The Channel $r=3$ and the Brillouin Zone Boundary}
 
-Dentro del espectro de canales estériles, la clase $r=3$ ejerce una influencia física singular que no puede ser ignorada. Modelando el anillo modular como una red cristalina discreta unidimensional periódica (un toro $\mathbb{T}^1$), el espacio recíproco de momentos $k$ exhibe una estructura de bandas análoga a la física de materia condensada.
+Within the spectrum of sterile channels, the class $r=3$ exerts a singular physical influence that cannot be ignored. Modeling the modular ring as a periodic one-dimensional discrete crystal lattice (a torus $\mathbb{T}^1$), the reciprocal momentum space $k$ exhibits a band structure analogous to condensed matter physics.
 
-El canal $r=3$ opera exactamente en la mitad de la periodicidad del retículo ($M/2 = 6/2 = 3$). En física del estado sólido, este punto define la frontera de la \textbf{Primera Zona de Brillouin} ($k = \pm \pi/a$). Al evaluar la exponencial compleja de transferencia en este atractor:
+The channel $r=3$ operates exactly at half the lattice periodicity ($M/2 = 6/2 = 3$). In solid-state physics, this point defines the boundary of the \textbf{First Brillouin Zone} ($k = \pm \pi/a$). Evaluating the complex transfer exponential at this attractor:
 \begin{equation}
 e^{i3} \approx -0.98999 + 0.14112i \approx -1 = e^{i\pi},
 \end{equation}
-observamos que actúa como una discontinuidad topológica. La transferencia de amplitud desde la clase $1$ a la clase $5 \equiv -1$ implica una inversión del vector de onda a través del origen. Sin embargo, en un retículo discreto, este salto (proceso \textit{Umklapp}) debe cruzar invariablemente la frontera de la zona de Brillouin ($r=3$), inyectando un defecto de fase exacto de $\pi$ radianes. Esta es la primera manifestación física de que la dualidad $\phi_2 = \phi_1 + \pi$ es una exigencia geométrica, no una convención aritmética.
+we observe that it acts as a topological discontinuity. The amplitude transfer from class $1$ to class $5 \equiv -1$ implies an inversion of the wave vector through the origin. However, in a discrete lattice, this jump (an \textit{Umklapp} process) must invariably cross the Brillouin zone boundary ($r=3$), injecting an exact phase defect of $\pi$ radians. This is the primary physical manifestation that the duality $\phi_2 = \phi_1 + \pi$ is a geometric requirement, not an arithmetic convention.
 
-\subsection{Isomorfismo Polifásico con el Procesamiento Cuántico de Señales}
+\subsection{Polyphase Isomorphism with Quantum Signal Processing}
 
-La restricción de la Zona de Brillouin en redes cristalinas es matemáticamente equivalente al Teorema de Muestreo de Nyquist-Shannon en la teoría de la información. Demostramos teóricamente, apoyándonos sólidamente en la equivalencia analítica de dominios establecida para el procesamiento algorítmico \cite{Peinador_Isomorfismo_DSP_2025}, que la descomposición topológica modular del espacio continuo de Hilbert es analíticamente isomórfica a la \textbf{descomposición polifase} ortogonal empleada en bancos de filtros digitales orientados a la reconstrucción perfecta.
+The Brillouin Zone restriction in crystal lattices is mathematically equivalent to the Nyquist-Shannon Sampling Theorem in information theory. We theoretically demonstrate, solidly relying on the analytic domain equivalence established for algorithmic processing \cite{Peinador_Isomorfismo_DSP_2025}, that the modular topological decomposition of the continuous Hilbert space is analytically isomorphic to the orthogonal \textbf{polyphase decomposition} employed in digital filter banks geared towards perfect reconstruction.
 
-\begin{teorema}[Isomorfismo Polifase de Superselección]
-Sea un vector de estado cuántico $|\psi\rangle = \sum_{x=0}^{\infty} c_x |x\rangle$. La proyección ortogonal del estado sobre las $M=6$ clases de congruencia,
+\begin{theorem}[Polyphase Superselection Isomorphism]
+Let $|\psi\rangle = \sum_{x=0}^{\infty} c_x |x\rangle$ be a quantum state vector. The orthogonal projection of the state onto the $M=6$ congruence classes,
 \begin{equation}
 |\psi_r\rangle = \sum_{k=0}^{\infty} c_{Mk + r} |Mk+r\rangle, \qquad r \in \{0,\dots,5\},
 \end{equation}
-es analíticamente isomorfa a la descomposición polifase de una señal discreta en el dominio de la transformada $\mathcal{Z}$. La reconstrucción unitaria del estado requiere la síntesis:
+is analytically isomorphic to the polyphase decomposition of a discrete signal in the $\mathcal{Z}$-transform domain. The unitary reconstruction of the state requires the synthesis:
 \begin{equation}
 \mathcal{Z}(|\psi\rangle) = \sum_{r=0}^{M-1} z^{-r} E_r(z^M),
 \end{equation}
-donde las componentes polifase $E_r$ son ortogonales, permitiendo el aislamiento pasivo de $\mathcal{C}_1$ y $\mathcal{C}_5$ sin solapamiento espectral (\textit{zero-leakage}).
-\end{teorema}
+where the polyphase components $E_r$ are orthogonal, enabling the passive isolation of $\mathcal{C}_1$ and $\mathcal{C}_5$ without spectral overlap (\textit{zero-leakage}).
+\end{theorem}
 
-La equivalencia entre dominios se sintetiza en la Tabla \ref{tab:isomorfismo}.
+The equivalence between domains is summarized in Table \ref{tab:isomorfismo}.
 
 \begin{table}[H]
 \centering
-\caption{Isomorfismo Polifásico: Física Cuántica vs. Procesamiento Digital de Señales (DSP)}
+\caption{Polyphase Isomorphism: Quantum Physics vs. Digital Signal Processing (DSP)}
 \label{tab:isomorfismo}
 \begin{tabular}{ll}
 \toprule
-\textbf{Sustrato Modular $\mathbb{Z}/6\mathbb{Z}$} & \textbf{Banco de Filtros DSP ($M=6$)} \\
+\textbf{Modular Substrate $\mathbb{Z}/6\mathbb{Z}$} & \textbf{DSP Filter Bank ($M=6$)} \\
 \midrule
-Índice de base computacional $|x\rangle$ & Tiempo discreto $n$ \\
-Clase de congruencia $r = x \bmod 6$ & Fase de decimación polifásica $r$ \\
-Canales resonantes ($r=1,5$) & Sub-bandas de información de espectro libre \\
-Canales estériles ($r=0,2,3,4$) & Sub-bandas de disipación suprimidas (\textit{stopband}) \\
-Frontera de Brillouin ($r=3$) & Límite de Nyquist (Frecuencia de plegamiento) \\
-Fidelidad unitaria y ortogonalidad & Reconstrucción Perfecta (PR) sin \textit{aliasing} \\
+Computational basis index $|x\rangle$ & Discrete time $n$ \\
+Congruence class $r = x \bmod 6$ & Polyphase decimation phase $r$ \\
+Resonant channels ($r=1,5$) & Free-spectrum information sub-bands \\
+Sterile channels ($r=0,2,3,4$) & Suppressed dissipation sub-bands (\textit{stopband}) \\
+Brillouin boundary ($r=3$) & Nyquist limit (Folding frequency) \\
+Unitary fidelity and orthogonality & Perfect Reconstruction (PR) without \textit{aliasing} \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-Este isomorfismo garantiza tres propiedades fundacionales para el hardware NISQ:
+This isomorphism guarantees three foundational properties for NISQ hardware:
 \begin{enumerate}
-    \item \textbf{Aislamiento Unitario:} Los subespacios de Hilbert asociados a cada canal son ortogonales. La amplitud depositada en los canales estériles puede suprimirse al $0\%$ sin violar la unitariedad global del registro activo.
-    \item \textbf{Decodificación Local:} La independencia de los canales permite que el operador de preparación actúe mediante tensores de baja dimensionalidad.
-    \item \textbf{Desplazamiento de \textit{Gauge}:} La fase cuántica $\phi$ opera de manera isomorfa a un retraso fraccionario en el dominio frecuencial. El cruce del límite de Nyquist exige que el filtro conjugado posea un salto de fase inverso estricto de $\pi$.
+    \item \textbf{Unitary Isolation:} The Hilbert subspaces associated with each channel are orthogonal. The amplitude deposited in sterile channels can be suppressed to $0\%$ without violating the global unitarity of the active register.
+    \item \textbf{Local Decoding:} The independence of the channels allows the preparation operator to act via low-dimensional tensors.
+    \item \textbf{Gauge Shift:} The quantum phase $\phi$ operates isomorphically to a fractional delay in the frequency domain. Crossing the Nyquist limit mandates that the conjugate filter possess a strict inverse phase jump of $\pi$.
 \end{enumerate}
 
-\section{El Origen de $\phi_2 = \pi$: Anomalía Quiral y el Lema Puente Holográfico}
+\section{The Origin of $\phi_2 = \pi$: Chiral Anomaly and the Holographic Bridge Lemma}
 \label{sec:origen_pi}
 
-Una evaluación superficial de la dualidad geométrica sugeriría que la fase óptima para el canal conjugado, $\phi_2 = \pi$, emerge como una mera convención trigonométrica de inversión ($\sin(\theta+\pi) = -\sin\theta$). Sin embargo, la inyección previa de la fase termodinámica $\phi_1 \neq 0$ rompe la simetría perfecta del anillo modular, induciendo una \textbf{anomalía quiral} que amenazaría con destruir la unitariedad global del operador de preparación. En esta sección demostramos que la constante $\pi$ actúa como un operador \textit{gauge} no conmutativo que restaura la isometría mediante una holonomía de Berry, justificando su magnitud exacta a través del Principio Holográfico y la regularización del vacío escalar.
+A superficial evaluation of the geometric duality would suggest that the optimal phase for the conjugate channel, $\phi_2 = \pi$, emerges as a mere trigonometric convention of inversion ($\sin(\theta+\pi) = -\sin\theta$). However, the prior injection of the thermodynamic phase $\phi_1 \neq 0$ breaks the perfect symmetry of the modular ring, inducing a \textbf{chiral anomaly} that would threaten to destroy the global unitarity of the preparation operator. In this section, we demonstrate that the constant $\pi$ acts as a non-commutative \textit{gauge} operator that restores isometry via a Berry holonomy, justifying its exact magnitude through the Holographic Principle and scalar vacuum regularization.
 
-\subsection{Formalización Dinámica de la Conexión de Berry}
+\subsection{Dynamic Formalization of the Berry Connection}
 \label{subsec:berry_formalism}
 
-La resolución de la anomalía quiral en el sustrato modular descansa sobre la introducción de un campo compensatorio dinámico. La aseveración topológica exige que una fase geométrica, $\Omega_{\text{Berry}}(x)$, compense exactamente el defecto no unitario inducido por la impedancia térmica del vacío ($R_{\text{fund}}$).
+The resolution of the chiral anomaly in the modular substrate rests upon the introduction of a compensatory dynamic field. The topological assertion demands that a geometric phase, $\Omega_{\text{Berry}}(x)$, exactly compensates for the non-unitary defect induced by the thermal impedance of the vacuum ($R_{\text{fund}}$).
 
-Modelamos la variedad base discreta como el toro unidimensional $\mathbb{T}^1$, parametrizado continuamente en la envolvente analítica por el ángulo modular continuo $\theta \in [0, 2\pi)$. 
+We model the discrete base manifold as the one-dimensional torus $\mathbb{T}^1$, continuously parameterized in the analytic envelope by the continuous modular angle $\theta \in [0, 2\pi)$. 
 
-\begin{lema}[Holonomía Cuántica en el Anillo Modular]
-El transporte paralelo del vector de estado sobre la métrica discreta impuesta por el isomorfismo de $\mathbb{Z}/6\mathbb{Z}$ induce intrínsecamente una fase geométrica de Berry, $\Omega_{\text{Berry}}$, que es matemáticamente equivalente en magnitud, pero de signo dinámicamente opuesto, al desplazamiento introducido por la perturbación de la fase termodinámica $\phi_1$.
-\end{lema}
+\begin{lemma}[Quantum Holonomy in the Modular Ring]
+The parallel transport of the state vector over the discrete metric imposed by the isomorphism of $\mathbb{Z}/6\mathbb{Z}$ intrinsically induces a geometric Berry phase, $\Omega_{\text{Berry}}$, which is mathematically equivalent in magnitude, but dynamically opposite in sign, to the shift introduced by the perturbation of the thermodynamic phase $\phi_1$.
+\end{lemma}
 
 \begin{proof}
-Consideremos la conexión de Berry $A = i \langle \psi(\lambda) | \nabla_\lambda | \psi(\lambda) \rangle$ sobre el espacio de parámetros del Hamiltoniano efectivo del sustrato \cite{Berry1984}, cuya curvatura describe el orden topológico subyacente \cite{Wen1990}. Al evaluar el argumento efectivo final del canal conjugado $\mathcal{C}_5$, el transporte del estado a lo largo de la zona de Brillouin integra una curvatura topológica que cancela exactamente la perturbación introducida por $\phi_1$. Consecuentemente, la interferencia geométrica colapsa, garantizando una unitariedad espectral libre de anomalías por fuga, y preservando estrictamente el aislamiento estructural del Subespacio Libre de Decoherencia (DFS).
+Consider the Berry connection $A = i \langle \psi(\lambda) | \nabla_\lambda | \psi(\lambda) \rangle$ over the parameter space of the effective Hamiltonian of the substrate \cite{Berry1984}, whose curvature describes the underlying topological order \cite{Wen1990}. Upon evaluating the final effective argument of the conjugate channel $\mathcal{C}_5$, the transport of the state along the Brillouin zone integrates a topological curvature that exactly cancels the perturbation introduced by $\phi_1$. Consequently, geometric interference collapses, guaranteeing a spectral unitarity free of leakage anomalies, and strictly preserving the structural isolation of the Decoherence-Free Subspace (DFS).
 \end{proof}
 
-\subsection{Simetría Discreta y Ley de Conservación de la Paridad Modular}
+\subsection{Discrete Symmetry and the Law of Conservation of Modular Parity}
 \label{subsec:simetria_inversion}
 
-La relación empírica $\phi_2 = \phi_1 + \pi$ observada en la optimización termodinámica de los canales $\mathcal{C}_1$ y $\mathcal{C}_5$ trasciende la mera coincidencia numérica para erigirse como la manifestación analítica de una simetría discreta fundamental del sustrato $\mathbb{Z}/6\mathbb{Z}$. En esta sección demostramos formalmente que la rotación de $\pi$ radianes constituye una \textbf{simetría de inversión quiral} que impone una ley de conservación estricta sobre la \textit{paridad modular} del sistema. Este principio algebraico es el que garantiza la optimalidad absoluta de la estrategia adaptativa (\textit{zero-leakage}) descrita en el Algoritmo \ref{alg:estrategia} (cuyos principios operativos se detallarán en la Sección \ref{subsec:estrategia_adaptativa}).
+The empirical relationship $\phi_2 = \phi_1 + \pi$ observed in the thermodynamic optimization of the channels $\mathcal{C}_1$ and $\mathcal{C}_5$ transcends mere numerical coincidence to emerge as the analytic manifestation of a fundamental discrete symmetry of the $\mathbb{Z}/6\mathbb{Z}$ substrate. In this section, we formally demonstrate that the rotation by $\pi$ radians constitutes a \textbf{chiral inversion symmetry} that imposes a strict conservation law on the \textit{modular parity} of the system. This algebraic principle is what guarantees the absolute optimality of the adaptive strategy (\textit{zero-leakage}) described in Algorithm \ref{alg:estrategia} (whose operational principles will be detailed in Section \ref{subsec:estrategia_adaptativa}).
 
-\subsubsection*{Formulación de la invariancia global}
+\subsubsection*{Formalization of Global Invariance}
 
-Consideremos la función de partición total del subespacio resonante,
+Consider the total partition function of the resonant subspace,
 \begin{equation}
 Z(\phi) = \sum_{x \in \mathcal{C}_1 \cup \mathcal{C}_5} \exp\left[A \sin\left(\frac{2\pi x}{6} + \phi\right)\right],
 \end{equation}
-donde las clases topológicas son $\mathcal{C}_1 = \{x \equiv 1 \pmod{6}\}$ y $\mathcal{C}_5 = \{x \equiv 5 \pmod{6}\}$. Definimos la transformación de fase $T: \phi \mapsto \phi + \pi$. Utilizando la identidad trigonométrica $\sin(\theta+\pi) = -\sin(\theta)$ y la biyección natural de paridad inversa entre las clases de congruencia $x \leftrightarrow 6-x$. Puesto que para todo $x \in \mathcal{C}_1$ se tiene rígidamente que $6-x \in \mathcal{C}_5$, esta transformación intercambia estrictamente ambos canales e induce la relación $\sin(2\pi(6-x)/6) = -\sin(2\pi x/6)$. Aplicando esta propiedad, se verifica analíticamente que la suma sobre todo el subespacio permanece inalterada:
+where the topological classes are $\mathcal{C}_1 = \{x \equiv 1 \pmod{6}\}$ and $\mathcal{C}_5 = \{x \equiv 5 \pmod{6}\}$. We define the phase transformation $T: \phi \mapsto \phi + \pi$. Utilizing the trigonometric identity $\sin(\theta+\pi) = -\sin(\theta)$ and the natural bijection of inverse parity between the congruence classes $x \leftrightarrow 6-x$. Since for all $x \in \mathcal{C}_1$ it rigidly holds that $6-x \in \mathcal{C}_5$, this transformation strictly interchanges both channels and induces the relation $\sin(2\pi(6-x)/6) = -\sin(2\pi x/6)$. Applying this property, it is analytically verified that the sum over the entire subspace remains unaltered:
 \begin{equation}
 Z(\phi + \pi) = Z(\phi).
 \label{eq:periodicidad_Z}
 \end{equation}
-La función de partición total es, por tanto, invariante bajo traslaciones de período $\pi$. En consecuencia, la probabilidad condicional de proyectar el estado en el canal $\mathcal{C}_1$, dada por
+The total partition function is, therefore, invariant under translations of period $\pi$. Consequently, the conditional probability of projecting the state onto the channel $\mathcal{C}_1$, given by
 \begin{equation}
 P_1(\phi) = \frac{1}{Z(\phi)}\sum_{x\in\mathcal{C}_1} e^{A\sin(2\pi x/6 + \phi)},
 \end{equation}
-satisface la relación de dualidad exacta respecto a la probabilidad del canal conjugado:
+satisfies the exact duality relation with respect to the probability of the conjugate channel:
 \begin{equation}
 P_1(\phi) = P_5(\phi+\pi).
 \label{eq:dualidad_prob}
 \end{equation}
 
-\subsubsection*{Deducción rigurosa de las fases óptimas}
+\subsubsection*{Rigorous Deduction of the Optimal Phases}
 
-Sea $\phi_1$ el desplazamiento \textit{gauge} que maximiza $P_1(\phi)$ contrarrestando la impedancia informacional del vacío ($R_{\text{fund}}$). De la ecuación \eqref{eq:dualidad_prob} se deduce inexorablemente que:
+Let $\phi_1$ be the \textit{gauge} shift that maximizes $P_1(\phi)$ by counteracting the informational impedance of the vacuum ($R_{\text{fund}}$). From equation \eqref{eq:dualidad_prob}, it inexorably follows that:
 \begin{equation}
 P_5(\phi_1+\pi) = P_1(\phi_1) = \max_{\phi} P_1(\phi).
 \end{equation}
-Puesto que el mapeo topológico exige que el rango de $P_1$ sea isométrico al rango de $P_5$, la cantidad $P_5(\phi_1+\pi)$ representa el máximo global accesible para $P_5$. Por lo tanto, el maximizador del canal conjugado es rígidamente $\phi_2 = \phi_1 + \pi$. Asumiendo unicidad en la variedad $[0, 2\pi)$, obtenemos la identidad estructural:
+Since the topological mapping requires the range of $P_1$ to be isometric to the range of $P_5$, the quantity $P_5(\phi_1+\pi)$ represents the global accessible maximum for $P_5$. Therefore, the maximizer of the conjugate channel is rigidly $\phi_2 = \phi_1 + \pi$. Assuming uniqueness on the manifold $[0, 2\pi)$, we obtain the structural identity:
 \begin{equation}
 \phi_2 \equiv \phi_1 + \pi \pmod{2\pi}.
 \label{eq:relacion_fases}
 \end{equation}
-Es imperativo notar que esta derivación es absolutamente ortogonal al valor del parámetro de acoplamiento térmico $A$; surge de manera intrínseca de la topología bipartita del grupo de unidades $(\mathbb{Z}/6\mathbb{Z})^{\times}$.
+It is imperative to note that this derivation is absolutely orthogonal to the value of the thermal coupling parameter $A$; it arises intrinsically from the bipartite topology of the unit group $(\mathbb{Z}/6\mathbb{Z})^{\times}$.
 
-\subsubsection*{El Operador de Paridad Modular ($\hat{P}$)}
+\subsubsection*{The Modular Parity Operator ($\hat{P}$)}
 
-Para traducir esta invariancia geométrica al lenguaje de la mecánica cuántica, reescribimos la base computacional estándar $|x\rangle$ parametrizando los autoestados del registro de búsqueda de forma equivalente como $|k, r\rangle$, donde el índice computacional es $x = 6k + r$, con $k \in \mathbb{N}$ y $r \in \{1, 5\}$. Definimos el \textbf{operador unitario de paridad modular} $\hat{P}$ actuando exclusivamente sobre el grado de libertad interno (quiral) del sustrato:
+To translate this geometric invariance into the language of quantum mechanics, we rewrite the standard computational basis $|x\rangle$ by equivalently parameterizing the eigenstates of the search register as $|k, r\rangle$, where the computational index is $x = 6k + r$, with $k \in \mathbb{N}$ and $r \in \{1, 5\}$. We define the \textbf{unitary modular parity operator} $\hat{P}$ acting exclusively on the internal (chiral) degree of freedom of the substrate:
 \begin{equation}
 \hat{P} |k, r\rangle = |k, 6-r\rangle.
 \end{equation}
-Por construcción, este operador permuta los sectores resonantes y satisface la involución $\hat{P}^2 = \mathbb{I}$, generando una representación del grupo discreto $\mathbb{Z}_2$. 
+By construction, this operator permutes the resonant sectors and satisfies the involution $\hat{P}^2 = \mathbb{I}$, generating a representation of the discrete group $\mathbb{Z}_2$. 
 
-En la formulación estándar de la mecánica cuántica, mientras que las simetrías continuas dictan leyes de conservación aditivas, las simetrías discretas imponen leyes de conservación multiplicativas. Dado que la máscara modular de inicialización es topológicamente simétrica respecto al intercambio de los canales $\mathcal{C}_1$ y $\mathcal{C}_5$, el Hamiltoniano de preparación conmuta con el operador $\hat{P}$. En consecuencia, el valor esperado $\langle \hat{P} \rangle$ emerge como una cantidad estrictamente conservada: el \textbf{invariante de paridad modular}.
+In the standard formulation of quantum mechanics, whereas continuous symmetries dictate additive conservation laws, discrete symmetries impose multiplicative conservation laws. Given that the modular initialization mask is topologically symmetric with respect to the exchange of channels $\mathcal{C}_1$ and $\mathcal{C}_5$, the preparation Hamiltonian commutes with the operator $\hat{P}$. Consequently, the expectation value $\langle \hat{P} \rangle$ emerges as a strictly conserved quantity: the \textbf{modular parity invariant}.
 
-\subsubsection*{Garantía de Optimalidad Algorítmica}
+\subsubsection*{Guarantee of Algorithmic Optimality}
 
-La existencia de esta ley de conservación multiplicativa es el pilar que fundamenta la viabilidad de la Estrategia Adaptativa a escala macroscópica (Sección \ref{subsec:estrategia_adaptativa}). Al transicionar de la Fase 1 a la Fase 2 del algoritmo de búsqueda, la inyección de la compuerta de fase global $\Delta\phi = \pi$ actúa como una transformación holonómica exacta que invierte la quiralidad del estado ($\mathcal{C}_1 \to \mathcal{C}_5$) sin alterar la función de partición $Z(\phi)$. 
+The existence of this multiplicative conservation law is the pillar that substantiates the viability of the Adaptive Strategy at a macroscopic scale (Section \ref{subsec:estrategia_adaptativa}). Upon transitioning from Phase 1 to Phase 2 of the search algorithm, the injection of the global phase gate $\Delta\phi = \pi$ acts as an exact holonomic transformation that inverts the chirality of the state ($\mathcal{C}_1 \to \mathcal{C}_5$) without altering the partition function $Z(\phi)$. 
 
-La conservación del invariante $\langle \hat{P} \rangle$ asegura matemáticamente que la probabilidad de éxito (fidelidad del estado) no sufra ninguna degradación entrópica ni dispersión hacia los canales estériles durante la conmutación ortogonal. La dualidad geométrica se sostiene incondicionalmente, validando que el \textit{speedup} algorítmico derivado de la reducción del espacio de Hilbert es inherentemente resiliente a la escala del criptograma.
+The conservation of the invariant $\langle \hat{P} \rangle$ mathematically ensures that the success probability (state fidelity) suffers neither entropic degradation nor leakage into the sterile channels during the orthogonal commutation. The geometric duality holds unconditionally, validating that the algorithmic speedup derived from the Hilbert space reduction is inherently resilient to the scale of the cryptogram.
 
-\subsection{Lema Puente: Correspondencia Holográfica y Pseudo-Entropía Modular}
+\subsection{Bridge Lemma: Holographic Correspondence and Modular Pseudo-Entropy}
 \label{subsec:lema_puente}
 
-Para justificar analíticamente por qué la restitución de esta fase asume invariablemente un residuo global de valor $\pi$, recurrimos a los principios de la entropía de entrelazamiento topológico formulados por Kitaev y Preskill \cite{Kitaev2006}, extendiéndolos hacia el marco de la \textbf{pseudo-entropía} en holografía no hermítica.
+To analytically justify why the restitution of this phase invariably assumes a global residue of value $\pi$, we resort to the principles of topological entanglement entropy formulated by Kitaev and Preskill \cite{Kitaev2006}, extending them into the framework of \textbf{pseudo-entropy} in non-Hermitian holography.
 
-Consideremos que el anillo modular opera como una variedad unidimensional finita con frontera. La entropía de entrelazamiento de von Neumann convencional, $S_A$, de un subsistema computacional $A$ acoplado a un volumen (\textit{bulk}) inobservable, obedece rígidamente a una ley de área sujeta a una corrección topológica invariante:
+Consider that the modular ring operates as a finite one-dimensional manifold with a boundary. The conventional von Neumann entanglement entropy, $S_A$, of a computational subsystem $A$ coupled to an unobservable bulk rigidly obeys an area law subject to an invariant topological correction:
 \begin{equation}
     S_A = \alpha |\partial A| - \gamma
 \end{equation}
-En esta formulación, el término dominante $\alpha |\partial A|$ encapsula la entropía de Shannon estrictamente local del registro de frontera (saturando en el límite de Landauer, $\ln 2$) \cite{Landauer1961}. El parámetro subdominante $\gamma$ representa la constante topológica propia del volumen.
+In this formulation, the dominant term $\alpha |\partial A|$ encapsulates the strictly local Shannon entropy of the boundary register (saturating at the Landauer limit, $\ln 2$) \cite{Landauer1961}. The subdominant parameter $\gamma$ represents the topological constant intrinsic to the bulk.
 
-Extrapolando este balance al dominio analítico complejo mediante la función Zeta de Riemann, la regularización del espectro de fluctuaciones del vacío escalar arroja un valor en el origen de $\zeta(0) = -1/2$. Evaluar analíticamente la acción efectiva compleja de esta divergencia topológica regularizada emanada del espectro de fluctuaciones del vacío escalar aritmético \cite{Peinador_Vacuum_Alpha_2025} en el plano métrico complejo genera intrínsecamente una métrica análoga a una pseudo-entropía modular:
+Extrapolating this balance to the complex analytic domain via the Riemann Zeta function, the regularization of the scalar vacuum fluctuation spectrum yields a value at the origin of $\zeta(0) = -1/2$. Analytically evaluating the complex effective action of this regularized topological divergence, emanating from the fluctuation spectrum of the arithmetic scalar vacuum \cite{Peinador_Vacuum_Alpha_2025}, in the complex metric plane intrinsically generates a metric analogous to a modular pseudo-entropy:
 \begin{equation}
     \text{Log}(\zeta(0)) = \ln\left|-\frac{1}{2}\right| + i\pi = -\ln 2 + i\pi.
 \end{equation}
 
-\begin{teorema}[Homología de la Fase $\pi$ y Pseudo-Entropía]
-La fase puramente imaginaria $i\pi$ emerge como el residuo topológico holonómico requerido para equilibrar la métrica de información entre la frontera observable (hardware) y el vacío analítico subyacente.
-\end{teorema}
+\begin{theorem}[Homology of the $\pi$ Phase and Pseudo-Entropy]
+The purely imaginary phase $i\pi$ emerges as the holonomic topological residue required to balance the information metric between the observable boundary (hardware) and the underlying analytic vacuum.
+\end{theorem}
 \begin{proof}
-Al formular el balance de la acción efectiva compleja ($\mathcal{S}_{\text{eff}}$) entre la frontera y el volumen, observamos una homología descriptiva exacta. La componente real de la dispersión de volumen ($-\ln 2$) cancela exactamente el límite de Landauer de la frontera ($\ln 2$):
+Formulating the balance of the complex effective action ($\mathcal{S}_{\text{eff}}$) between the boundary and the bulk reveals an exact descriptive homology. The real component of the bulk dispersion ($-\ln 2$) exactly cancels the Landauer limit of the boundary ($\ln 2$):
 \begin{equation}
     \mathcal{S}_{\text{eff}} = \ln 2 + \text{Log}(\zeta(0)) = \ln 2 - \ln 2 + i\pi = i\pi.
 \end{equation}
-En este marco extendido, la magnitud $i\pi$ no representa un déficit de información observable (que violaría la hermiticidad de la entropía de von Neumann), sino un \textit{quantum} de fase geométrica. Constituye la penalización de \textit{gauge} estricta para garantizar que el mapeo topológico del sustrato conserve la unitariedad global.
+In this extended framework, the magnitude $i\pi$ does not represent an observable information deficit (which would violate the Hermiticity of the von Neumann entropy), but rather a \textit{quantum} of geometric phase. It constitutes the strict \textit{gauge} penalty to guarantee that the topological mapping of the substrate conserves global unitarity.
 \end{proof}
 
-\subsection{Consistencia Algebraica: El Isomorfismo del Grupo de Unidades}
+\subsection{Algebraic Consistency: The Unit Group Isomorphism}
 \label{subsec:isomorfismo_unidades}
 
-Esta fundamentación holográfica y geométrica encuentra su correspondencia exacta y elegante en la teoría de grupos finitos, garantizando la consistencia interna de la teoría en el límite algebraico puro.
+This holographic and geometric foundation finds its exact and elegant correspondence in finite group theory, guaranteeing the internal consistency of the theory in the pure algebraic limit.
 
-El conjunto de elementos generadores de $\mathbb{Z}/6\mathbb{Z}$ es el grupo de unidades $G = (\mathbb{Z}/6\mathbb{Z})^{\times} = \{1,5\}$, el cual es un grupo abeliano de orden 2, isomorfo a $\mathbb{Z}/2\mathbb{Z}$. Este grupo admite exactamente dos representaciones unidimensionales (caracteres de Dirichlet) sobre el cuerpo de los complejos: el carácter principal $\chi_1(g) = 1$ y el carácter no trivial $\chi_5(g) = (-1)^g$, entendiendo que $(-1)^5 = -1 = e^{i\pi}$.
+The set of generator elements of $\mathbb{Z}/6\mathbb{Z}$ is the unit group $G = (\mathbb{Z}/6\mathbb{Z})^{\times} = \{1,5\}$, which is an Abelian group of order 2, isomorphic to $\mathbb{Z}/2\mathbb{Z}$. This group admits exactly two one-dimensional representations (Dirichlet characters) over the complex field: the principal character $\chi_1(g) = 1$ and the non-trivial character $\chi_5(g) = (-1)^g$, understanding that $(-1)^5 = -1 = e^{i\pi}$.
 
-La fase $\pi$ emerge, en este contexto, como el \textbf{argumento del carácter de Dirichlet no trivial} evaluado en el generador inverso. La convergencia perfecta entre la termodinámica holográfica ($S_{\text{total}} = i\pi$) y el álgebra de caracteres modulares ($\chi_5(5) = e^{i\pi}$) confirma que el operador de inicialización topológica $\mathbb{Z}/6\mathbb{Z}$ respeta rigurosamente las leyes de conservación estructural a todas las escalas analíticas.
+The phase $\pi$ emerges, in this context, as the \textbf{argument of the non-trivial Dirichlet character} evaluated at the inverse generator. The perfect convergence between holographic thermodynamics ($S_{\text{total}} = i\pi$) and the algebra of modular characters ($\chi_5(5) = e^{i\pi}$) confirms that the $\mathbb{Z}/6\mathbb{Z}$ topological initialization operator rigorously respects structural conservation laws across all analytic scales.
 
-\section{El Origen de $\phi_1$: Evidencia Empírica y Derivación Analítica vía Grupo de Renormalización}
+\section{The Origin of $\phi_1$: Empirical Evidence and Analytic Derivation via the Renormalization Group}
 \label{sec:origen_phi1}
 
-Mientras que la fase $\phi_2 = \pi$ está dictada axiomáticamente por la simetría de grupo y la holografía del vacío escalar, la fase óptima para la clase $1 \pmod 6$, observada empíricamente en $\phi_1 \approx 0.0105$ rad, constituye una ruptura de la simetría perfecta. En esta sección, presentamos evidencia numérica de alta precisión que vincula esta desviación con la termodinámica de la información cuántica, y proponemos un marco teórico formal basado en la impedancia del vacío y el Grupo de Renormalización.
+While the phase $\phi_2 = \pi$ is axiomatically dictated by group symmetry and scalar vacuum holography, the optimal phase for the class $1 \pmod 6$, empirically observed at $\phi_1 \approx 0.0105$ rad, constitutes a breaking of perfect symmetry. In this section, we present high-precision numerical evidence linking this deviation to the thermodynamics of quantum information, and we propose a formal theoretical framework based on vacuum impedance and the Renormalization Group.
 
-\subsection{El Problema de la Asimetría: Conflicto Binario-Ternario}
+\subsection{The Asymmetry Problem: Binary-Ternary Conflict}
 
-La simetría geométrica perfecta entre las clases $1$ y $5$ se rompe en la práctica debido a una incompatibilidad de representación estructural. El grupo $\mathbb{Z}/6\mathbb{Z}$ es isomorfo al producto directo $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z}$, lo que refleja la coexistencia de dos arquitecturas informacionales en tensión:
+The perfect geometric symmetry between classes $1$ and $5$ is broken in practice due to a structural representation incompatibility. The group $\mathbb{Z}/6\mathbb{Z}$ is isomorphic to the direct product $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z}$, reflecting the coexistence of two informational architectures in tension:
 \begin{itemize}
-    \item La componente $\mathbb{Z}/2\mathbb{Z}$ se asocia a la información binaria, propia de la codificación en qubits y de la frontera holográfica de los dispositivos NISQ.
-    \item La componente $\mathbb{Z}/3\mathbb{Z}$ se asocia a la información ternaria, que maximiza la densidad de empaquetamiento analítico en el volumen continuo (\textit{bulk}).
+    \item The $\mathbb{Z}/2\mathbb{Z}$ component is associated with binary information, characteristic of qubit encoding and the holographic boundary of NISQ devices.
+    \item The $\mathbb{Z}/3\mathbb{Z}$ component is associated with ternary information, which maximizes the analytic packing density in the continuous bulk.
 \end{itemize}
-La compleja traducción topológica obligatoria que ocurre entre estas dos bases fundamentales de representación impone invariablemente una severa fricción entrópica sistémica, definida formalmente en la literatura como la \textbf{impedancia informacional del vacío} \cite{Peinador_Genesis_e_2025}, en estricta y absoluta concordancia con los rigurosos límites termodinámicos impuestos por el principio de Landauer extendido \cite{Landauer1961}:
+The mandatory complex topological translation occurring between these two fundamental representation bases invariably imposes a severe systemic entropic friction, formally defined in the literature as the \textbf{informational impedance of the vacuum} \cite{Peinador_Genesis_e_2025}, in strict and absolute accordance with the rigorous thermodynamic bounds imposed by the extended Landauer principle \cite{Landauer1961}:
 \begin{equation}
 R_{\text{fund}} = \frac{1}{6\log_2 3} = \frac{\ln 2}{6\ln 3} \approx 0.1051549589.
 \label{eq:rfund}
 \end{equation}
-Postulamos que la asimetría $\phi_1$ requerida para aislar la amplitud cuántica es la manifestación física de este coste de traducción termodinámica.
+We postulate that the asymmetry $\phi_1$ required to isolate the quantum amplitude is the physical manifestation of this thermodynamic translation cost.
 
-\subsection{Resultados Empíricos y la Relación $\phi_1 \approx R_{\text{fund}}/10$}
+\subsection{Empirical Results and the Relation $\phi_1 \approx R_{\text{fund}}/10$}
 
-Para determinar el valor exacto de $\phi_1$ que maximiza la fidelidad del colapso en el subespacio $\mathcal{C}_1$, se ejecutaron simulaciones masivas de \textit{statevector} acopladas a algoritmos de optimización no lineal sobre la función de amplitud espectral \eqref{eq:amplitud}. 
+To determine the exact value of $\phi_1$ that maximizes the fidelity of the collapse into the subspace $\mathcal{C}_1$, massive statevector simulations coupled to non-linear optimization algorithms were executed over the spectral amplitude function \eqref{eq:amplitud}. 
 
-Fijando el parámetro de ganancia en $A = 5.0$ (el umbral que empíricamente satura el aislamiento topológico antes de inducir fugas iterativas), el óptimo analítico converge implacablemente a:
+Fixing the gain parameter at $A = 5.0$ (the threshold that empirically saturates the topological isolation before inducing iterative leakages), the analytic optimum converges relentlessly to:
 \begin{equation}
 \phi_1^{\text{exp}} = 0.010507 \text{ rad}.
 \end{equation}
-Este resultado arroja una correspondencia fenomenológica extraordinaria con la impedancia informacional del sistema, escalada por una década exacta:
+This result yields an extraordinary phenomenological correspondence with the informational impedance of the system, scaled by an exact decade:
 \begin{equation}
 \frac{R_{\text{fund}}}{10} \approx 0.0105155 \text{ rad}.
 \end{equation}
-La discrepancia entre la observación puramente empírica de la optimización cuántica y la constante fundamental propuesta es $\Delta\phi \approx 8.5 \times 10^{-6}$ rad, lo que certifica una coincidencia del $\textbf{99.92\%}$. 
+The discrepancy between the purely empirical observation of the quantum optimization and the proposed fundamental constant is $\Delta\phi \approx 8.5 \times 10^{-6}$ rad, certifying a coincidence of $\textbf{99.92\%}$. 
 
-\begin{resultado}[Observación Fenomenológica]
-El parámetro de fase que confina la amplitud cuántica en la clase generadora $1 \pmod 6$ obedece a la métrica $\phi_1 \approx R_{\text{fund}}/10$. Esta extrema precisión sugiere que la fase actúa como un desplazamiento \textit{gauge} necesario para compensar la fricción de Landauer al mapear la topología ternaria del sustrato sobre un hardware físico binario.
-\end{resultado}
+\begin{result}[Phenomenological Observation]
+The phase parameter that confines the quantum amplitude within the generator class $1 \pmod 6$ obeys the metric $\phi_1 \approx R_{\text{fund}}/10$. This extreme precision suggests that the phase acts as a necessary \textit{gauge} shift to compensate for the Landauer friction when mapping the ternary topology of the substrate onto binary physical hardware.
+\end{result}
 
-De este modo, definimos la expresión teórica exacta
+Thus, we define the exact theoretical expression:
 \begin{equation}
 \phi_1^{\text{teo}} = \frac{R_{\text{fund}}}{10} \approx 0.0105155 \text{ rad},
 \label{eq:phi1_teo}
 \end{equation}
-que se corresponde con el atractor termodinámico derivado en la subsección siguiente.
+which corresponds to the thermodynamic attractor derived in the following subsection.
 
-\subsection{Derivación Analítica del Atractor Termodinámico $\phi_1$ vía Flujo RG}
+\subsection{Analytic Derivation of the Thermodynamic Attractor $\phi_1$ via RG Flow}
 \label{sec:derivacion_phi1}
 
-Para derivar analíticamente el factor de escala que ensambla el atractor infrarrojo $\phi_1$, formalizamos el operador de preparación modular como un flujo del Grupo de Renormalización (RG) en una red espacial acotada. Definimos la fase termodinámica como un parámetro de acoplamiento inducido por la impedancia informacional que separa la topología ternaria del volumen continuo y la topología binaria del hardware de frontera. Sea $g = A^{-1}$ el parámetro de temperatura efectiva acoplado a la fase de dispersión. 
+To analytically derive the scaling factor that sets the infrared attractor $\phi_1$, we formalize the modular preparation operator as a Renormalization Group (RG) flow on a bounded spatial lattice. We define the thermodynamic phase as a coupling parameter induced by the informational impedance separating the ternary topology of the continuous bulk and the binary topology of the boundary hardware. Let $g = A^{-1}$ be the effective temperature parameter coupled to the dispersion phase. 
 
-La dinámica asintótica del operador de preparación modular puede ser descrita de manera rigurosa mediante la función beta de Callan-Symanzik \cite{Callan1970}, la cual rige la evolución de la escala de acoplamiento asimétrico $g$ frente a variaciones en la escala de momento $\mu$ de la red tensorial:
+The asymptotic dynamics of the modular preparation operator can be rigorously described by the Callan-Symanzik beta function \cite{Callan1970}, which governs the evolution of the asymmetric coupling scale $g$ against variations in the momentum scale $\mu$ of the tensor network:
 \begin{equation}
 \beta(g) = \mu \frac{\partial g}{\partial \mu} = -\epsilon g + \gamma_{\mathbb{Q}(\zeta_6)} g^2 + \mathcal{O}(g^3)
 \label{eq:beta_function}
 \end{equation}
-donde $\epsilon$ representa la dimensión anómala del acoplamiento (absorbida en nuestro régimen de regularización infrarroja). El coeficiente asintótico de dispersión, $\gamma_{\mathbb{Q}(\zeta_6)}$, se identifica estrictamente con la invariante de Euler-Kronecker asociada al cuerpo ciclotómico $\mathbb{Q}(\zeta_6)$ \cite{Ihara2006}. Esta constante topológica encapsula la dispersión de las fluctuaciones espectrales en progresiones aritméticas y se extrae formalmente del término constante de la expansión de Laurent de la derivada logarítmica de la función zeta de Dedekind $\zeta_K(s)$ en el polo $s=1$:
+where $\epsilon$ represents the anomalous dimension of the coupling (absorbed in our infrared regularization regime). The asymptotic dispersion coefficient, $\gamma_{\mathbb{Q}(\zeta_6)}$, is strictly identified with the Euler-Kronecker invariant associated with the cyclotomic field $\mathbb{Q}(\zeta_6)$ \cite{Ihara2006}. This topological constant encapsulates the dispersion of spectral fluctuations in arithmetic progressions and is formally extracted from the constant term of the Laurent expansion of the logarithmic derivative of the Dedekind zeta function $\zeta_K(s)$ at the pole $s=1$:
 \begin{equation}
 \gamma_{\mathbb{Q}(\zeta_6)} = \lim_{s\to 1^+} \left( \frac{\zeta_{\mathbb{Q}(\zeta_6)}'(s)}{\zeta_{\mathbb{Q}(\zeta_6)}(s)} + \frac{1}{s-1} \right).
 \end{equation}
 
-Exigiendo la condición de invariancia de escala en el punto fijo infrarrojo de la trayectoria de renormalización (donde $\beta(g_c) = 0$), el parámetro de asimetría de fase se constriñe por el colapso dimensional del espacio de Hilbert estéril. Al proyectar la matriz de superselección topológica sobre los grados de libertad locales del autómata finito determinista (DFA), el isomorfismo estructural $\mathbb{Z}/6\mathbb{Z} \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z}$ impone un emparejamiento estricto. Las $2$ subredes de la paridad quiral (generadores del grupo de unidades $\mathcal{C}_1$ y $\mathcal{C}_5$) se acoplan con las $5$ transiciones de estado no triviales necesarias para aislar disipativamente a los divisores de cero. En consecuencia, el volumen de fases asintótico experimenta un colapso topológico determinista hacia un colector hiperdimensional de dimensión $d = 2 \times 5 = 10$.
+By imposing the scale invariance condition at the infrared fixed point of the renormalization trajectory (where $\beta(g_c) = 0$), the phase asymmetry parameter becomes constrained by the dimensional collapse of the sterile Hilbert space. Projecting the topological superselection matrix onto the local degrees of freedom of the deterministic finite automaton (DFA), the structural isomorphism $\mathbb{Z}/6\mathbb{Z} \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z}$ imposes a strict pairing. The $2$ sublattices of chiral parity (generators of the unit group $\mathcal{C}_1$ and $\mathcal{C}_5$) couple with the $5$ non-trivial state transitions necessary to dissipatively isolate the zero divisors. Consequently, the asymptotic phase volume undergoes a deterministic topological collapse onto a hyperdimensional manifold of dimension $d = 2 \times 5 = 10$.
 
-\footnote{La factorización $d = 2 \times 5$ se corresponde con el producto del número de subredes de paridad quiral (los dos generadores del grupo de unidades $\mathcal{C}_1$ y $\mathcal{C}_5$) y el número de transiciones no triviales del autómata finito determinista que aíslan los divisores de cero en $\mathbb{Z}/6\mathbb{Z}$. Esta dimensión efectiva emerge de la teoría de representaciones del grupo $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z}$ en la red tensorial unidimensional.}
+\footnote{The factorization $d = 2 \times 5$ corresponds to the product of the number of chiral parity sublattices (the two generators of the unit group $\mathcal{C}_1$ and $\mathcal{C}_5$) and the number of non-trivial transitions of the deterministic finite automaton that isolate the zero divisors in $\mathbb{Z}/6\mathbb{Z}$. This effective dimension emerges from the representation theory of the group $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z}$ on the one-dimensional tensor network.}
 
-Al integrar el desplazamiento asimétrico de fase $\phi$ a lo largo del flujo de la divergencia del vacío escalar regulado, este prefactor geométrico absorbe integralmente la carga entrópica de la transformación, derivando en un escalar analítico puro dictado desde los primeros principios:
+By integrating the asymmetric phase shift $\phi$ along the flow of the regularized scalar vacuum divergence, this geometric prefactor integrally absorbs the entropic load of the transformation, yielding a pure analytic scalar dictated from first principles:
 \begin{equation}
 \phi_1 = \int_{g_0}^{g_c} \frac{\partial \phi}{\partial g} dg \equiv \frac{1}{d} \left( \frac{\ln 2}{6\ln 3} \right) = \frac{1}{10} R_{\text{fund}} \approx 0.010515 \text{ rad}.
 \label{eq:phi1_exact_derivation}
 \end{equation}
 
-Esta derivación analítica integral ratifica sin ambigüedades que el escalar geométrico $1/10$ obedece al colapso de fase predecible en variedades de baja dimensionalidad \cite{Peinador_Emergencia_Geometria_2025}, constituyendo en consecuencia el valor propio termodinámico de renormalización exacto dictado asintóticamente por el encogimiento topológico absoluto de los divisores de cero estériles al acoplarse sobre la arquitectura de la red tensorial unidimensional (MPS).
+This integral analytic derivation unambiguously ratifies that the geometric scalar $1/10$ obeys the predictable phase collapse in low-dimensional manifolds \cite{Peinador_Emergencia_Geometria_2025}, consequently constituting the exact thermodynamic renormalization eigenvalue asymptotically dictated by the absolute topological shrinkage of the sterile zero divisors upon coupling to the one-dimensional tensor network architecture (MPS).
 
-\section{Dinámica de Sistemas Abiertos y Consecuencias Algorítmicas}
+\section{Open System Dynamics and Algorithmic Consequences}
 \label{sec:consecuencias}
 
-Las secciones precedentes han establecido el origen analítico de las fases $\phi_1$ y $\phi_2 = \pi$, anclándolas en la termodinámica de la información y la topología holográfica. Resta explorar las consecuencias operativas de esta asimetría en arquitecturas físicas reales. Demostraremos empíricamente que el estado modular induce una Fase Extendida No Ergódica (NEE) que lo protege frente a la decoherencia, que la dualidad geométrica permite una estrategia de búsqueda adaptativa, y que la topología del registro garantiza una preparación eficiente a escala macroscópica.
+The preceding sections have established the analytic origin of the phases $\phi_1$ and $\phi_2 = \pi$, anchoring them in information thermodynamics and holographic topology. It remains to explore the operational consequences of this asymmetry in real physical architectures. We will empirically demonstrate that the modular state induces a Non-Ergodic Extended (NEE) Phase that protects it against decoherence, that the geometric duality enables an adaptive search strategy, and that the register's topology guarantees efficient preparation at a macroscopic scale.
 
-\subsection{Robustez Dinámica: Formalismo MPDO y el Lindbladiano Padre}
+\subsection{Dynamic Robustness: MPDO Formalism and the Parent Lindbladian}
 \label{subsec:robustez_dinamica}
 
-La viabilidad física de la superselección topológica exige superar la aproximación de sistemas cerrados. En procesadores de la era NISQ, la interacción con el baño térmico transforma inexorablemente el estado puro inicial en una matriz densidad mixta $\rho(t)$. Para fundamentar analíticamente el bloqueo termodinámico y confirmar la existencia estructural de la Fase \textit{Non-Ergodic Extended} (NEE), procedemos a construir rigurosamente el Lindbladiano Padre (\textit{Parent Lindbladian}) $\mathcal{L}_{\text{MST}}$ que alberga al Operador de Densidad de Producto Matricial (MPDO) topológico como su único estado oscuro estacionario, basándonos en el criterio de mezcla rápida (\textit{rapid mixing}) para redes tensoriales abiertas.
+The physical viability of topological superselection demands moving beyond the closed-system approximation. In NISQ-era processors, the interaction with the thermal bath inexorably transforms the initial pure state into a mixed density matrix $\rho(t)$. To analytically substantiate the thermodynamic blockade and confirm the structural existence of the Non-Ergodic Extended (NEE) Phase, we proceed to rigorously construct the Parent Lindbladian $\mathcal{L}_{\text{MST}}$ that harbors the topological Matrix Product Density Operator (MPDO) as its unique stationary dark state, based on the rapid mixing criterion for open tensor networks.
 
-La ecuación maestra local de $k$-cuerpos que gobierna la relajación markoviana del registro $\rho$ se define en la forma canónica de Lindblad \cite{Lindblad1976} mediante:
+The local $k$-body master equation governing the Markovian relaxation of the register $\rho$ is defined in the canonical Lindblad form \cite{Lindblad1976} by:
 \begin{equation}
 \frac{d\rho}{dt} = \mathcal{L}_{\text{MST}}(\rho) = \sum_{j=1}^{N-1} \gamma_j \left( L_j \rho L_j^\dagger - \frac{1}{2} \{ L_j^\dagger L_j, \rho \} \right)
 \label{eq:lindblad_master}
 \end{equation}
-Para asegurar que el subespacio de superselección $\mathbb{Z}/6\mathbb{Z}$ opere como un atractor disipativo incondicional, diseñamos los operadores de salto (\textit{jump operators}) $L_j$ aprovechando las matrices de transición ortogonales del autómata finito determinista topológico. Sea $\Pi_j^{\text{est}}$ el proyector local sobre las clases de congruencia estériles del tensor virtual adyacente ($r \in \{0,2,3,4\} \pmod 6$). Construimos el operador de penalización de entropía inyectando una corrección de \textit{dephasing} asimétrica:
+To ensure that the superselection subspace $\mathbb{Z}/6\mathbb{Z}$ operates as an unconditional dissipative attractor, we design the jump operators $L_j$ by leveraging the orthogonal transition matrices of the topological deterministic finite automaton. Let $\Pi_j^{\text{est}}$ be the local projector onto the sterile congruence classes of the adjacent virtual tensor ($r \in \{0,2,3,4\} \pmod 6$). We construct the entropy penalty operator by injecting an asymmetric dephasing correction:
 \begin{equation}
 L_j = \left( \mathbb{I} - \sum_{r \in \{1,5\}} |r\rangle\langle r|_j \right) \otimes \sigma_j^z = \Pi_j^{\text{est}} \otimes \sigma_j^z
 \label{eq:jump_operators}
 \end{equation}
-Dado que los generadores de la base topológica conmutan estrictamente con el operador global de paridad modular $\hat{P}$, el conjunto de superoperadores $\mathcal{L}_{\text{MST}}$ es intrínsecamente libre de frustración y satisface la invariancia traslacional.
+Given that the generators of the topological basis strictly commute with the global modular parity operator $\hat{P}$, the set of superoperators $\mathcal{L}_{\text{MST}}$ is intrinsically frustration-free and satisfies translational invariance.
 
-\begin{teorema}[Inmunidad Ergódica y Ley de Área Disipativa]
+\begin{theorem}[Ergodic Immunity and Dissipative Area Law]
 \label{teo:parent_lindbladian}
-El espectro de la matriz de transferencia del Liouvilliano $\mathcal{L}_{\text{MST}}$ exhibe un autovalor dominante aislado $\lambda_0 = 0$ asociado al estado asintótico $\rho_\infty$ con dimensión de enlace estricta $\chi_{\text{MPDO}} \le 36$. La brecha de relajación espectral (\textit{Liouvillian gap}) $\Delta = \text{Re}(\lambda_1) > 0$ está acotada inferiormente por la penalización topológica, siendo analíticamente independiente del tamaño $N$. Este confinamiento disipativo markoviano restringe severamente la dinámica de relajación a una variedad de soporte asintótico que es intrínsecamente multifractal, caracterizada por una dimensión fraccionaria reducida $D_2 < 1$ \cite{Peinador_Modular_Quantum_Chaos_2026}, destruyendo analítica y definitivamente la termalización ergódica de volumen dictada por los axiomas de la Hipótesis de Termalización del Estado Propio (ETH) y forzando a la Entropía de Rényi bipartita ($S_2$) a saturar una Ley de Área estricta:
+The spectrum of the transfer matrix of the Liouvillian $\mathcal{L}_{\text{MST}}$ exhibits an isolated dominant eigenvalue $\lambda_0 = 0$ associated with the asymptotic state $\rho_\infty$ with a strict bond dimension $\chi_{\text{MPDO}} \le 36$. The Liouvillian gap $\Delta = \text{Re}(\lambda_1) > 0$ is lower-bounded by the topological penalty, being analytically independent of the size $N$. This Markovian dissipative confinement severely restricts the relaxation dynamics to an asymptotic support manifold that is intrinsically multifractal, characterized by a reduced fractional dimension $D_2 < 1$ \cite{Peinador_Modular_Quantum_Chaos_2026}, analytically and definitively destroying the ergodic volume thermalization dictated by the axioms of the Eigenstate Thermalization Hypothesis (ETH) and forcing the bipartite Rényi Entropy ($S_2$) to saturate a strict Area Law:
 \begin{equation}
 S_2(\rho(t \to \infty)) = -\log_2(\text{Tr}(\rho_A^2)) \le \log_2(\chi_{\text{MPDO}}) \approx 2.585 \text{ bits}.
 \end{equation}
-\end{teorema}
+\end{theorem}
 
-\subsection{Verificación Empírica en el Límite Macroscópico: Contracción MPDO}
+\subsection{Empirical Verification in the Macroscopic Limit: MPDO Contraction}
 \label{subsec:verificacion_empirica}
 
-Para certificar la evasión de la termalización ergódica propuesta en el Teorema \ref{teo:parent_lindbladian} y descartar que el estrangulamiento entrópico sea un artefacto cinemático de tamaño finito (\textit{finite-size effect}), es imperativo proyectar la validación empírica hacia el límite termodinámico. 
+To certify the evasion of ergodic thermalization proposed in Theorem \ref{teo:parent_lindbladian} and to rule out that the entropic bottleneck is a kinematic finite-size effect, it is imperative to project the empirical validation towards the thermodynamic limit. 
 
-Dado que la simulación de la ecuación de Lindblad mediante matrices de Liouville de fuerza bruta escala como $\mathcal{O}(4^N)$, hemos instrumentado un algoritmo de contracción exacta de redes tensoriales basado en MPDO. Aprovechando la cota de confinamiento $\chi_{\text{MPDO}} \le 36$, el registro cuántico fue escalado hasta $N=60$ qubits y sometido a canales de ruido físico concurrentes (relajación térmica y despolarización global con $p=0.015$).
+Since the simulation of the Lindblad equation using brute-force Liouville matrices scales as $\mathcal{O}(4^N)$, we have instrumented an exact tensor network contraction algorithm based on MPDO. Leveraging the confinement bound $\chi_{\text{MPDO}} \le 36$, the quantum register was scaled up to $N=60$ qubits and subjected to concurrent physical noise channels (thermal relaxation and global depolarization with $p=0.015$).
 
-Evaluando la Entropía de Rényi bipartita $S_2$ frente al límite de termalización ergódica (donde la entropía escalaría extensivamente como la Ley de Volumen, $N/2$), los resultados empíricos revelan un bloqueo termodinámico absoluto:
+Evaluating the bipartite Rényi Entropy $S_2$ against the ergodic thermalization limit (where the entropy would scale extensively as the Volume Law, $N/2$), the empirical results reveal an absolute thermodynamic blockade:
 
 \begin{itemize}
-    \item $N=10$: $S_2 = 1.1042$ bits (Límite ergódico: $5.0$ bits)
-    \item $N=20$: $S_2 = 1.2167$ bits (Límite ergódico: $10.0$ bits)
-    \item $N=30$: $S_2 = 1.3249$ bits (Límite ergódico: $15.0$ bits)
-    \item $N=60$: $S_2 = 1.6495$ bits (Límite ergódico: $30.0$ bits)
+    \item $N=10$: $S_2 = 1.1042$ bits (Ergodic limit: $5.0$ bits)
+    \item $N=20$: $S_2 = 1.2167$ bits (Ergodic limit: $10.0$ bits)
+    \item $N=30$: $S_2 = 1.3249$ bits (Ergodic limit: $15.0$ bits)
+    \item $N=60$: $S_2 = 1.6495$ bits (Ergodic limit: $30.0$ bits)
 \end{itemize}
 
 \begin{figure}[H]
 \centering
-% Asegúrate de renombrar la imagen gráfica a image_c0fee0.png en tu directorio
 \includegraphics[width=0.85\textwidth]{Area_Law_Proof.png}
-\caption{Extrapolación termodinámica de la Entropía de Rényi bipartita ($S_2$) empleando redes tensoriales MPDO bajo dinámica de Lindblad. El estado modular exhibe una estricta adhesión a la Ley de Área, saturando en $S_2 \approx 1.65$ bits, muy por debajo de la cota topológica $\log_2 6$ (línea verde). Este estrangulamiento desafía masivamente la termalización de volumen (línea roja discontinua), demostrando la consolidación asintótica de la Fase \textit{Non-Ergodic Extended} (NEE).}
+\caption{Thermodynamic extrapolation of the bipartite Rényi Entropy ($S_2$) using MPDO tensor networks under Lindblad dynamics. The modular state exhibits a strict adherence to the Area Law, saturating at $S_2 \approx 1.65$ bits, well below the topological bound $\log_2 6$ (green line). This bottleneck massively defies volume thermalization (dashed red line), demonstrating the asymptotic consolidation of the Non-Ergodic Extended (NEE) Phase.}
 \label{fig:S2_scaling_macro}
 \end{figure}
 
-\subsubsection*{Robustez de la Fase NEE frente a perturbaciones de Gauge ($\phi_1$)}
+\subsubsection*{Robustness of the NEE Phase against Gauge Perturbations ($\phi_1$)}
 
-Para evaluar la viabilidad de la preparación de este estado en procesadores ruidosos, donde la calibración de fases analíticas es imperfecta, sometimos el parámetro de asimetría $\phi_1$ a un análisis de sensibilidad termodinámica manteniendo la condición de dualidad $\phi_2 = \phi_1 + \pi$. Los resultados del barrido en $N=60$ qubits revelan que la entropía de Rényi exhibe un \textit{plateau} topológico de extrema rigidez. Variaciones de $\phi_1$ alrededor del atractor fenomenológico $\phi_1 \approx 0.0105$ rad apenas alteran el entrelazamiento, manteniendo $S_2 \ll 2.585$ bits. El hardware puede tolerar fluctuaciones de \textit{gauge} severas sin riesgo de inducir la catástrofe ergódica.
+To evaluate the viability of preparing this state on noisy processors, where analytic phase calibration is imperfect, we subjected the asymmetry parameter $\phi_1$ to a thermodynamic sensitivity analysis while maintaining the duality condition $\phi_2 = \phi_1 + \pi$. The results of the sweep at $N=60$ qubits reveal that the Rényi entropy exhibits a topological plateau of extreme rigidity. Variations of $\phi_1$ around the phenomenological attractor $\phi_1 \approx 0.0105$ rad barely alter the entanglement, maintaining $S_2 \ll 2.585$ bits. The hardware can tolerate severe gauge fluctuations without the risk of inducing the ergodic catastrophe.
 
-\subsection{Estrategia Adaptativa y Reducción de la Profundidad Lógica}
+\subsection{Adaptive Strategy and Logical Depth Reduction}
 \label{subsec:estrategia_adaptativa}
 
-La dualidad de inversión $\phi_2 = \phi_1 + \pi$ posee una aplicación algorítmica inmediata en criptoanálisis. Puesto que la clase de congruencia de los factores primos de un criptograma $N$ es \textit{a priori} desconocida, la simetría de inversión permite ejecutar una exploración ortogonal sin recompilar la matriz de preparación inicial.
+The inversion duality $\phi_2 = \phi_1 + \pi$ possesses an immediate algorithmic application in cryptanalysis. Since the congruence class of the prime factors of a cryptogram $N$ is \textit{a priori} unknown, the inversion symmetry allows for an orthogonal exploration without recompiling the initial preparation matrix.
 
 \begin{algorithm}[H]
-\caption{Estrategia Adaptativa de Búsqueda Modular (MST)}
+\caption{Modular Search Adaptive Strategy (MST)}
 \label{alg:estrategia}
 \begin{algorithmic}[1]
-\Require Número semiprimo $N$, oráculo de factorización $U_f$.
-\Ensure Factor primo no trivial de $N$.
+\Require Semiprime number $N$, factorization oracle $U_f$.
+\Ensure Non-trivial prime factor of $N$.
 \Statex
-\State \textbf{Fase 1: Exploración del Subespacio $\mathcal{C}_1$}
-\State Inicializar registro MPS con la fase termodinámica $\phi_1 \approx R_{\text{fund}}/10$.
-\State Ejecutar oráculo sobre el volumen residual.
-\If{el candidato medido $x \equiv 1 \pmod 6$ divide a $N$}
+\State \textbf{Phase 1: Exploration of Subspace $\mathcal{C}_1$}
+\State Initialize MPS register with the thermodynamic phase $\phi_1 \approx R_{\text{fund}}/10$.
+\State Execute oracle over the residual volume.
+\If{the measured candidate $x \equiv 1 \pmod 6$ divides $N$}
     \State \textbf{return} $x$, $N/x$
 \EndIf
 \Statex
-\State \textbf{Fase 2: Conmutación al Subespacio Conjugado $\mathcal{C}_5$}
-\State Aplicar operador \textit{gauge} de desplazamiento global $\Delta\phi = \pi$ al registro.
-\State Ejecutar oráculo (el circuito permanece estructuralmente invariante).
-\State Medir el candidato $x$.
-\If{$x$ divide a $N$}
+\State \textbf{Phase 2: Commutation to Conjugate Subspace $\mathcal{C}_5$}
+\State Apply global displacement \textit{gauge} operator $\Delta\phi = \pi$ to the register.
+\State Execute oracle (the circuit remains structurally invariant).
+\State Measure candidate $x$.
+\If{$x$ divides $N$}
     \State \textbf{return} $x$, $N/x$
 \Else
-    \State \textbf{return} abortar (iniciar protocolo de amplificación)
+    \State \textbf{return} abort (initiate amplification protocol)
 \EndIf
 \end{algorithmic}
 \end{algorithm}
 
-\subsubsection*{Reevaluación de la Complejidad Asintótica y Límite de Coherencia}
+\subsubsection*{Reevaluation of Asymptotic Complexity and Coherence Limit}
 
-Es imperativo contextualizar la magnitud de la contracción geométrica observada en el marco estricto de la computación cuántica tolerante a fallos (FTQC). La métrica dominante que gobierna la viabilidad arquitectónica de circuitos profundos (como el criptoanálisis de Shor \cite{Shor1994}) recae fundamentalmente en el recuento de compuertas no-Clifford (\textit{T-count}), debido a las severas exigencias de sobrecarga de los protocolos de destilación de estados mágicos (\textit{magic state distillation}) \cite{Gidney2021}.
+It is imperative to contextualize the magnitude of the observed geometric contraction within the strict framework of Fault-Tolerant Quantum Computing (FTQC). The dominant metric governing the architectural viability of deep circuits (such as Shor's cryptanalysis \cite{Shor1994}) rests fundamentally on the non-Clifford gate count (\textit{T-count}), due to the severe overhead demands of magic state distillation protocols \cite{Gidney2021}.
 
-En un esquema de inicialización canónico de máxima entropía, el circuito de exponentiación modular debe insertar compuertas Toffoli y T de manera redundante a lo largo de un espacio de Hilbert indiscriminado. Para un criptograma de $n$ bits, esta sobrecarga computacional de destilación impone un volumen asintótico limitante estimado como $T_{\text{std}} = C_0 \cdot \mathcal{O}(n^3 \log n)$. Sin embargo, la inicialización topológica basada en MPS de enlace acotado ($\chi \le 6$) pre-computa analíticamente un aislamiento ortogonal de la matriz de estados. Al concentrar el volumen paramétrico sobre los canales $\mathcal{C}_1 \cup \mathcal{C}_5$ y eludir la evaluación estéril del $66.66\%$ de la capacidad de canal disipativo del anillo $\mathbb{Z}/6\mathbb{Z}$, la arquitectura de suma requiere ser inyectada exclusivamente sobre la entropía activa residual. La reconfiguración del coste se abstrae topológicamente como:
+In a canonical maximum-entropy initialization scheme, the modular exponentiation circuit must insert Toffoli and T gates redundantly across an indiscriminate Hilbert space. For an $n$-bit cryptogram, this computational distillation overhead imposes a limiting asymptotic volume estimated as $T_{\text{std}} = C_0 \cdot \mathcal{O}(n^3 \log n)$. However, topological initialization based on bounded-bond MPS ($\chi \le 6$) analytically pre-computes an orthogonal isolation of the state matrix. By concentrating the parametric volume onto the channels $\mathcal{C}_1 \cup \mathcal{C}_5$ and eluding the sterile evaluation of $66.66\%$ of the dissipative channel capacity of the $\mathbb{Z}/6\mathbb{Z}$ ring, the adder architecture requires injection exclusively over the residual active entropy. The cost reconfiguration is topologically abstracted as:
 \begin{equation}
 T_{\text{MST}} \approx \left(\frac{1}{3} C_0 \right) \mathcal{O}(n^3 \log n) + \mathcal{O}_{\text{Gauge}}(1)
 \label{eq:toffoli_reduction}
 \end{equation}
 
-La viabilidad de estos estados MPS de enlace acotado se apoya en resultados recientes que muestran que estados con baja varianza de energía pueden actuar como cicatrices cuánticas de muchos cuerpos, eludiendo la termalización ergódica \cite{Rai2024}.
+The viability of these bounded-bond MPS states is supported by recent results showing that states with low energy variance can act as quantum many-body scars, evading ergodic thermalization \cite{Rai2024}.
 
-Esquemas recientes de fusión tensorial asistida por medición demuestran que estados MPS con dimensiones de enlace pequeñas pueden prepararse con profundidad de circuito constante, lo que sugiere una implementación práctica en hardware NISQ \cite{Stephen2025}.
+Recent measurement-assisted tensor fusion schemes demonstrate that MPS states with small bond dimensions can be prepared with constant circuit depth, suggesting practical implementation on NISQ hardware \cite{Stephen2025}.
 
-Esta compresión del prefactor operativo al $33.33\%$ asume implicaciones transversales que desbordan la mera eficiencia temporal algorítmica. Bajo un paradigma de protección por Códigos de Corrección de Errores de Superficie (\textit{Surface Codes}) \cite{Fowler2012}, la probabilidad de fallo lógico $P_L$ exhibe una escalabilidad exponencial ligada intrínsecamente al volumen espacio-temporal computacional de control $V \approx d^2 \times \tau$, donde $d$ es la distancia estructural de la red y $\tau$ constituye la profundidad del ciclo lógico del síndrome.
+This compression of the operational prefactor to $33.33\%$ assumes transversal implications that overflow mere algorithmic temporal efficiency. Under a protection paradigm by Surface Codes \cite{Fowler2012}, the logical failure probability $P_L$ exhibits an exponential scalability intrinsically linked to the computational control spacetime volume $V \approx d^2 \times \tau$, where $d$ is the structural distance of the lattice and $\tau$ constitutes the depth of the logical syndrome cycle.
 
-Puesto que el cambio de plano subespacial dictado por el mecanismo de control de fuga geométrica $\Delta\phi = \pi$ invoca un coste de profundidad local intrínsecamente unitario y asintóticamente $\mathcal{O}(1)$, el encogimiento drástico del parámetro $\tau$ de ciclos lógicos despresuriza la ecuación umbral del código de superficie. Esta disminución macroscópica masiva de los requerimientos subyacentes de destilación mágica tolera el mantenimiento de la fidelidad objetivo frente a tasas de error físico (\textit{physical error thresholds}, $\epsilon_{\text{phys}}$) notablemente menos restrictivas. La topología de la fase $\pi$ no rompe las cotas estandarizadas superiores dictadas por la clase de complejidad BQP algorítmica de Shor $\mathcal{O}(n^3)$; en su lugar, colapsa en la práctica la pared de decoherencia exigida en el hardware escalable temprano (\textit{early-FTQC}) para la vulneración incondicional de los criptosistemas globales asimétricos modernos como RSA-2048.
+Since the subspace plane shift dictated by the geometric leakage control mechanism $\Delta\phi = \pi$ invokes an intrinsically unitary and asymptotically $\mathcal{O}(1)$ local depth cost, the drastic shrinkage of the logical cycle parameter $\tau$ depressurizes the surface code threshold equation. This massive macroscopic decrease in the underlying magic distillation requirements tolerates the maintenance of target fidelity against notably less restrictive physical error thresholds ($\epsilon_{\text{phys}}$). The topology of the $\pi$ phase does not break the standardized upper bounds dictated by Shor's algorithmic BQP complexity class $\mathcal{O}(n^3)$; instead, it practically collapses the decoherence wall demanded in early scalable hardware (\textit{early-FTQC}) for the unconditional vulnerability of modern asymmetric global cryptosystems such as RSA-2048.
 
-\section{Conclusiones}
+\section{Conclusions}
 \label{sec:conclusiones}
 
-Este trabajo ha consolidado el prior topológico $\mathbb{Z}/6\mathbb{Z}$ como una estructura física unificada que conecta la aritmética modular, la geometría cuántica y la termodinámica de la información, ofreciendo una base rigurosa para la preparación eficiente de estados cuánticos en algoritmos de búsqueda.
+This work has consolidated the topological prior $\mathbb{Z}/6\mathbb{Z}$ as a unified physical structure that connects modular arithmetic, quantum geometry, and information thermodynamics, offering a rigorous foundation for the efficient preparation of quantum states in search algorithms.
 
-Hemos demostrado que la fase geométrica $\phi_2 = \pi$ emana directamente del isomorfismo del grupo de unidades $(\mathbb{Z}/6\mathbb{Z})^{\times}$ y actúa como una holonomía de Berry no conmutativa que resuelve la anomalía quiral del sustrato. Mediante el Lema Puente Holográfico, establecimos que este residuo topológico es la compensación exacta requerida para reconciliar la regularización del vacío continuo ($\zeta(0) = -1/2$) con la entropía binaria local ($\ln 2$). 
+We have demonstrated that the geometric phase $\phi_2 = \pi$ emanates directly from the isomorphism of the unit group $(\mathbb{Z}/6\mathbb{Z})^{\times}$ and acts as a non-commutative Berry holonomy that resolves the chiral anomaly of the substrate. Through the Holographic Bridge Lemma, we established that this topological residue is the exact compensation required to reconcile continuous vacuum regularization ($\zeta(0) = -1/2$) with local binary entropy ($\ln 2$). 
 
-Paralelamente, hemos derivado analíticamente que la pequeña asimetría requerida en el canal termodinámico ($\phi_1$) es una firma estricta de la fricción generada al proyectar información ternaria (óptima para el volumen) sobre un hardware binario (frontera holográfica). La fase $\phi_1 \approx R_{\text{fund}}/10$ emerge como un punto fijo infrarrojo del flujo del Grupo de Renormalización (RG). La función beta de Callan-Symanzik, acoplada a la constante de Euler-Kronecker, impone un colapso dimensional del espacio de fases ($d=10$) que fija el escalar de asimetría de forma exacta desde primeros principios, eliminando cualquier carácter heurístico.
+Concurrently, we have analytically derived that the small asymmetry required in the thermodynamic channel ($\phi_1$) is a strict signature of the friction generated when projecting ternary information (optimal for the bulk) onto binary hardware (holographic boundary). The phase $\phi_1 \approx R_{\text{fund}}/10$ emerges as an infrared fixed point of the Renormalization Group (RG) flow. The Callan-Symanzik beta function, coupled to the Euler-Kronecker constant, imposes a dimensional collapse of the phase space ($d=10$) that fixes the asymmetry scalar exactly from first principles, eliminating any heuristic character.
 
-Desde la perspectiva de los sistemas cuánticos abiertos, la formulación de un Lindbladiano Padre libre de frustración demuestra que el estado modular evade estructuralmente la Hipótesis de Termalización del Estado Propio (ETH). La existencia de una brecha espectral de disipación (\textit{Liouvillian gap}) acotada y la satisfacción de la Desigualdad de Sóbolev Logarítmica Modificada (MLSI) garantizan una mezcla rápida (\textit{rapid mixing}) que confina la dinámica a una Fase Extendida No Ergódica (NEE). La saturación asintótica de la entropía de Rényi ($S_2 \approx 1.65$ bits), verificada mediante contracción exacta de redes tensoriales MPDO hasta $N=60$ qubits, confirma que el registro blinda pasivamente la coherencia cuántica, imponiendo una Ley de Área estricta frente al ruido ambiental.
+From the perspective of open quantum systems, the formulation of a frustration-free Parent Lindbladian demonstrates that the modular state structurally evades the Eigenstate Thermalization Hypothesis (ETH). The existence of a bounded Liouvillian dissipation gap and the satisfaction of the Modified Logarithmic Sobolev Inequality (MLSI) guarantee a rapid mixing that confines the dynamics to a Non-Ergodic Extended (NEE) phase. The asymptotic saturation of the Rényi entropy ($S_2 \approx 1.65$ bits), verified via exact contraction of MPDO tensor networks up to $N=60$ qubits, confirms that the register passively shields quantum coherence, imposing a strict Area Law against environmental noise.
 
-Finalmente, en el dominio del criptoanálisis cuántico, la Estrategia Adaptativa de Búsqueda Modular (MST) redefine la viabilidad operativa de la factorización de enteros. Si bien la superselección topológica no subvierte la cota de complejidad asintótica superior $\mathcal{O}(n^3)$ del algoritmo de Shor, sí ejecuta una contracción crítica del prefactor polinómico y de la profundidad lógica de compuertas Toffoli. Al purgar analíticamente el volumen estéril del espacio de Hilbert mediante estados MPS de enlace acotado ($\chi \le 6$) y operar con una profundidad de inicialización local $\mathcal{O}(1)$ durante la conmutación de canal, la topología modular reduce masivamente el volumen espacio-temporal de los ciclos lógicos de síndrome ($\tau$). Esta minimización del requerimiento de destilación mágica relaja drásticamente los umbrales de corrección de errores en códigos de superficie, habilitando la ejecución de criptoanálisis sobre estándares industriales (como RSA-2048) dentro de las tolerancias térmicas de las arquitecturas FTQC y NISQ contemporáneas.
+Finally, in the domain of quantum cryptanalysis, the Modular Search Adaptive Strategy (MST) redefines the operational viability of integer factorization. While topological superselection does not subvert the $\mathcal{O}(n^3)$ upper asymptotic complexity bound of Shor's algorithm, it does execute a critical contraction of the polynomial prefactor and the logical depth of Toffoli gates. By analytically purging the sterile volume of the Hilbert space using bounded-bond MPS states ($\chi \le 6$) and operating with a local initialization depth $\mathcal{O}(1)$ during channel commutation, the modular topology massively reduces the spacetime volume of the logical syndrome cycles ($\tau$). This minimization of the magic distillation requirement drastically relaxes the error correction thresholds in surface codes, enabling the execution of cryptanalysis on industrial standards (such as RSA-2048) within the thermal tolerances of contemporary FTQC and NISQ architectures.
 
 % ==============================================================================
-% AGRADECIMIENTOS Y DECLARACIÓN DE IA
+% ACKNOWLEDGMENTS & AI DECLARATION
 % ==============================================================================
-\section*{Agradecimientos}
-El autor expresa su más profundo agradecimiento a:
+\section*{Acknowledgments}
+The author expresses his deepest gratitude to:
 
 \begin{itemize}
-    \item La comunidad de computación científica de código abierto, particularmente a los desarrolladores de \textsc{Python}, \textsc{SciPy} (específicamente \texttt{scipy.linalg}) y \textsc{NumPy}. La simulación y contracción exacta de los Operadores de Densidad de Producto Matricial (MPDO) hasta el límite macroscópico de $N=60$ qubits bajo dinámica disipativa habría sido computacionalmente prohibitiva sin estas rutinas algebraicas altamente optimizadas.
-    \item Los arquitectos de \textsc{Google Colab}, por democratizar el acceso a entornos computacionales de alto rendimiento, permitiendo a investigadores independientes resolver sistemas cuánticos abiertos complejos y compartir motores de simulación reproducibles sin barreras económicas.
-    \item La tradición intelectual de la teoría de la información cuántica, la materia condensada y los sistemas cuánticos abiertos, desde Rolf Landauer y Göran Lindblad, hasta Peter Shor, Alexei Kitaev y John Preskill. Su andamiaje fundacional ha hecho posible esta síntesis geométrica y algorítmica.
+    \item The open-source scientific computing community, particularly the developers of \textsc{Python}, \textsc{SciPy} (specifically \texttt{scipy.linalg}), and \textsc{NumPy}. The simulation and exact contraction of the Matrix Product Density Operators (MPDO) up to the macroscopic limit of $N=60$ qubits under dissipative dynamics would have been computationally prohibitive without these highly optimized algebraic routines.
+    \item The architects of \textsc{Google Colab}, for democratizing access to high-performance computing environments, enabling independent researchers to solve complex open quantum systems and share reproducible simulation engines without economic barriers.
+    \item The intellectual tradition of quantum information theory, condensed matter, and open quantum systems—from Rolf Landauer and Göran Lindblad, to Peter Shor, Alexei Kitaev, and John Preskill. Their foundational scaffolding has made this geometric and algorithmic synthesis possible.
 \end{itemize}
 
 \vspace{0.3cm}
-\noindent \textbf{Declaración de uso de IA} \\
-De acuerdo con los principios de transparencia científica, el autor declara que se utilizaron Modelos de Lenguaje Extensos (LLMs) como soporte instrumental durante la preparación de este manuscrito para las siguientes tareas específicas:
+\noindent \textbf{AI Use Declaration} \\
+In accordance with the principles of scientific transparency, the author declares that Large Language Models (LLMs) were utilized as instrumental support during the preparation of this manuscript for the following specific tasks:
 
 \begin{enumerate}
-    \item \textbf{Revisión adversaria (\textit{Red Teaming}):} Se emplearon modelos de IA para simular un proceso riguroso de revisión por pares, sometiendo a prueba de estrés las hipótesis sobre la viabilidad termodinámica del estado. Esta dialéctica crítica motivó directamente el salto de sistemas cerrados a la formulación del Lindbladiano Padre, impulsando la adopción del escalado de redes tensoriales MPDO como herramienta de diagnóstico definitiva para certificar la inmunidad ergódica.
-    \item \textbf{Optimización de código:} Asistencia en la refactorización de la arquitectura del software y la gestión de memoria para contraer eficientemente las matrices de transferencia disipativas de $1296 \times 1296$ (asociadas al límite estructural $\chi \le 36$) dentro de las restricciones de hardware en la nube.
-    \item \textbf{Refinamiento técnico:} Mejora de la fluidez, la jerarquía estructural y la precisión del lenguaje científico (incluyendo la traducción integral al inglés académico) para alinearlo con los estándares de formato y rigor de revistas de física y tecnología cuántica de alto impacto.
+    \item \textbf{Adversarial Review (Red Teaming):} AI models were employed to simulate a rigorous peer-review process, stress-testing hypotheses regarding the thermodynamic viability of the state. This critical dialectic directly motivated the leap from closed systems to the formulation of the Parent Lindbladian, driving the adoption of MPDO tensor network scaling as the definitive diagnostic tool to certify ergodic immunity.
+    \item \textbf{Code Optimization:} Assistance in refactoring the software architecture and memory management to efficiently contract the $1296 \times 1296$ dissipative transfer matrices (associated with the structural limit $\chi \le 36$) within cloud hardware constraints.
+    \item \textbf{Technical Refinement:} Enhancing the fluency, structural hierarchy, and precision of the scientific language (including the comprehensive translation into academic English) to align with the formatting and rigor standards of high-impact physics and quantum technology journals.
 \end{enumerate}
 
-\textbf{Aclaración crucial:} Los avances teóricos fundamentales de este trabajo —la deducción de la fase $\phi_2 = \pi$ como holonomía de Berry para resolver la anomalía quiral, la derivación de $\phi_1 \approx R_{\text{fund}}/10$ como atractor infrarrojo del flujo del Grupo de Renormalización, la formulación del Lindbladiano Padre libre de frustración, la certificación de la fase No Ergódica Extendida (NEE) mitigadora de la termalización, y la drástica contracción de la profundidad lógica (\textit{T-count}) en criptoanálisis FTQC— son exclusivamente creación intelectual original del autor. Las herramientas de IA actuaron estrictamente como asistentes metodológicos, no como agentes de descubrimiento conceptual.
+\textbf{Crucial Clarification:} The fundamental theoretical breakthroughs of this work—the deduction of the phase $\phi_2 = \pi$ as a Berry holonomy to resolve the chiral anomaly, the derivation of $\phi_1 \approx R_{\text{fund}}/10$ as an infrared attractor of the Renormalization Group flow, the formulation of the frustration-free Parent Lindbladian, the certification of the thermalization-mitigating Non-Ergodic Extended (NEE) phase, and the drastic contraction of the logical depth (T-count) in FTQC cryptanalysis—are exclusively the original intellectual creation of the author. AI tools acted strictly as methodological assistants, not as agents of conceptual discovery.
 
-
-\section{Disponibilidad de datos}
-El marco computacional completo, incluyendo los algoritmos de Python para la contracción exacta de redes tensoriales MPDO bajo dinámica de Lindblad y los scripts de extrapolación termodinámica (evaluación de la Ley de Área y entropía de Rényi), están disponibles públicamente y son totalmente reproducibles en el repositorio oficial: \url{https://github.com/NachoPeinador/Phase-Pi-Quantum-Prior}
+\section{Data Availability}
+The complete computational framework, including the Python algorithms for the exact contraction of MPDO tensor networks under Lindblad dynamics and the thermodynamic extrapolation scripts (evaluation of the Area Law and Rényi entropy), is publicly available and fully reproducible at the official repository: \url{https://github.com/NachoPeinador/Phase-Pi-Quantum-Prior}
 
 % ==============================================================================
 % REFERENCES (ORDERED BY APPEARANCE)
@@ -615,64 +613,62 @@ J. I. Peinador Sala, \textit{The Modular Spectrum of $\pi$: From Prime Channel S
 \end{thebibliography}
 
 % ==============================================================================
-% APÉNDICES
+% APPENDICES
 % ==============================================================================
 \appendix
 
-\section{Acotación mediante Estados de Producto Matricial (MPS)}
+\section{Bounding via Matrix Product States (MPS)}
 \label{app:mps}
 
-Una crítica habitual a la inicialización de estados dispersos es el requerimiento de una profundidad de circuito exponencial. El estado $\mathbb{Z}/6\mathbb{Z}$ elude analíticamente este problema gracias a su representabilidad matricial topológica.
+A common criticism of sparse state initialization is the requirement of an exponential circuit depth. The $\mathbb{Z}/6\mathbb{Z}$ state analytically eludes this problem thanks to its topological matrix representability.
 
-La pertenencia de un entero a una clase de congruencia módulo $6$ se determina mediante un autómata finito determinista (DFA) con exactamente $6$ estados. Las transiciones $\delta(r,b) = (2r+b) \pmod 6$ procesan cualquier cadena binaria leída.
+The membership of an integer in a congruence class modulo $6$ is determined by a deterministic finite automaton (DFA) with exactly $6$ states. The transitions $\delta(r,b) = (2r+b) \pmod 6$ process any read binary string.
 
-Para construir un MPS que represente el estado $|\psi_{\text{top}}\rangle$, definimos matrices de transición $M_b$ de dimensión $6\times 6$ donde $(M_b)_{r,s} = 1$ si $\delta(r,b) = s$, y $0$ en otro caso. El estado topológico obedece a la forma canónica MPS:
+To construct an MPS representing the state $|\psi_{\text{top}}\rangle$, we define transition matrices $M_b$ of dimension $6\times 6$ where $(M_b)_{r,s} = 1$ if $\delta(r,b) = s$, and $0$ otherwise. The topological state obeys the canonical MPS form:
 \begin{equation}
 |\psi_{\text{top}}\rangle = \sum_{b_1,\dots,b_n} \left( e_{\text{in}}^T M_{b_1} M_{b_2} \cdots M_{b_n} e_{\text{out}} \right) |b_1\cdots b_n\rangle.
 \end{equation}
-La modulación $\exp[A\sin(2\pi x/6 + \phi)]$ se absorbe multiplicando $M_b$ por tensores de fase locales, preservando estrictamente la dimensión de enlace $\chi \le 6$. Esto garantiza algoritmos de compilación cuántica en escalera isométrica con una profundidad temporal de circuito $\mathcal{O}(\text{poly}(n))$.
+The modulation $\exp[A\sin(2\pi x/6 + \phi)]$ is absorbed by multiplying $M_b$ by local phase tensors, strictly preserving the bond dimension $\chi \le 6$. This guarantees isometric staircase quantum compilation algorithms with a temporal circuit depth of $\mathcal{O}(\text{poly}(n))$.
 
-\section{Análisis de Fourier del Confinamiento Modular}
+\section{Fourier Analysis of the Modular Confinement}
 \label{app:fourier}
 
-La dualidad $\phi_2 = \phi_1 + \pi$ postulada se refrenda analíticamente mediante la función indicatriz signada de los canales: $f(x) = 1$ para $x \equiv 1$, $f(x) = -1$ para $x \equiv 5$, y $0$ en el resto. La serie de Fourier discreta revela que los armónicos resonantes $k=1$ y $k=5$ poseen coeficientes ortogonales de amplitud pura conjugada:
+The postulated duality $\phi_2 = \phi_1 + \pi$ is analytically endorsed by the signed indicator function of the channels: $f(x) = 1$ for $x \equiv 1$, $f(x) = -1$ for $x \equiv 5$, and $0$ elsewhere. The discrete Fourier series reveals that the resonant harmonics $k=1$ and $k=5$ possess orthogonal coefficients of pure conjugate amplitude:
 \begin{align}
 c_1 &= \frac{i}{3}, \qquad c_5 &= -\frac{i}{3}.
 \end{align}
-La fase relativa espectral entre las componentes de estas sub-bandas fundamentales es invariablemente de $\pi$ radianes. Cualquier transferencia de probabilidad geométrica exige esta rotación compensatoria.
+The relative spectral phase between the components of these fundamental sub-bands is invariably $\pi$ radians. Any geometric probability transfer demands this compensatory rotation.
 
-\section{Construcción Rigurosa del Lindbladiano Padre y el Gap Espectral}
+\section{Rigorous Construction of the Parent Lindbladian and the Spectral Gap}
 \label{app:lindblad_construction}
 
-Para formalizar la resiliencia en la Fase Extendida No Ergódica (NEE) empíricamente validada en la Sección \ref{sec:consecuencias}, y descartar efectos cinemáticos de pre-termalización, construimos explícitamente el Lindbladiano Padre (\textit{Parent Lindbladian}) $\mathcal{L}_{\text{MST}}$ que estabiliza el subespacio topológico $\mathbb{Z}/6\mathbb{Z}$ como un atractor disipativo único.
+To formalize the resilience in the Non-Ergodic Extended (NEE) Phase empirically validated in Section \ref{sec:consecuencias}, and to rule out kinematic pre-thermalization effects, we explicitly construct the Parent Lindbladian $\mathcal{L}_{\text{MST}}$ that stabilizes the $\mathbb{Z}/6\mathbb{Z}$ topological subspace as a unique dissipative attractor.
 
-La evolución temporal de la matriz densidad del registro cuántico, $\rho(t)$, acoplado a un baño térmico de Markov, está gobernada por la ecuación maestra local de $k$-cuerpos:
+The temporal evolution of the quantum register's density matrix, $\rho(t)$, coupled to a Markovian thermal bath, is governed by the local $k$-body master equation:
 \begin{equation}
 \frac{d\rho}{dt} = \mathcal{L}_{\text{MST}}(\rho) = -i[H_{\text{eff}}, \rho] + \sum_{j=1}^{N-1} \gamma_j \left( L_j \rho L_j^\dagger - \frac{1}{2} \{ L_j^\dagger L_j, \rho \} \right)
 \label{eq:app_lindblad_master}
 \end{equation}
-donde $\gamma_j$ representa las tasas de acoplamiento de disipación local.
+where $\gamma_j$ represents the local dissipation coupling rates.
 
-Para garantizar que el atractor asintótico $\rho_\infty$ sea exactamente el \textit{Matrix Product Density Operator} (MPDO) topológico con dimensión de enlace $\chi_{\text{MPDO}} \le 36$, diseñamos los operadores de salto (\textit{jump operators}) $L_j$ condicionándolos al autómata finito determinista (DFA) modular. Sea $\Pi_j^{\text{est}}$ el proyector ortogonal sobre las clases de congruencia estériles del tensor virtual adyacente ($r \in \{0,2,3,4\} \pmod 6$). Definimos el operador de penalización entrópica como:
+To guarantee that the asymptotic attractor $\rho_\infty$ is exactly the topological Matrix Product Density Operator (MPDO) with bond dimension $\chi_{\text{MPDO}} \le 36$, we design the jump operators $L_j$ by conditioning them on the modular deterministic finite automaton (DFA). Let $\Pi_j^{\text{est}}$ be the orthogonal projector onto the sterile congruence classes of the adjacent virtual tensor ($r \in \{0,2,3,4\} \pmod 6$). We define the entropic penalty operator as:
 \begin{equation}
 L_j = \left( \mathbb{I} - \sum_{r \in \{1,5\}} |r\rangle\langle r|_j \right) \otimes \sigma_j^z = \Pi_j^{\text{est}} \otimes \sigma_j^z
 \label{eq:app_jump_operators}
 \end{equation}
 
-Físicamente, esta proyección asimétrica puede implementarse acoplando el registro a un baño auxiliar con un espectro de frecuencias sintonizado \cite{Liu2025}. Equivale a una corrección de \textit{dephasing} asimétrica: cuando el ruido excita al sistema hacia un canal estéril, la dinámica disipativa penaliza ortogonalmente la ocupación, bombeando la amplitud de regreso al subespacio resonante $\mathcal{C}_1 \cup \mathcal{C}_5$. Dado que los generadores topológicos conmutan con el operador de paridad modular $\hat{P}$, el Lindbladiano resultante es intrínsecamente libre de frustración (\textit{frustration-free}).
+Physically, this asymmetric projection can be implemented by coupling the register to an auxiliary bath with a tuned frequency spectrum \cite{Liu2025}. It is equivalent to an asymmetric dephasing correction: when noise excites the system into a sterile channel, the dissipative dynamics orthogonally penalizes the occupation, pumping the amplitude back to the resonant subspace $\mathcal{C}_1 \cup \mathcal{C}_5$. Given that the topological generators commute with the modular parity operator $\hat{P}$, the resulting Lindbladian is intrinsically frustration-free.
 
-\textbf{Demostración Axiomática del Gap Disipativo y Mezcla Rápida (Rapid Mixing):}
-Para que el estado asintótico $\rho_\infty$ constituya una fase topológica asintóticamente robusta frente a perturbaciones locales, el espectro de la matriz de transferencia del superoperador $\mathcal{L}_{\text{MST}}$ debe soportar un hiato de relajación. Sea $\lambda_0 = 0$ el autovalor oscuro estacionario asociado al MPDO. La brecha espectral (\textit{Liouvillian gap}) se define formalmente como $\Delta = \inf_{\lambda_i \neq 0} |\text{Re}(\lambda_i)| > 0$.
+\textbf{Axiomatic Proof of the Dissipative Gap and Rapid Mixing:}
+For the asymptotic state $\rho_\infty$ to constitute an asymptotically robust topological phase against local perturbations, the spectrum of the transfer matrix of the superoperator $\mathcal{L}_{\text{MST}}$ must support a relaxation gap. Let $\lambda_0 = 0$ be the stationary dark eigenvalue associated with the MPDO. The Liouvillian gap is formally defined as $\Delta = \inf_{\lambda_i \neq 0} |\text{Re}(\lambda_i)| > 0$.
 
-Crucialmente, el Lindbladiano padre derivado es libre de frustración (\textit{frustration-free}). Debido a la localidad estricta de los operadores de penalización entrópica $L_j = \Pi_j^{\text{est}} \otimes \sigma_j^z$ y a la conmutatividad intrínseca de la base generadora con el operador global de paridad modular $\hat{P}$, el generador disipativo no solo exhibe un \textit{gap} invariante del tamaño del sistema $N$ ($\Delta = \Omega(1)$), sino que además obedece una constante de Desigualdad de Sóbolev Logarítmica Modificada (MLSI) acotada, $\alpha > 0$ \cite{Kastoryano2013}.
+Crucially, the derived parent Lindbladian is frustration-free. Due to the strict locality of the entropic penalty operators $L_j = \Pi_j^{\text{est}} \otimes \sigma_j^z$ and the intrinsic commutativity of the generator basis with the global modular parity operator $\hat{P}$, the dissipative generator not only exhibits a system-size invariant gap ($\Delta = \Omega(1)$), but also obeys a bounded Modified Logarithmic Sobolev Inequality (MLSI) constant, $\alpha > 0$ \cite{Kastoryano2013}.
 
-El cumplimiento de la cota MLSI es analíticamente trascendental: garantiza que la distancia en la norma de traza de una condición inicial arbitraria respecto a la subvariedad de superselección estacionaria decaiga exponencialmente, implicando un tiempo de convergencia termodinámico que escala sub-extensivamente como $\tau_{\text{mix}} \propto \Delta^{-1} \log N$.
-Esta dinámica de propagación destruye matemáticamente la termalización de volumen dictada por la Hipótesis de Termalización del Estado Propio (ETH). La mezcla rápida impide la formación de correlaciones a larga distancia en las trayectorias estériles, forzando un confinamiento absoluto del sistema en una Fase Extendida No Ergódica (NEE). En consecuencia, la entropía de Rényi bipartita se ancla asintóticamente al límite predeterminado por la dimensión de enlace del estado oscuro MPDO:
+The fulfillment of the MLSI bound is analytically highly significant: it guarantees that the trace-norm distance from an arbitrary initial condition to the stationary superselection submanifold decays exponentially, implying a thermodynamic convergence time that scales sub-extensively as $\tau_{\text{mix}} \propto \Delta^{-1} \log N$.
+This propagation dynamics mathematically destroys the volume thermalization dictated by the Eigenstate Thermalization Hypothesis (ETH). Rapid mixing prevents the formation of long-range correlations in the sterile trajectories, forcing an absolute confinement of the system into a Non-Ergodic Extended (NEE) Phase. Consequently, the bipartite Rényi entropy anchors asymptotically to the limit predetermined by the bond dimension of the MPDO dark state:
 \begin{equation}
 S_2(\rho(t \to \infty)) \le \log_2(\chi_{\text{MPDO}}) \le \log_2(36) \approx 5.169 \text{ bits},
 \end{equation}
-lo que ratifica desde la teoría de campos topológicos la represión ergódica extrema ($S_2 \approx 1.65$ bits) reportada en el límite macroscópico $N=60$, garantizando un bloqueo incondicional contra el emborronamiento térmico en hardware NISQ.
-
-
+which ratifies from topological field theory the extreme ergodic repression ($S_2 \approx 1.65$ bits) reported in the macroscopic limit $N=60$, guaranteeing an unconditional blockade against thermal blurring in NISQ hardware.
 
 \end{document}
