@@ -3,7 +3,7 @@
 ### Topological Superselection $\mathbb{Z}/6\mathbb{Z}$: Analytical Phase Derivation and Dissipative Stabilization for FTQC Cryptanalysis
 [![Read in Spanish](https://img.shields.io/badge/Lang-Leer%20en%20Español-red?style=flat&logoColor=white&color=B31B1B)](https://github.com/NachoPeinador/Phase-Pi-Quantum-Prior/blob/main/README_es.md)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.xxxxxxxx.svg)](https://doi.org/10.5281/zenodo.xxxxxxxx)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19354011.svg)](https://doi.org/10.5281/zenodo.19354011)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0008--1822--3452-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0009-0008-1822-3452)
 [![X](https://img.shields.io/badge/X-%40todos__lumpen-000000?style=flat&logo=x&logoColor=white)](https://twitter.com/todos_lumpen)
 [![Papers](https://img.shields.io/badge/Paper-Read_PDF-B31B1B?style=flat&logo=latex&logoColor=white)](https://github.com/NachoPeinador/Phase-Pi-Quantum-Prior/blob/main/Paper/Topological_Z6Z_Superselection.pdf)
@@ -178,7 +178,7 @@ This project utilizes a **dual-licensing scheme**:
   title = {Topological {$\mathbb{Z}/6\mathbb{Z}$} Superselection: Analytic Phase Derivation and Dissipative Stabilization for {FTQC} Cryptanalysis},
   url = {https://github.com/NachoPeinador/Phase-Pi-Quantum-Prior},
   year = {2026},
-  doi = {10.5281/zenodo.xxxxxxxx}
+  doi = {10.5281/zenodo.19354011}
 }
 }
 ```
