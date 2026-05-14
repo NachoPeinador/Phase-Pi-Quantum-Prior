@@ -195,7 +195,7 @@ This work establishes that arithmetic is not a random sequence, but a **determin
 
 <div align="center">
 
-<b>Last Update:</b> May 14, 2026 | <b>Status:</b> Under Review at <i>Quantum Science and Technology</i> (ID: QST-105397) | Built with ⚛️ & 🐍
+<b>Last Update:</b> May, 2026 | <b>Status:</b> Under Review at <i>Quantum Science and Technology</i> ID: QST-105397 | Built with ⚛️ & 🐍
 
 </div>
 
