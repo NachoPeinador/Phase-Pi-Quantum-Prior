@@ -96,22 +96,22 @@ The empirical validation suite is divided into five comprehensive Jupyter Notebo
 
 ### 📓 Notebook I: Arithmetic and Thermodynamic Foundations
 
-[](https://colab.research.google.com/github/NachoPeinador/Phase-Pi-Quantum-Prior/blob/main/Notebooks/Arithmetic_and_Thermodynamic_Foundations_of_Z_6Z_Superselection.ipynb)
+[![Open In Colab](https://colab.research.google.com/github/NachoPeinador/Phase-Pi-Quantum-Prior/blob/main/Notebooks/Arithmetic_and_Thermodynamic_Foundations_of_Z_6Z_Superselection.ipynb)
 Demonstrates how to break away from the traditional maximum-entropy uniform superposition by confining the quantum amplitude strictly to resonant arithmetic channels. Validates that the optimal phase to map ternary geometry onto binary states is $\phi_1 \approx R_{\text{fund}}/10$, while the inverse resonant channel necessitates exactly $\phi_2 = \pi$ to cancel the chiral anomaly.
 
 ### 📓 Notebook II: The NISQ Hardware Challenge and MPS Compression
 
-[](https://colab.research.google.com/github/NachoPeinador/Phase-Pi-Quantum-Prior/blob/main/Notebooks/The_NISQ_Hardware_Challenge_and_MPS_Compression.ipynb)
+[![Open In Colab](https://colab.research.google.com/github/NachoPeinador/Phase-Pi-Quantum-Prior/blob/main/Notebooks/The_NISQ_Hardware_Challenge_and_MPS_Compression.ipynb)
 Transitions from abstract math to quantum engineering. Demonstrates the superselection rules act as a 6-state Deterministic Finite Automaton (DFA), compiling the state using **Matrix Product States (MPS)** with a maximum bond dimension $\chi \le 6$ and polynomial circuit depth $\mathcal{O}(\text{poly}(n))$.
 
 ### 📓 Notebook III: Hybrid Cryptanalysis and Optimal Adaptive Strategy
 
-[](https://colab.research.google.com/github/NachoPeinador/Phase-Pi-Quantum-Prior/blob/main/Notebooks/Hybrid_Cryptanalysis_and_Optimal_Adaptive_Strategy.ipynb)
+[![Open In Colab](https://colab.research.google.com/github/NachoPeinador/Phase-Pi-Quantum-Prior/blob/main/Notebooks/Hybrid_Cryptanalysis_and_Optimal_Adaptive_Strategy.ipynb)
 Projects the topological mapping onto applied cryptography (RSA-2048). Quantifies the FTQC resource compression (purging 66.6% of sterile trajectories) and formalizes the adaptive two-round holonomic rotation protocol ($\Delta\phi = \pi$) that saves $\sim 189$ Billion expensive T-gates.
 
 ### 📓 Notebook IV: Topological $\mathbb{Z}/6\mathbb{Z}$ Superselection (Dissipative MPDO)
 
-[](https://www.google.com/search?q=https://colab.research.google.com/github/NachoPeinador/Phase-Pi-Quantum-Prior/blob/main/Notebooks/Topological_Z_6Z_Superselection.ipynb)
+[![Open In Colab](https://www.google.com/search?q=https://colab.research.google.com/github/NachoPeinador/Phase-Pi-Quantum-Prior/blob/main/Notebooks/Topological_Z_6Z_Superselection.ipynb)
 Evaluates the robustness of the system under true open quantum dynamics (Lindblad equation).
 
 * **Dissipative Phase Transition:** By introducing a leakage parameter $\delta$ via `QuTiP`, it demonstrates the abrupt transition from ETH evasion to Volume Law thermalization when the topological mask is broken.
@@ -119,7 +119,7 @@ Evaluates the robustness of the system under true open quantum dynamics (Lindbla
 
 ### 🛡️ Notebook V: Formal Verification in Lean 4
 
-[](https://www.google.com/search?q=https://colab.research.google.com/github/NachoPeinador/Phase-Pi-Quantum-Prior/blob/main/Notebooks/Formal_Verification_in_Lean_4.ipynb)
+[![Open In Colab](https://www.google.com/search?q=https://colab.research.google.com/github/NachoPeinador/Phase-Pi-Quantum-Prior/blob/main/Notebooks/Formal_Verification_in_Lean_4.ipynb)
 Elevates the mathematical claims to the highest standard of modern theoretical physics. Using the **Lean 4 theorem prover** and the **Mathlib4** library (de Moura & Ullrich, 2021), this notebook provides mechanized, machine-checked proofs of the foundational algebraic substrate:
 
 * The modular chiral involution and discrete geometric symmetry.
