@@ -167,7 +167,7 @@ This project utilizes a **dual-licensing scheme**:
   title = {Topological {$\mathbb{Z}/6\mathbb{Z}$} Superselection: Analytic Phase Derivation and Dissipative Stabilization for {FTQC} Cryptanalysis},
   url = {[https://github.com/NachoPeinador/Phase-Pi-Quantum-Prior](https://github.com/NachoPeinador/Phase-Pi-Quantum-Prior)},
   year = {2026},
-  doi = {10.5281/zenodo.19354011}
+  doi = {10.5281/zenodo.20410506}
 }
 
 ```
