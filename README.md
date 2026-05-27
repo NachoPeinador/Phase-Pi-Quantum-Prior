@@ -96,7 +96,7 @@ The empirical validation suite is divided into five comprehensive Jupyter Notebo
 
 ### 📓 Notebook I: Arithmetic and Thermodynamic Foundations
 
-[![Open In Colab](https://colab.research.google.com/github/NachoPeinador/Phase-Pi-Quantum-Prior/blob/main/Notebooks/Arithmetic_and_Thermodynamic_Foundations_of_Z_6Z_Superselection.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Phase-Pi-Quantum-Prior/blob/main/Notebooks/Arithmetic_and_Thermodynamic_Foundations_of_Z_6Z_Superselection.ipynb)
 Demonstrates how to break away from the traditional maximum-entropy uniform superposition by confining the quantum amplitude strictly to resonant arithmetic channels. Validates that the optimal phase to map ternary geometry onto binary states is $\phi_1 \approx R_{\text{fund}}/10$, while the inverse resonant channel necessitates exactly $\phi_2 = \pi$ to cancel the chiral anomaly.
 
 ### 📓 Notebook II: The NISQ Hardware Challenge and MPS Compression
