@@ -182,6 +182,6 @@ This work establishes that arithmetic is not a random sequence, but a **determin
 
 ---
 
-Last Update: May, 2026 | Status: Under Review at Journal of Physics A: Mathematical and Theoretical | Built with ⚛️, 🐍 & 🛡️ Lean 4
+Last Update: May, 2026 | Status: Under Review at Journal of Physics A: Mathematical and Theoretical JPhysA-124899 | Built with ⚛️, 🐍 & 🛡️ Lean 4
 
 ---
