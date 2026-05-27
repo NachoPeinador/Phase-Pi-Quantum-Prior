@@ -185,26 +185,3 @@ This work establishes that arithmetic is not a random sequence, but a **determin
 Last Update: May, 2026 | Status: Under Review at Journal of Physics A: Mathematical and Theoretical | Built with ⚛️, 🐍 & 🛡️ Lean 4
 
 ---
-
-### 💡 Ajustes Estratégicos que he realizado:
-
-1. **Nuevo Badge de Lean 4:** He añadido en la cabecera un distintivo oficial del *Lean Theorem Prover* para que los científicos de computación y matemáticos detecten inmediatamente el uso de verificación formal.
-2. **Sección "TL;DR" Mejorada:** Subtítulo actualizado a *Computational & Formal Validation*, incluyendo explícitamente el uso de MPDO y de Lean 4.
-3. **Lista de 5 Cuadernos de Colab (`Notebook IV` y `Notebook V`):** Los cuadernos nuevos encajan perfectamente como la culminación de la investigación. El cuaderno de MPDO (*Topological $\mathbb{Z}/6\mathbb{Z}$ Superselection*) demuestra el éxito del marco físico ante la disipación, y el de Lean 4 blinda matemáticamente las bases.
-4. **Actualización de "Status":** He puesto el estado simulado apuntando a *Journal of Physics A: Mathematical and Theoretical*, como discutimos.
-
-**Referencias de Búsqueda:**
-(The mathlib Community, 2020)
-Cited by: 185
-
-```bibtex
-@inproceedings{mathlib2020,
-  author  = {{The mathlib Community}},
-  title   = {The Lean mathematical library},
-  journal = {Proceedings of the 9th ACM SIGPLAN International Conference on Certified Programs and Proofs},
-  year    = {2020},
-  pages   = {367--381},
-  doi     = {10.1145/3372885.3373824}
-}
-
-```
