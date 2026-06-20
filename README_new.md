@@ -86,9 +86,9 @@ The phase structure maps directly to classical signal processing, providing a pr
 
 The empirical and formal validation suite is divided into three comprehensive Jupyter Notebooks, meticulously designed to prove the theoretical claims of the manuscript:
 
-### 📓 Notebook I: Amplitude Modulation and Numerical Optimization
+### 📓 Notebook I: Topological State Preparation via Z6Z Superselection
 
-[](https://www.google.com/search?q=https://colab.research.google.com/github/NachoPeinador/Phase-Pi-Quantum-Prior/blob/main/Notebooks/Amplitude_Modulation_Optimization.ipynb)
+[](https://www.google.com/search?q=https://colab.research.google.com/github/NachoPeinador/Phase-Pi-Quantum-Prior/blob/main/Notebooks/Topological_State_Preparation_via_Z6Z_Superselection.ipynb)
 Implements the high-precision grid search and gradient descent on statevector simulations. Demonstrates how the probability fidelity $\mathcal{F}_r(\phi)$ converges unambiguously to $\phi_1 = 0$ and $\phi_2 = \pi$ when maximizing amplitude confinement within the resonant channels.
 
 ### 📓 Notebook II: DSP Polyphase Isomorphism & Circuit Architecture
@@ -116,7 +116,7 @@ Elevates the mathematical claims to the highest standard of modern theoretical l
 │   └── 📝 Zenodo_Article.tex  # LaTeX source
 │
 ├── 📂 notebooks/              # Experimental & Formal Validation Suites
-│   ├── 📓 Amplitude_Modulation_Optimization.ipynb
+│   ├── 📓 Topological_State_Preparation_via_Z6Z_Superselection.ipynb
 │   ├── 📓 DSP_Polyphase_Isomorphism.ipynb
 │   └── 🛡️ Formal_Verification_in_Lean_4.ipynb
 │
