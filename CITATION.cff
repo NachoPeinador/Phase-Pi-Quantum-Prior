@@ -4,26 +4,31 @@ authors:
   - family-names: "Peinador Sala"
     given-names: "José Ignacio"
     orcid: "https://orcid.org/0009-0008-1822-3452"
-title: "Topological Z/6Z Superselection: Analytic Phase Derivation and Dissipative Stabilization for FTQC Cryptanalysis"
-version: 1.0.0
-doi: 10.5281/zenodo.20410506
-date-released: 2026-03-27
+title: "Topological State Preparation via Z/6Z Superselection, Optimal Phases and DSP Isomorphism."
+version: 3.0.0
+doi: 10.5281/zenodo.19354010
+date-released: 2026-06-20
 url: "https://github.com/NachoPeinador/Phase-Pi-Quantum-Prior"
 repository-code: "https://github.com/NachoPeinador/Phase-Pi-Quantum-Prior"
 keywords:
-  - quantum computing
-  - fault-tolerant quantum computing (FTQC)
+  - Formal Verification
+  - Quantum State Preparation
   - topological superselection
-  - matrix product states (MPS)
-  - open quantum systems
-  - lindblad dynamics
-  - quantum cryptanalysis
-  - shor's algorithm
+  - Modular Arithmetic (Z/6Z)
+  - Lean 4
+  - Phase Modulation
+  - Digital Signal Processing
+  - Polyphase Decomposition
 license: MIT
 abstract: >-
   This repository contains the empirical validation suite and computational 
-  framework for the Z/6Z Topological Prior in quantum state preparation. 
-  It includes exact Matrix Product Density Operator (MPDO) tensor contractions 
-  simulating the Non-Ergodic Extended (NEE) phase under Lindblad dynamics, 
-  and the macroscopic projection of Fault-Tolerant Quantum Computing (FTQC) 
-  T-count reductions for hybrid cryptanalysis against RSA moduli.
+  framework for the Topological State Preparation via Z/6Z Superselection, Optimal Phases and DSP Isomorphism.. 
+  It includes:
+Implements the high-precision grid search and gradient descent on statevector simulations. Demonstrates how the probability fidelity Fr(ϕ) converges unambiguously to ϕ1=0 and ϕ2=π when maximizing amplitude confinement within the resonant channels.
+Translates the algebraic phase relation into a Digital Signal Processing framework. Validates the three essential properties for NISQ/FTQC hardware: Unitary isolation (orthogonality), Local decoupling (independent polyphase preparation), and Perfect reconstruction without destructive interference.
+Elevates the mathematical claims to the highest standard of modern theoretical logic. Using the Lean 4 theorem prover and the Mathlib4 library, this notebook provides mechanized, machine-checked proofs of the foundational algebraic substrate:
+Modular involution (5≡−1(mod6)).
+Unit group isomorphism (Z/6Z)×≅Z/2Z.
+Topological closure of the deterministic transition rules.
+
+
