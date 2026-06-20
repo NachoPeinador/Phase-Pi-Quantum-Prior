@@ -92,7 +92,9 @@ The empirical and formal validation suite is divided into three comprehensive Ju
 Implements the high-precision grid search and gradient descent on statevector simulations. Demonstrates how the probability fidelity $\mathcal{F}_r(\phi)$ converges unambiguously to $\phi_1 = 0$ and $\phi_2 = \pi$ when maximizing amplitude confinement within the resonant channels.
 
 ### 📓 Notebook II: DSP Polyphase Isomorphism & Circuit Architecture
+
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://www.google.com/search?q=https://colab.research.google.com/github/NachoPeinador/Phase-Pi-Quantum-Prior/blob/main/Notebooks/DSP_Polyphase_Isomorphism.ipynb)
+
 
 Translates the algebraic phase relation into a Digital Signal Processing framework. Validates the three essential properties for NISQ/FTQC hardware: Unitary isolation (orthogonality), Local decoupling (independent polyphase preparation), and Perfect reconstruction without destructive interference.
 
