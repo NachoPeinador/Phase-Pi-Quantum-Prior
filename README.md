@@ -3,18 +3,12 @@
 ### Topological State Preparation via $\mathbb{Z}/6\mathbb{Z}$ Superselection: Optimal Phases and DSP Isomorphism
 
 ---
+<p align="center">
+  <img src="Images/Phase_Reponse.png" width="90%" alt="Global Invariance and Pi-Periodicity of the Partition Function">
+</p>
 
 > * **The analytic core of the $\mathbb{Z}/6\mathbb{Z}$ topological superselection.** Probability amplitude deposited in sterile channels is computationally wasted. By confining the register to the resonant channels $\mathcal{C}_1$ and $\mathcal{C}_5$ using exact phase modulations ($\phi_1 = 0$, $\phi_2 = \pi$), we achieve perfect spectral isolation isomorphic to DSP polyphase filters.*
 > 
----
-
-<p align="center">
-  <img src="Images/DISCRETE_SYMMETRY.png" width="90%" alt="Global Invariance and Pi-Periodicity of the Partition Function">
-</p>
-
-> * **The analytic core of the $\mathbb{Z}/6\mathbb{Z}$ topological superselection.** The perfect geometric duality between the resonant channels (blue and red) demonstrates the Zero-Leakage adaptive strategy driven by the exact holonomic phase shift $\Delta\phi = \pi$.*
-
----
 
 
 ## 🎯 TL;DR – The Essentials
