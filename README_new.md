@@ -87,18 +87,18 @@ The phase structure maps directly to classical signal processing, providing a pr
 The empirical and formal validation suite is divided into three comprehensive Jupyter Notebooks, meticulously designed to prove the theoretical claims of the manuscript:
 
 ### 📓 Notebook I: Topological State Preparation via Z6Z Superselection
-
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://www.google.com/search?q=https://colab.research.google.com/github/NachoPeinador/Phase-Pi-Quantum-Prior/blob/main/Notebooks/Topological_State_Preparation_via_Z6Z_Superselection.ipynb)
+
 Implements the high-precision grid search and gradient descent on statevector simulations. Demonstrates how the probability fidelity $\mathcal{F}_r(\phi)$ converges unambiguously to $\phi_1 = 0$ and $\phi_2 = \pi$ when maximizing amplitude confinement within the resonant channels.
 
 ### 📓 Notebook II: DSP Polyphase Isomorphism & Circuit Architecture
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://www.google.com/search?q=https://colab.research.google.com/github/NachoPeinador/Phase-Pi-Quantum-Prior/blob/main/Notebooks/DSP_Polyphase_Isomorphism.ipynb)
 
-[](https://www.google.com/search?q=https://colab.research.google.com/github/NachoPeinador/Phase-Pi-Quantum-Prior/blob/main/Notebooks/DSP_Polyphase_Isomorphism.ipynb)
 Translates the algebraic phase relation into a Digital Signal Processing framework. Validates the three essential properties for NISQ/FTQC hardware: Unitary isolation (orthogonality), Local decoupling (independent polyphase preparation), and Perfect reconstruction without destructive interference.
 
 ### 🛡️ Notebook III: Formal Verification in Lean 4
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://www.google.com/search?q=https://colab.research.google.com/github/NachoPeinador/Phase-Pi-Quantum-Prior/blob/main/Notebooks/Formal_Verification_in_Lean_4.ipynb)
 
-[](https://www.google.com/search?q=https://colab.research.google.com/github/NachoPeinador/Phase-Pi-Quantum-Prior/blob/main/Notebooks/Formal_Verification_in_Lean_4.ipynb)
 Elevates the mathematical claims to the highest standard of modern theoretical logic. Using the **Lean 4 theorem prover** and the **Mathlib4** library, this notebook provides mechanized, machine-checked proofs of the foundational algebraic substrate:
 
 * Modular involution ($5 \equiv -1 \pmod 6$).
