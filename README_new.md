@@ -27,7 +27,7 @@ Standard quantum algorithms that exploit arithmetic structure rely on an initial
 
 A fundamental theorem of elementary number theory states that every prime number $p > 3$ satisfies $p \equiv 1 \pmod{6}$ or $p \equiv 5 \pmod{6}$. This research introduces a structured Quantum State Preparation (QSP) protocol that modulates the amplitude with a sinusoidal envelope governed by a phase parameter:
 
-$$P(x) \propto \exp\left[A \sin\left(\frac{2\pi x}{6} + \phi\right)\right] \cdot \mathds{1}_{x \equiv 1,5 \pmod{6}}$$
+$$P(x) \propto \exp\left[A \sin\left(\frac{2\pi x}{6} + \phi\right)\right] \cdot \mathbf{1}_{x \equiv 1,5 \pmod{6}}$$
 
 By determining the optimal phases to align this envelope with the discrete integer lattice, we transform arithmetic search from a high-entropy sweep into a **topologically tuned resonance**.
 
