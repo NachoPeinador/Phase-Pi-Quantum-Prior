@@ -121,16 +121,15 @@ Elevates the mathematical claims to the highest standard of modern theoretical l
 ```text
 .
 ├── 📂 Paper/                  # Theoretical Documentation
-│   ├── 📄 Zenodo_Article.pdf  # The definitive manuscript
-│   └── 📝 Zenodo_Article.tex  # LaTeX source
+│   ├── 📄 Topological_State_Preparation_via_Z6Z_Superselection.pdf  # The definitive manuscript
+│   └── 📝 Topological_State_Preparation_via_Z6Z_Superselection.tex  # LaTeX source
 │
 ├── 📂 notebooks/              # Experimental & Formal Validation Suites
 │   ├── 📓 Topological_State_Preparation_via_Z6Z_Superselection.ipynb
 │   ├── 📓 DSP_Polyphase_Isomorphism.ipynb
 │   └── 🛡️ Formal_Verification_in_Lean_4.ipynb
 │
-├── 📜 README.md               # English Documentation
-├── 📜 README_es.md            # Spanish Documentation
+├── 📜 README.md               
 ├── 📜 LICENSE                 # Dual scheme: Apache 2.0 / CC-BY 4.0
 └── 📜 CITATION.cff            # Academic citation metadata
 
