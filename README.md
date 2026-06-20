@@ -156,7 +156,7 @@ This project utilizes a **dual-licensing scheme**:
 
 ## 🔭 Philosophical Context
 
-> *"The result $\phi_2 = \pi$ is remarkable in its simplicity: it requires only elementary modular arithmetic and basic trigonometry, yet it provides a direct bridge between the algebraic structure of prime numbers and the phase control of quantum registers."*
+> *"The result φ₂ = π is remarkable in its simplicity: it requires only elementary modular arithmetic and basic trigonometry, yet it provides a direct bridge between the algebraic structure of prime numbers and the phase control of quantum registers."*
 
 This work establishes a rigorous foundation for arithmetic-aware quantum state preparation, demonstrating that algorithmic initialization can be deeply optimized before a single logical gate is applied.
 
