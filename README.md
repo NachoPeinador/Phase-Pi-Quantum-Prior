@@ -9,14 +9,6 @@
 [![Papers](https://img.shields.io/badge/Paper-Read_PDF-B31B1B?style=flat&logo=latex&logoColor=white)](https://github.com/NachoPeinador/Phase-Pi-Quantum-Prior/blob/main/Paper/Topological_State_Preparation_via_Z6Z_Superselection.pdf)
 
 ---
-
-> 🌌 **El Universo Aritmético / The Arithmetic Universe** >
-
-> 🇬🇧 *This research is part of the theoretical framework of **The Arithmetic Universe**, the theory which postulates that fundamental reality is not hidden in infinite chaos, but in the elegant and humble architecture of integers.* > 🔗 **[Discover the central repository, the interactive notebooks, and the Lean 4 validation here](https://github.com/NachoPeinador/EL_UNIVERSO_ARITMETICO)**.
->
-> 🇪🇸 *Esta investigación forma parte del marco teórico de **El Universo Aritmético**, la teoría que postula que la realidad fundamental no se esconde en el caos infinito, sino en la elegante y humilde arquitectura de los números enteros.* > 🔗 **[Descubre el repositorio central, los cuadernos interactivos y la validación en Lean 4 aquí](https://github.com/NachoPeinador/EL_UNIVERSO_ARITMETICO)**.
-
----
 <p align="center">
   <img src="Images/Phase_Reponse.png" width="90%" alt="Global Invariance and Pi-Periodicity of the Partition Function">
 </p>
@@ -176,3 +168,11 @@ This work establishes a rigorous foundation for arithmetic-aware quantum state p
 ---
 
 Last Update: June, 2026 | Built with ⚛️, 🐍 & 🛡️ Lean 4
+
+---
+
+> 🌌 **El Universo Aritmético / The Arithmetic Universe** >
+
+> 🇬🇧 *This research is part of the theoretical framework of **The Arithmetic Universe**, the theory which postulates that fundamental reality is not hidden in infinite chaos, but in the elegant and humble architecture of integers.* > 🔗 **[Discover the central repository, the interactive notebooks, and the Lean 4 validation here](https://github.com/NachoPeinador/EL_UNIVERSO_ARITMETICO)**.
+>
+> 🇪🇸 *Esta investigación forma parte del marco teórico de **El Universo Aritmético**, la teoría que postula que la realidad fundamental no se esconde en el caos infinito, sino en la elegante y humilde arquitectura de los números enteros.* > 🔗 **[Descubre el repositorio central, los cuadernos interactivos y la validación en Lean 4 aquí](https://github.com/NachoPeinador/EL_UNIVERSO_ARITMETICO)**.
